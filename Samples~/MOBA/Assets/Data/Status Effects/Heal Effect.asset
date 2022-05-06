@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ebf45717ec4964c979c8bce9b34ffa, type: 3}
+  m_Name: Heal Effect
+  m_EditorClassIdentifier: 
+  m_DisplayName: Heal
+  m_MaxStackSize: 1
+  Duration: 3
+  TotalDamage: -25
+  DamageType: 0

@@ -1,0 +1,16 @@
+{
+	"name": "com.lcomstive.legs",
+	"version": "0.0.1",
+	"description": "A framework for event-based gameplay systems",
+	"displayName": "LeGS",
+	"author": "Lewis Comstive",
+	"license": "MIT",
+	"keywords": [ "LeGS" ],
+	"samples": [
+		{
+			"displayName": "MOBA Sample",
+			"description": "MOBA-style gameplay example game",
+			"path": "Samples~/MOBA"
+		}
+	]
+}

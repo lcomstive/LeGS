@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af56e525e8fe523468a1ca1d93acef08, type: 3}
+  m_Name: Add Heal Effect
+  m_EditorClassIdentifier: 
+  <DisplayName>k__BackingField: Heal
+  <Description>k__BackingField: Heals a small amount of health over time
+  <Cooldown>k__BackingField: 10
+  <Effect>k__BackingField: {fileID: 11400000, guid: fd825f1ff22fa23428695351a8812e1d, type: 2}
