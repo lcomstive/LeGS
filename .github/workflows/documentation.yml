@@ -19,7 +19,7 @@ jobs:
 
     # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
     - name: Copy media
-      run: cp -R Documentation/Markdown/Media Documentation/html/Media
+      run: sudo cp -R Documentation/Markdown/Media Documentation/html/Media
     
     # Upload HTML to GitHub Pages site
     - name: Publish
