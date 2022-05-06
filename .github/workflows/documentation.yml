@@ -1,0 +1,29 @@
+name: Documentation
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # Checkout
+    - uses: actions/checkout@v3
+
+    # Generate HTML
+    - name: Doxygen
+      uses: mattnotmitt/doxygen-action@v1.9.2
+      with:
+        doxyfile-path: 'Documentation/Doxyfile'
+
+    # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
+    - name: Copy media
+      run: cp -R Documentation/Markdown/Media Documentation/html/Media
+    
+    # Upload HTML to GitHub Pages site
+    - name: Publish
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: Documentation/html

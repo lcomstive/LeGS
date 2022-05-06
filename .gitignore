@@ -1,40 +1,3 @@
-## C++ ##
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-Library/[Bb]uild/
-Library/[Bb]uilds/
-
 ## UNITY ##
 Samples~/**/[Ll]ibrary/
 Samples~/**/[Tt]emp/
@@ -55,6 +18,9 @@ Samples~/**/[Uu]ser[Ss]ettings/
 
 # Visual Studio cache directory
 .vs/
+
+# Mac OS meta file
+.DS_Store
 
 # Gradle cache directory
 .gradle/
