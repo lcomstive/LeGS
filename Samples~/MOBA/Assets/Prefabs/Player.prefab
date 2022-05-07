@@ -1460,6 +1460,7 @@ GameObject:
   - component: {fileID: 6067222847208340990}
   - component: {fileID: 5866666020304067303}
   - component: {fileID: 5866666020304067305}
+  - component: {fileID: 1923779479547762889}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1514,7 +1515,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6409311497393111202}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1578,8 +1579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f703e7ba8166cd149b0d418866ad2588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 15
-  m_JumpDelay: 0.5
+  m_JumpForce: 3.5
+  m_JumpDelay: 0.35
   m_GroundedJumpDelay: 0.5
   m_GroundLayers:
     serializedVersion: 2
@@ -1627,10 +1628,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521a31d5a7dd20840ab701c5a2264bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DisplayName: Entity
-  m_Health: 0
-  m_MaxHealth: 250
+  <DisplayName>k__BackingField: Player
   CapHealth: 1
+  <Health>k__BackingField: 0
+  <MaxHealth>k__BackingField: 150
+  m_Info: {fileID: 11400000, guid: f4ba6a63f26312145ae04647447a3760, type: 2}
+--- !u!114 &1923779479547762889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409311497393111202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c568ffcacba1f4fa1ac8fc2de5e71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Ability>k__BackingField: {fileID: 0}
+  m_CastAction: {fileID: -4948257818613253037, guid: 98fd0ffd8b9780f4fa27ec269ff429f3, type: 3}
 --- !u!1 &6511490314707178630
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af56e525e8fe523468a1ca1d93acef08, type: 3}
-  m_Name: Add Heal Effect
+  m_Name: Add Health Buff
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: Heal
-  <Description>k__BackingField: Heals a small amount of health over time
-  <Cooldown>k__BackingField: 10
-  <Effect>k__BackingField: {fileID: 11400000, guid: fd825f1ff22fa23428695351a8812e1d, type: 2}
+  <DisplayName>k__BackingField: Add Health Buff
+  <Description>k__BackingField: Adds the health buff status effect
+  <Cooldown>k__BackingField: 2.5
+  <Effect>k__BackingField: {fileID: 11400000, guid: 16721c9fbe9874b9493cdba21f12a1ea, type: 2}

@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ebf45717ec4964c979c8bce9b34ffa, type: 3}
-  m_Name: Burn
+  m_Script: {fileID: 11500000, guid: 6126f40dd64e24702b8220740f4aef76, type: 3}
+  m_Name: Health Buff
   m_EditorClassIdentifier: 
-  m_DisplayName: Burn
+  m_DisplayName: Health Buff
   m_MaxStackSize: 1
-  Duration: 2.5
-  TotalDamage: 30
-  DamageType: 1
+  Duration: 4
+  m_AttributeName: Health
+  m_AddModifier: 0
+  m_MultiplyModifier: -0.5

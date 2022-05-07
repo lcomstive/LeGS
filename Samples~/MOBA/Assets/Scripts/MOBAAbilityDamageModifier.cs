@@ -1,14 +1,15 @@
-using LEGS;
+﻿using LEGS;
 using UnityEngine;
 using LEGS.Abilities;
 
 namespace MOBAExample
 {
-	public class MOBAAbilityDamageModifier : IDamageModifier
+	/*
+	public class MOBAAbilityDamageModifier
 	{
 		public float CalculateDamage(float input, IEntity sender, IDamageable receiver)
 		{
-			ICastAbility abilityInfo = sender as ICastAbility;
+			AbilityInfo abilityInfo = sender as AbilityInfo;
 			if(abilityInfo == null) return input;
 
 			MOBAAbility ability = (MOBAAbility)abilityInfo.Ability;
@@ -33,4 +34,5 @@ namespace MOBAExample
 			return input;
 		}
 	}
+	*/
 }

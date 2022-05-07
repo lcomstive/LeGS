@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -6,6 +6,10 @@ using UnityEngine.InputSystem;
 
 namespace LEGS.Abilities
 {
+	/// <summary>
+	/// Basic class that activates an ability on keypress,
+	/// with cooldown functionality
+	/// </summary>
 	[RequireComponent(typeof(IEntity))]
 	public class SimpleAbilityCaster : MonoBehaviour
 	{
@@ -15,6 +19,11 @@ namespace LEGS.Abilities
 		/// Casting entity
 		/// </summary>
 		public IEntity Entity { get; private set; }
+
+		/// <summary>
+		/// Visible name of attached entity
+		/// </summary>
+		public string DisplayName => Entity?.DisplayName ?? string.Empty;
 
 		#if ENABLE_INPUT_SYSTEM
 		[SerializeField] private InputActionReference m_CastAction;

@@ -1,7 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS.Abilities
 {
+    /// <summary>
+	/// An activateable script that modifies a character or the world in some form
+	/// </summary>
     public interface IAbility
     {
         /// <summary>

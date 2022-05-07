@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1de8cef25e97041ab8462fd0a382684c, type: 3}
-  m_Name: Heal Effect
+  m_Name: Burn Effect
   m_EditorClassIdentifier: 
-  m_DisplayName: Status Effect
+  m_DisplayName: Burn
   m_MaxStackSize: 1
-  Duration: 7.5
-  TotalDamage: -50
+  Duration: 3
+  TotalDamage: 25

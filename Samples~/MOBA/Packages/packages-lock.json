@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.lcomstive.legs": {
-      "version": "https://github.com/lcomstive/LeGS.git",
+      "version": "file:../../../",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "2ccb1b1ba842df938ba3de9f1454a3c177aca5ee"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.cinemachine": {
       "version": "2.8.4",

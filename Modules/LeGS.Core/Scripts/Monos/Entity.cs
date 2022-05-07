@@ -1,9 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS
 {
+	/// <summary>
+	/// <see cref="MonoBehaviour"/> base implementation of an <see cref="IEntity"/>
+	/// </summary>
 	public class Entity : MonoBehaviour, IEntity
 	{
+		/// <summary>
+		/// Readable name suitable for debugging and/or UI
+		/// </summary>
 		[Tooltip("Readable name suitable for debugging and/or UI")]
 		[field: SerializeField] public string DisplayName { get; private set; } = "Entity";
 

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS
 {
@@ -11,6 +11,9 @@ namespace LEGS
 		Stay = 4
 	}
 
+	/// <summary>
+	/// Applies a <see cref="StatusEffect"/> during trigger event(s)
+	/// </summary>
 	[RequireComponent(typeof(Collider))]
 	public class TriggerApplyStatus : MonoBehaviour
 	{

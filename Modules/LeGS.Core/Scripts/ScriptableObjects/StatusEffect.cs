@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS
 {
+	/// <summary>
+	/// <see cref="ScriptableObject"/> derived <see cref="IStatusEffect"/>
+	/// </summary>
 	public class StatusEffect : ScriptableObject, IStatusEffect
 	{
-		[SerializeField] private string m_DisplayName = "Status Effect";
-		[SerializeField] private uint m_MaxStackSize = 1;
+		[SerializeField, Tooltip("Readable name suitable for debugging and/or game UI")]
+		private string m_DisplayName = "Status Effect";
+
+		[SerializeField, Tooltip("Maximum amount of this status effect to be applied to an entity. Value of 0 = infinite.")]
+		private uint m_MaxStackSize = 1;
 
 		public string Name => m_DisplayName;
 		public uint MaxStackSize => m_MaxStackSize;

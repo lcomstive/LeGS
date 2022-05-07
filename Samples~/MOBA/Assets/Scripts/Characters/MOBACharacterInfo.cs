@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using LEGS.Shop;
 using UnityEngine;
 using System.Collections.Generic;
@@ -29,7 +29,9 @@ namespace MOBAExample
 		/// </summary>
 
 		[SerializeField, HideInInspector]
-		private AnimationCurve[] m_BaseTraits = new AnimationCurve[Enum.GetValues(typeof(CharacterTrait)).Length];
+		public AnimationCurve[] m_BaseTraits = new AnimationCurve[Enum.GetValues(typeof(CharacterTrait)).Length];
+
+		public int GetCurrentLevel(float experience) => (int)Mathf.Floor(ExperienceLevels.Evaluate(experience));
 
 		public float this[CharacterTrait trait, int level]
 		{

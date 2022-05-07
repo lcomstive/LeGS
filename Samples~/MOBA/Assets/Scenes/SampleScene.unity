@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.4
+  m_fontSize: 35.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1009,7 +1009,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 15, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &658284291
 MonoBehaviour:
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b67d8c7523ec04d9dcba86a9e9530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Effect: {fileID: 11400000, guid: 4acee9cb27bc2a8429f00f01fcc41a78, type: 2}
+  Effect: {fileID: 11400000, guid: 45e8b6bcf9ae04781863b21e4a9571f7, type: 2}
   TriggerType: 1
 --- !u!1 &989520909
 GameObject:
@@ -2227,20 +2227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858dbb78cee144548a775c377c34a5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5866666020304067304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147541449254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8c568ffcacba1f4fa1ac8fc2de5e71f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Ability>k__BackingField: {fileID: 0}
-  m_CastAction: {fileID: -4948257818613253037, guid: 98fd0ffd8b9780f4fa27ec269ff429f3, type: 3}
 --- !u!1001 &6067222847714499204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2248,6 +2234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1923779479547762889, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
+      propertyPath: <Ability>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 2cf4bb3c230a045f797a8d5ef55d5369, type: 2}
     - target: {fileID: 5866666020304067304, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2257,16 +2247,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 448796366}
     - target: {fileID: 5866666020304067305, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: m_Info
-      value: 
-      objectReference: {fileID: 11400000, guid: f4ba6a63f26312145ae04647447a3760, type: 2}
-    - target: {fileID: 5866666020304067305, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: <MaxHealth>k__BackingField
-      value: 150
+      propertyPath: Attributes.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5866666020304067305, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: <DisplayName>k__BackingField
-      value: Player
+      propertyPath: Attributes.Array.data[0].m_BaseValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666020304067305, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
+      propertyPath: Attributes.Array.data[0].<Name>k__BackingField
+      value: Health
       objectReference: {fileID: 0}
     - target: {fileID: 6033031802627676696, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
       propertyPath: m_RootOrder
@@ -2311,18 +2301,6 @@ PrefabInstance:
     - target: {fileID: 6033031802627676696, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6067222847208340990, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: m_JumpDelay
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 6067222847208340990, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: m_JumpForce
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6067222847208340991, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6409311497393111202, guid: ba555f9d744252d4089e651b0723dc8e, type: 3}
       propertyPath: m_Name
