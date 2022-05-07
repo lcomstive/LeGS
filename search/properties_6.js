@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['Name',['../interfaceLEGS_1_1IStatusEffect.html#a14ee66e31b785dd2cc2e3169b33cfcff',1,'LEGS::IStatusEffect']]]
+  ['killer_0',['Killer',['../classLEGS_1_1EntityDeathEventArgs.html#a586fa26dbde49a2583c73f80fd01613a',1,'LEGS::EntityDeathEventArgs']]]
 ];

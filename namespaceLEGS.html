@@ -107,7 +107,11 @@ $(document).ready(function(){initNavTree('namespaceLEGS.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1DamageOverTimeStatusEffect.html">DamageOverTimeStatusEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLEGS_1_1TimedStatusEffect.html" title="StatusEffect that removes itself from StatusEffect.Receiver after Duration seconds has passed">TimedStatusEffect</a> that applies damage over time to StatusEffect.Receiver  <a href="classLEGS_1_1DamageOverTimeStatusEffect.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Entity.html">Entity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MonoBehaviour base implementation of an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a>  <a href="classLEGS_1_1Entity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1EntityDeathEventArgs.html">EntityDeathEventArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> gets destroyed  <a href="classLEGS_1_1EntityDeathEventArgs.html#details">More...</a><br /></td></tr>
@@ -128,9 +132,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageable.html">IDamageable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> that has health and can receive damage  <a href="interfaceLEGS_1_1IDamageable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageModifier.html">IDamageModifier</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alters incoming damage to an <a class="el" href="interfaceLEGS_1_1IDamageable.html" title="Represents an IEntity that has health and can receive damage">IDamageable</a>  <a href="interfaceLEGS_1_1IDamageModifier.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a LeGS object. This is the base type for most LeGS types.  <a href="interfaceLEGS_1_1IEntity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,13 +144,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1LEGEventArgs.html">LEGEventArgs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1StatusEffect.html">StatusEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ScriptableObject derived <a class="el" href="interfaceLEGS_1_1IStatusEffect.html" title="An object that can be added and removed from an IStatusEffectReceiver">IStatusEffect</a>  <a href="classLEGS_1_1StatusEffect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1StatusEffectChangeArgs.html">StatusEffectChangeArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event for changing of a <a class="el" href="interfaceLEGS_1_1IStatusEffect.html" title="An object that can be added and removed from an IStatusEffectReceiver">IStatusEffect</a> in an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a>  <a href="classLEGS_1_1StatusEffectChangeArgs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1TimedStatusEffect.html">TimedStatusEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLEGS_1_1StatusEffect.html" title="ScriptableObject derived IStatusEffect">StatusEffect</a> that removes itself from StatusEffect.Receiver after <a class="el" href="classLEGS_1_1TimedStatusEffect.html#a0f63a90e5885282de64e0f8e520c9214" title="Time in seconds to apply this status effect. &lt;0 = no expirt">Duration</a> seconds has passed  <a href="classLEGS_1_1TimedStatusEffect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1TriggerApplyStatus.html">TriggerApplyStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a <a class="el" href="classLEGS_1_1StatusEffect.html" title="ScriptableObject derived IStatusEffect">StatusEffect</a> during trigger event(s)  <a href="classLEGS_1_1TriggerApplyStatus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>

@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['onadded_0',['OnAdded',['../interfaceLEGS_1_1IStatusEffect.html#ac8461463d4380734b58b299f71de95d1',1,'LEGS.IStatusEffect.OnAdded()'],['../classLEGS_1_1StatusEffect.html#a626cf8263b0676f026615053b7948f02',1,'LEGS.StatusEffect.OnAdded()'],['../classLEGS_1_1TimedStatusEffect.html#af9986f7db4251d8271443959f06353b3',1,'LEGS.TimedStatusEffect.OnAdded()']]],
-  ['onremoved_1',['OnRemoved',['../interfaceLEGS_1_1IStatusEffect.html#a0166694fcd4938f94d182f12789fbfef',1,'LEGS.IStatusEffect.OnRemoved()'],['../classLEGS_1_1StatusEffect.html#aac3a0ccf2c2fac2614e9b4c228f3640e',1,'LEGS.StatusEffect.OnRemoved()']]]
+  ['abilities_0',['Abilities',['../namespaceLEGS_1_1Abilities.html',1,'LEGS']]],
+  ['characters_1',['Characters',['../namespaceLEGS_1_1Characters.html',1,'LEGS']]],
+  ['dialogue_2',['Dialogue',['../namespaceLEGS_1_1Dialogue.html',1,'LEGS']]],
+  ['inventory_3',['Inventory',['../namespaceLEGS_1_1Inventory.html',1,'LEGS']]],
+  ['items_4',['Items',['../namespaceLEGS_1_1Items.html',1,'LEGS']]],
+  ['legeventargs_5',['LEGEventArgs',['../classLEGS_1_1LEGEventArgs.html',1,'LEGS']]],
+  ['legs_6',['LeGS',['../index.html',1,'']]],
+  ['legs_7',['LEGS',['../namespaceLEGS.html',1,'']]],
+  ['legs_20abilities_8',['LeGS Abilities',['../md_Modules_LeGS_Abilities_Documentation_LeGS_Abilities.html',1,'']]],
+  ['legs_20characters_9',['LeGS Characters',['../md_Modules_LeGS_Characters_Documentation_LeGS_Characters.html',1,'']]],
+  ['legs_20dialogue_10',['LeGS Dialogue',['../md_Modules_LeGS_Dialogue_Documentation_LeGS_Dialogue.html',1,'']]],
+  ['legs_20inventory_11',['LeGS Inventory',['../md_Modules_LeGS_Inventory_Documentation_LeGS_Inventory.html',1,'']]],
+  ['legs_20items_12',['LeGS Items',['../md_Modules_LeGS_Items_Documentation_LeGS_Items.html',1,'']]],
+  ['legs_20quests_13',['LeGS Quests',['../md_Modules_LeGS_Quests_Documentation_LeGS_Quests.html',1,'']]],
+  ['legs_20shop_14',['LeGS Shop',['../md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html',1,'']]],
+  ['quests_15',['Quests',['../namespaceLEGS_1_1Quests.html',1,'LEGS']]],
+  ['shop_16',['Shop',['../namespaceLEGS_1_1Shop.html',1,'LEGS']]]
 ];

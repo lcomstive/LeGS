@@ -6,14 +6,15 @@ var annotated_dup =
         [ "AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect" ],
         [ "AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
         [ "IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", "interfaceLEGS_1_1Abilities_1_1IAbility" ],
-        [ "IAbilityCaster", "interfaceLEGS_1_1Abilities_1_1IAbilityCaster.html", null ],
-        [ "IAbilityTargetSelector", "interfaceLEGS_1_1Abilities_1_1IAbilityTargetSelector.html", null ],
-        [ "ICastAbility", "interfaceLEGS_1_1Abilities_1_1ICastAbility.html", null ],
         [ "SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster" ]
       ] ],
       [ "Characters", "namespaceLEGS_1_1Characters.html", [
+        [ "Attribute", "classLEGS_1_1Characters_1_1Attribute.html", "classLEGS_1_1Characters_1_1Attribute" ],
+        [ "AttributeEventArgs", "classLEGS_1_1Characters_1_1AttributeEventArgs.html", "classLEGS_1_1Characters_1_1AttributeEventArgs" ],
         [ "Character", "classLEGS_1_1Characters_1_1Character.html", "classLEGS_1_1Characters_1_1Character" ],
-        [ "ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ]
+        [ "IAttributeHolder", "interfaceLEGS_1_1Characters_1_1IAttributeHolder.html", "interfaceLEGS_1_1Characters_1_1IAttributeHolder" ],
+        [ "ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
+        [ "StatusEffectModifyAttribute", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute" ]
       ] ],
       [ "Dialogue", "namespaceLEGS_1_1Dialogue.html", [
         [ "IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ]
@@ -32,13 +33,13 @@ var annotated_dup =
       [ "Shop", "namespaceLEGS_1_1Shop.html", [
         [ "Currency", "structLEGS_1_1Shop_1_1Currency.html", null ]
       ] ],
-      [ "Entity", "classLEGS_1_1Entity.html", null ],
+      [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
+      [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
       [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
       [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
       [ "EntitySpawnEventArgs", "classLEGS_1_1EntitySpawnEventArgs.html", "classLEGS_1_1EntitySpawnEventArgs" ],
       [ "ICharacter", "interfaceLEGS_1_1ICharacter.html", null ],
       [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
-      [ "IDamageModifier", "interfaceLEGS_1_1IDamageModifier.html", "interfaceLEGS_1_1IDamageModifier" ],
       [ "IEntity", "interfaceLEGS_1_1IEntity.html", "interfaceLEGS_1_1IEntity" ],
       [ "IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", "interfaceLEGS_1_1IStatusEffect" ],
       [ "IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", "interfaceLEGS_1_1IStatusEffectReceiver" ],

@@ -117,7 +117,7 @@ Inheritance diagram for LEGS.IDamageable:</div>
 <area href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types." alt="LEGS.IEntity" shape="rect" coords="92,0,267,24"/>
 <area href="interfaceLEGS_1_1Characters_1_1ICharacter.html" title="For characters that can receive damage &amp; status effects." alt="LEGS.Characters.ICharacter" shape="rect" coords="0,112,175,136"/>
 <area href="interfaceLEGS_1_1ICharacter.html" title="For characters that can receive damage &amp; status effects." alt="LEGS.ICharacter" shape="rect" coords="185,112,360,136"/>
-<area href="classLEGS_1_1Characters_1_1Character.html" alt="LEGS.Characters.Character" shape="rect" coords="0,168,175,192"/>
+<area href="classLEGS_1_1Characters_1_1Character.html" title="Simple class for an ICharacter &amp; IAttributeHolder implementation." alt="LEGS.Characters.Character" shape="rect" coords="0,168,175,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,12 +126,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa054565c2773bd2659a84dcdc1b58a88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">ApplyDamage</a> (float amount, <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> sender)</td></tr>
 <tr class="memdesc:aa054565c2773bd2659a84dcdc1b58a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases Health by <em>amount</em> . Healing is negative damage.  <a href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">More...</a><br /></td></tr>
 <tr class="separator:aa054565c2773bd2659a84dcdc1b58a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae257020ae71856e7b600d6f79481f07c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageable.html#ae257020ae71856e7b600d6f79481f07c">AddDamageModifier&lt; T &gt;</a> ()</td></tr>
-<tr class="memdesc:ae257020ae71856e7b600d6f79481f07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a modifier for altering damage amount before being applied  <a href="interfaceLEGS_1_1IDamageable.html#ae257020ae71856e7b600d6f79481f07c">More...</a><br /></td></tr>
-<tr class="separator:ae257020ae71856e7b600d6f79481f07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a588bbb67b276f73599d395a029a6e8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageable.html#a588bbb67b276f73599d395a029a6e8a4">RemoveDamageModifier</a> (<a class="el" href="interfaceLEGS_1_1IDamageModifier.html">IDamageModifier</a> modifier)</td></tr>
-<tr class="memdesc:a588bbb67b276f73599d395a029a6e8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes damage modifier  <a href="interfaceLEGS_1_1IDamageable.html#a588bbb67b276f73599d395a029a6e8a4">More...</a><br /></td></tr>
-<tr class="separator:a588bbb67b276f73599d395a029a6e8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -148,41 +142,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
 <tr class="separator:abd51de275db84cc01174741858a13907 inherit properties_interfaceLEGS_1_1IEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae257020ae71856e7b600d6f79481f07c" name="ae257020ae71856e7b600d6f79481f07c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae257020ae71856e7b600d6f79481f07c">&#9670;&nbsp;</a></span>AddDamageModifier&lt; T &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">T LEGS.IDamageable.AddDamageModifier&lt; T &gt; </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Modifier to create. Must derive from <a class="el" href="interfaceLEGS_1_1IDamageModifier.html" title="Alters incoming damage to an IDamageable">IDamageModifier</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Created instance of damage modifier</dd></dl>
-
-<p>Implemented in <a class="el" href="classLEGS_1_1Characters_1_1Character.html#a3982618c1c2481d2c87248a44ebf873d">LEGS.Characters.Character</a>.</p>
-<div class="typeconstraint">
-<dl><dt><b>Type Constraints</b></dt><dd>
-<table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IDamageModifier</em></td><td>&#160;</td></tr>
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>new()</em></td><td>&#160;</td></tr>
-</table>
-</dd>
-</dl>
-</div>
-
-</div>
-</div>
 <a id="aa054565c2773bd2659a84dcdc1b58a88" name="aa054565c2773bd2659a84dcdc1b58a88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa054565c2773bd2659a84dcdc1b58a88">&#9670;&nbsp;</a></span>ApplyDamage()</h2>
 
@@ -208,29 +167,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Health may not be decreased by <em>amount</em>  exactly due to attached <a class="el" href="interfaceLEGS_1_1IDamageModifier.html" title="Alters incoming damage to an IDamageable">IDamageModifier</a>s</p>
+<p >Health may not be decreased by <em>amount</em>  exactly due to attached IDamageModifiers</p>
 
 <p>Implemented in <a class="el" href="classLEGS_1_1Characters_1_1Character.html#ac69d5c24c0715a6ddbd05cdcdbb2794c">LEGS.Characters.Character</a>.</p>
-
-</div>
-</div>
-<a id="a588bbb67b276f73599d395a029a6e8a4" name="a588bbb67b276f73599d395a029a6e8a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a588bbb67b276f73599d395a029a6e8a4">&#9670;&nbsp;</a></span>RemoveDamageModifier()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LEGS.IDamageable.RemoveDamageModifier </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfaceLEGS_1_1IDamageModifier.html">IDamageModifier</a>&#160;</td>
-          <td class="paramname"><em>modifier</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classLEGS_1_1Characters_1_1Character.html#a82893a9d2c7b3c6e113c3d66314caf8a">LEGS.Characters.Character</a>.</p>
 
 </div>
 </div>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['displayname_0',['DisplayName',['../interfaceLEGS_1_1Abilities_1_1IAbility.html#a42ad92276a93db1114f0343d7c2d5cbd',1,'LEGS.Abilities.IAbility.DisplayName()'],['../interfaceLEGS_1_1IEntity.html#abd51de275db84cc01174741858a13907',1,'LEGS.IEntity.DisplayName()']]]
+  ['cooldown_0',['Cooldown',['../interfaceLEGS_1_1Abilities_1_1IAbility.html#a70a4d7a5e9ef60c04be48266f0aa611e',1,'LEGS.Abilities.IAbility.Cooldown()'],['../classLEGS_1_1Abilities_1_1Ability.html#a05603810d8a7a59a7cc2b51a197c0bd4',1,'LEGS.Abilities.Ability.Cooldown()']]],
+  ['currentvalue_1',['CurrentValue',['../classLEGS_1_1Characters_1_1Attribute.html#a87f9a2d8897accdf66de77de52b4818f',1,'LEGS::Characters::Attribute']]]
 ];

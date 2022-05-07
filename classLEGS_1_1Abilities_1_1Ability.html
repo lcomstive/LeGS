@@ -105,33 +105,39 @@ $(document).ready(function(){initNavTree('classLEGS_1_1Abilities_1_1Ability.html
   <div class="headertitle"><div class="title">LEGS.Abilities.Ability Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>ScriptableObject version of an <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html" title="An activateable script that modifies a character or the world in some form">IAbility</a> for convenience  
+</p>
 <div class="dynheader">
 Inheritance diagram for LEGS.Abilities.Ability:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classLEGS_1_1Abilities_1_1Ability.png" usemap="#LEGS.Abilities.Ability_map" alt=""/>
   <map id="LEGS.Abilities.Ability_map" name="LEGS.Abilities.Ability_map">
-<area href="interfaceLEGS_1_1Abilities_1_1IAbility.html" alt="LEGS.Abilities.IAbility" shape="rect" coords="231,0,452,24"/>
-<area href="classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html" alt="LEGS.Abilities.AbilityAddStatusEffect" shape="rect" coords="115,112,336,136"/>
+<area href="interfaceLEGS_1_1Abilities_1_1IAbility.html" title="An activateable script that modifies a character or the world in some form" alt="LEGS.Abilities.IAbility" shape="rect" coords="231,0,452,24"/>
+<area href="classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html" title="Applies a status effect to the casting entity" alt="LEGS.Abilities.AbilityAddStatusEffect" shape="rect" coords="115,112,336,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af2fe7e8a9e9c005f04319a298fe324ee"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">Activate</a> (<a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> caster, GameObject gameObject)</td></tr>
-<tr class="memdesc:af2fe7e8a9e9c005f04319a298fe324ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate and use this ablity  <a href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">More...</a><br /></td></tr>
+<tr class="memdesc:af2fe7e8a9e9c005f04319a298fe324ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates this ability on the desired <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a>, with reference to it's associated GameObject for convenience  <a href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">More...</a><br /></td></tr>
 <tr class="separator:af2fe7e8a9e9c005f04319a298fe324ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="memItemLeft" align="right" valign="top"><a id="a2eca95cbdfd6d47e20c59d5dffe60247" name="a2eca95cbdfd6d47e20c59d5dffe60247"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b> = &quot;Ability&quot;<code> [get]</code></td></tr>
+<tr class="memdesc:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for debugging and/or UI <br /></td></tr>
 <tr class="separator:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="memItemLeft" align="right" valign="top"><a id="aeb6bc9f7b82ee23b6f7386c8e3d963f1" name="aeb6bc9f7b82ee23b6f7386c8e3d963f1"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Description</b> = &quot;Ability description&quot;<code> [get]</code></td></tr>
+<tr class="memdesc:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description to show to players <br /></td></tr>
 <tr class="separator:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="memItemLeft" align="right" valign="top"><a id="a05603810d8a7a59a7cc2b51a197c0bd4" name="a05603810d8a7a59a7cc2b51a197c0bd4"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Cooldown</b> = 2.5f<code> [get]</code></td></tr>
+<tr class="memdesc:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum time, in seconds, between activations <br /></td></tr>
 <tr class="separator:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfaceLEGS_1_1Abilities_1_1IAbility"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceLEGS_1_1Abilities_1_1IAbility')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">LEGS.Abilities.IAbility</a></td></tr>
 <tr class="memitem:a70a4d7a5e9ef60c04be48266f0aa611e inherit properties_interfaceLEGS_1_1Abilities_1_1IAbility"><td class="memItemLeft" align="right" valign="top"><a id="a70a4d7a5e9ef60c04be48266f0aa611e" name="a70a4d7a5e9ef60c04be48266f0aa611e"></a>
@@ -177,13 +183,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">caster</td><td><a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> that activated this ability</td></tr>
-    <tr><td class="paramname">gameObject</td><td>GameObject containing <em>caster</em> </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implements <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html#a7edd07d2c01542e58ceff035c4a778bf">LEGS.Abilities.IAbility</a>.</p>
 

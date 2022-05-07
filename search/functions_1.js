@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calculatedamage_0',['CalculateDamage',['../interfaceLEGS_1_1IDamageModifier.html#ab7485fbd01b089babcb87382bd0e00ce',1,'LEGS::IDamageModifier']]]
+  ['calculatecurrentvalue_0',['CalculateCurrentValue',['../classLEGS_1_1Characters_1_1Attribute.html#a78febdbe52e0e5cea52748fdc522719f',1,'LEGS::Characters::Attribute']]]
 ];

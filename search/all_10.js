@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['validateparameters_0',['ValidateParameters',['../classLEGS_1_1Quests_1_1Quest.html#abb7fb40863ff1ce68d43d8cd21f4b69d',1,'LEGS::Quests::Quest']]]
+  ['sender_0',['Sender',['../classLEGS_1_1EntityHealthChangeEventArgs.html#a59e497b6869f1affc05e9c7ade9f2b36',1,'LEGS::EntityHealthChangeEventArgs']]],
+  ['shop_1',['Shop',['../group__Shop.html',1,'']]],
+  ['simpleabilitycaster_2',['SimpleAbilityCaster',['../classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html',1,'LEGS::Abilities']]],
+  ['statuseffect_3',['StatusEffect',['../classLEGS_1_1StatusEffect.html',1,'LEGS']]],
+  ['statuseffectchangeargs_4',['StatusEffectChangeArgs',['../classLEGS_1_1StatusEffectChangeArgs.html',1,'LEGS.StatusEffectChangeArgs'],['../classLEGS_1_1StatusEffectChangeArgs.html#a83cfe41d591721240b1f5811b24e9948',1,'LEGS.StatusEffectChangeArgs.StatusEffectChangeArgs()']]],
+  ['statuseffectmodifyattribute_5',['StatusEffectModifyAttribute',['../classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html',1,'LEGS::Characters']]]
 ];

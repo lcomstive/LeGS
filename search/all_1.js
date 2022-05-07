@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['calculatedamage_0',['CalculateDamage',['../interfaceLEGS_1_1IDamageModifier.html#ab7485fbd01b089babcb87382bd0e00ce',1,'LEGS::IDamageModifier']]],
-  ['character_1',['Character',['../classLEGS_1_1Characters_1_1Character.html',1,'LEGS::Characters']]],
-  ['characters_2',['Characters',['../group__Characters.html',1,'']]],
-  ['cooldown_3',['Cooldown',['../interfaceLEGS_1_1Abilities_1_1IAbility.html#a70a4d7a5e9ef60c04be48266f0aa611e',1,'LEGS::Abilities::IAbility']]],
-  ['core_4',['Core',['../core.html',1,'']]],
-  ['currency_5',['Currency',['../structLEGS_1_1Shop_1_1Currency.html',1,'LEGS::Shop']]]
+  ['basevalue_0',['BaseValue',['../classLEGS_1_1Characters_1_1Attribute.html#aaf6c9fe72cc1ff236f772eb7e44cef23',1,'LEGS::Characters::Attribute']]],
+  ['basevaluechanged_1',['BaseValueChanged',['../classLEGS_1_1Characters_1_1Attribute.html#ae15fe6778842eca7019ba58887b4d479',1,'LEGS::Characters::Attribute']]]
 ];

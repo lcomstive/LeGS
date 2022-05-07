@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maxstacksize_0',['MaxStackSize',['../interfaceLEGS_1_1IStatusEffect.html#a1360e44bc5607430a27bbffe1cd898a7',1,'LEGS::IStatusEffect']]]
+  ['health_0',['Health',['../classLEGS_1_1Characters_1_1Character.html#a4d097a4203a8cd341fa4c5d7660050a2',1,'LEGS::Characters::Character']]]
 ];

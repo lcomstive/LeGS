@@ -106,14 +106,19 @@ $(document).ready(function(){initNavTree('classLEGS_1_1TimedStatusEffect.html','
   <div class="headertitle"><div class="title">LEGS.TimedStatusEffect Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classLEGS_1_1StatusEffect.html" title="ScriptableObject derived IStatusEffect">StatusEffect</a> that removes itself from StatusEffect.Receiver after <a class="el" href="classLEGS_1_1TimedStatusEffect.html#a0f63a90e5885282de64e0f8e520c9214" title="Time in seconds to apply this status effect. &lt;0 = no expirt">Duration</a> seconds has passed  
+</p>
 <div class="dynheader">
 Inheritance diagram for LEGS.TimedStatusEffect:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classLEGS_1_1TimedStatusEffect.png" usemap="#LEGS.TimedStatusEffect_map" alt=""/>
   <map id="LEGS.TimedStatusEffect_map" name="LEGS.TimedStatusEffect_map">
-<area href="classLEGS_1_1StatusEffect.html" alt="LEGS.StatusEffect" shape="rect" coords="79,56,227,80"/>
-<area href="interfaceLEGS_1_1IStatusEffect.html" title="An object that can be added and removed from an IStatusEffectReceiver" alt="LEGS.IStatusEffect" shape="rect" coords="158,0,306,24"/>
+<area href="classLEGS_1_1StatusEffect.html" title="ScriptableObject derived IStatusEffect" alt="LEGS.StatusEffect" shape="rect" coords="139,56,407,80"/>
+<area href="interfaceLEGS_1_1IStatusEffect.html" title="An object that can be added and removed from an IStatusEffectReceiver" alt="LEGS.IStatusEffect" shape="rect" coords="278,0,546,24"/>
+<area href="classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html" alt="LEGS.Characters.StatusEffectModifyAttribute" shape="rect" coords="0,168,268,192"/>
+<area href="classLEGS_1_1DamageOverTimeStatusEffect.html" title="TimedStatusEffect that applies damage over time to StatusEffect.Receiver" alt="LEGS.DamageOverTimeStatusEffect" shape="rect" coords="278,168,546,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -122,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af9986f7db4251d8271443959f06353b3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1TimedStatusEffect.html#af9986f7db4251d8271443959f06353b3">OnAdded</a> (<a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> sender, <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a> receiver)</td></tr>
 <tr class="memdesc:af9986f7db4251d8271443959f06353b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This status effect has been added to <em>receiver</em> , from <em>sender</em>   <a href="classLEGS_1_1TimedStatusEffect.html#af9986f7db4251d8271443959f06353b3">More...</a><br /></td></tr>
 <tr class="separator:af9986f7db4251d8271443959f06353b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6f31b530fc4dc220359baf3b881cea"><td class="memItemLeft" align="right" valign="top"><a id="a0d6f31b530fc4dc220359baf3b881cea" name="a0d6f31b530fc4dc220359baf3b881cea"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdate</b> ()</td></tr>
+<tr class="memitem:a0d6f31b530fc4dc220359baf3b881cea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1TimedStatusEffect.html#a0d6f31b530fc4dc220359baf3b881cea">OnUpdate</a> ()</td></tr>
+<tr class="memdesc:a0d6f31b530fc4dc220359baf3b881cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame on the main game thread  <a href="classLEGS_1_1TimedStatusEffect.html#a0d6f31b530fc4dc220359baf3b881cea">More...</a><br /></td></tr>
 <tr class="separator:a0d6f31b530fc4dc220359baf3b881cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLEGS_1_1StatusEffect"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLEGS_1_1StatusEffect')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLEGS_1_1StatusEffect.html">LEGS.StatusEffect</a></td></tr>
 <tr class="memitem:aac3a0ccf2c2fac2614e9b4c228f3640e inherit pub_methods_classLEGS_1_1StatusEffect"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1StatusEffect.html#aac3a0ccf2c2fac2614e9b4c228f3640e">OnRemoved</a> ()</td></tr>
@@ -134,12 +139,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdate</b> 
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0f63a90e5885282de64e0f8e520c9214"><td class="memItemLeft" align="right" valign="top"><a id="a0f63a90e5885282de64e0f8e520c9214" name="a0f63a90e5885282de64e0f8e520c9214"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Duration</b> = 1.0f</td></tr>
+<tr class="memdesc:a0f63a90e5885282de64e0f8e520c9214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in seconds to apply this status effect. &lt;0 = no expirt <br /></td></tr>
 <tr class="separator:a0f63a90e5885282de64e0f8e520c9214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a8fd1bf9e9b20e10cc0dbd7e6e199cf49"><td class="memItemLeft" align="right" valign="top"><a id="a8fd1bf9e9b20e10cc0dbd7e6e199cf49" name="a8fd1bf9e9b20e10cc0dbd7e6e199cf49"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>TimeRemaining</b><code> [get]</code></td></tr>
+<tr class="memdesc:a8fd1bf9e9b20e10cc0dbd7e6e199cf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time before removing from StatusEffect.Receiver <br /></td></tr>
 <tr class="separator:a8fd1bf9e9b20e10cc0dbd7e6e199cf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classLEGS_1_1StatusEffect"><td colspan="2" onclick="javascript:toggleInherit('properties_classLEGS_1_1StatusEffect')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classLEGS_1_1StatusEffect.html">LEGS.StatusEffect</a></td></tr>
 <tr class="memitem:a366d6498f4bd5912937671f975beb6ac inherit properties_classLEGS_1_1StatusEffect"><td class="memItemLeft" align="right" valign="top"><a id="a366d6498f4bd5912937671f975beb6ac" name="a366d6498f4bd5912937671f975beb6ac"></a>
@@ -200,6 +207,33 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>MaxStackSize</b><code
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classLEGS_1_1StatusEffect.html#a626cf8263b0676f026615053b7948f02">LEGS.StatusEffect</a>.</p>
+
+</div>
+</div>
+<a id="a0d6f31b530fc4dc220359baf3b881cea" name="a0d6f31b530fc4dc220359baf3b881cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6f31b530fc4dc220359baf3b881cea">&#9670;&nbsp;</a></span>OnUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LEGS.TimedStatusEffect.OnUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classLEGS_1_1DamageOverTimeStatusEffect.html#a89d0c4475df078234d54bb8b8a0a13c6">LEGS.DamageOverTimeStatusEffect</a>.</p>
 
 </div>
 </div>
