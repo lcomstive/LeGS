@@ -1,5 +1,6 @@
 ﻿using LEGS;
 using UnityEngine;
+using LEGS.Abilities;
 using LEGS.Characters;
 using System.Collections;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace MOBAExample
 			EventManager.Subscribe<EntityDeathEventArgs>(EntityDeathEventArgs.EventName, OnEntityDeath, true);
 
 			Attributes = new List<Attribute>();
-			foreach(CharacterTrait trait in AllTraits)
+			foreach (CharacterTrait trait in AllTraits)
 			{
 				Attribute attribute = new Attribute(trait.ToString(), m_Info[trait, Level]);
 				Attributes.Add(attribute);
@@ -56,7 +57,7 @@ namespace MOBAExample
 
 		private void OnDestroy()
 		{
-			if(m_RegenCoroutine != null)
+			if (m_RegenCoroutine != null)
 				StopCoroutine(m_RegenCoroutine);
 
 			EventManager.Unsubscribe<EntityDeathEventArgs>(EntityDeathEventArgs.EventName, OnEntityDeath);
@@ -64,28 +65,88 @@ namespace MOBAExample
 
 		public override void ApplyDamage(float amount, IEntity sender)
 		{
+			if (sender is AbilityInfo)
+			{
+				AbilityInfo abilityInfo = (AbilityInfo)sender;
+				if (ApplyAbilityDamage(abilityInfo.Ability as MOBAAbility, abilityInfo.Caster as MOBACharacter))
+					return;
+			}
+
 			base.ApplyDamage(amount, sender);
 
-			if(Health <= 0)
+			if (Health <= 0)
 				EventManager.Publish(EntityDeathEventArgs.EventName, new EntityDeathEventArgs(this, sender));
+		}
+
+		public bool ApplyAbilityDamage(MOBAAbility ability, MOBACharacter sender)
+		{
+			if (!ability || !sender)
+				return false;
+
+			// Calculate damage to apply
+			float damage = 0;
+			switch (ability.DamageType)
+			{
+				default:
+				case DamageTypes.Physical:
+					damage = sender.GetAttribute(CharacterTrait.AttackDamage).CurrentValue * ability.AttackDamageScale;
+					break;
+				case DamageTypes.Magical:
+					damage = sender.GetAttribute(CharacterTrait.AbilityPower).CurrentValue * ability.AttackDamageScale;
+					break;
+				case DamageTypes.True:
+					damage = ability.AttackDamageScale;
+					break;
+			}
+			
+			// Apply damage
+			ApplyDamage(damage, sender, ability.DamageType);
+
+			// Apply status effect
+			if(ability.ReceiverEffect != null)
+				AddStatusEffect(ability.ReceiverEffect, sender);
+
+			return true;
+		}
+
+		public void ApplyDamage(float amount, MOBACharacter sender, DamageTypes type)
+		{
+			float resistance;
+
+			// Calculate resistance
+			if (type == DamageTypes.Physical)
+				resistance = Mathf.Max(
+					GetAttribute(CharacterTrait.Armour).CurrentValue -
+						sender.GetAttribute(CharacterTrait.ArmourPenetration).CurrentValue,
+					0.0f);
+			else
+				resistance = Mathf.Max(
+					GetAttribute(CharacterTrait.MagicResistance).CurrentValue -
+						sender.GetAttribute(CharacterTrait.MagicPenetration).CurrentValue,
+					0.0f);
+
+			if(resistance > 0) // Apply resistance
+				amount *= 1.0f - (resistance / (resistance + 100.0f));
+
+			base.ApplyDamage(amount, sender);
 		}
 
 		private void OnEntityDeath(EntityDeathEventArgs args)
 		{
 			// Check if we performed the kill
-			if(args.Killer != (IEntity)this)
+			if (args.Killer != (IEntity)this)
 				return;
 
 			MOBACharacter character = args.Entity as MOBACharacter;
-			if(!character)
+			if (!character)
 				return; // Invalid/incompatible cast to MOBACharacter
 
 			int previousLevel = Level;
 			m_Experience += character.m_Info.KillRewardExperience;
-			if(Level != previousLevel)
+			if (Level != previousLevel)
 			{
 				Debug.Log($"'{DisplayName}' reached level {Level + 1}");
-				// TODO: Event
+				// TODO: level up event
 			}
 
 			// TODO: Gain coin equal to character.m_Info.KillReward
@@ -103,22 +164,19 @@ namespace MOBAExample
 		{
 			int level = Level;
 			m_Experience += experience;
-			if(level == Level) // Did not level up
+			if (level == Level) // Did not level up
 				return;
 
 			// Levelled up
 
 			// Update base trait values
-			foreach(CharacterTrait trait in AllTraits)
+			foreach (CharacterTrait trait in AllTraits)
 				GetAttribute(trait).BaseValue = m_Info[trait, Level];
 
 			LevelUp?.Invoke(this);
 		}
 
-		public Attribute this[CharacterTrait trait]
-		{
-			get => GetAttribute(trait);
-		}
+		public Attribute this[CharacterTrait trait] => GetAttribute(trait);
 
 		public delegate void OnLevelUp(MOBACharacter character);
 		public event OnLevelUp LevelUp;

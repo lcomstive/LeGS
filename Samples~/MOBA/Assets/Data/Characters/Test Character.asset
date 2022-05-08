@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test Character
   m_EditorClassIdentifier: 
   Abilities: []
-  m_KillRewardEXP: 10
+  m_KillRewardEXP: 35
   m_KillReward:
     m_Value: 100
     m_Unit: 0
@@ -22,13 +22,13 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0.0023839893
-      outSlope: 0.0023839893
+      value: 0
+      inSlope: 0.015757965
+      outSlope: 0.015757965
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.03823529
+      outWeight: 0.018796034
     - serializedVersion: 3
       time: 2500
       value: 18

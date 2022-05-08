@@ -5,6 +5,7 @@
 	"displayName": "LeGS",
 	"author": "Lewis Comstive",
 	"license": "MIT",
+	"hideInEditor": "false",
 	"keywords": [ "LeGS" ],
 	"samples": [
 		{

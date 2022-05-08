@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace LEGS.Characters
@@ -56,7 +57,9 @@ namespace LEGS.Characters
 				AppliedStatusEffects.Add(effectName, new List<IStatusEffect>());
 
 			// Check if adding this effect will exceed max stack size
-			if (effect.MaxStackSize > 0 && AppliedStatusEffects[effectName].Count >= effect.MaxStackSize - 1)
+			if (effect.MaxStackSize > 0 &&
+				AppliedStatusEffects.ContainsKey(effectName) &&
+				AppliedStatusEffects[effectName].Count >= effect.MaxStackSize)
 				RemoveStatusEffect(AppliedStatusEffects[effectName][0]); // Remove first effect, effectively replacing with most recent
 
 			// Add effect 
@@ -186,9 +189,11 @@ namespace LEGS.Characters
 
 		private void Update()
 		{
-			foreach (string effectName in AppliedStatusEffects.Keys)
+			// Reverse loops because timed effects may remove themselves in OnUpdate()
+			var effectNames = AppliedStatusEffects.Keys.ToArray();
+			for(int k = effectNames.Length - 1; k >= 0; k--)
 			{
-				// Reverse loop because timed effects may remove themselves in OnUpdate()
+				string effectName = effectNames[k];
 				for(int i = AppliedStatusEffects[effectName].Count - 1; i >= 0; i--)
 				{
 					TimedStatusEffect timedEffect = AppliedStatusEffects[effectName][i] as TimedStatusEffect;

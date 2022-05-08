@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6126f40dd64e24702b8220740f4aef76, type: 3}
+  m_Script: {fileID: 11500000, guid: b6f2436d97d9e34499b6656712186ec1, type: 3}
   m_Name: Health Buff
   m_EditorClassIdentifier: 
   m_DisplayName: Health Buff
   m_MaxStackSize: 1
-  Duration: 4
+  Duration: 3
   m_AttributeName: Health
-  m_AddModifier: 0
-  m_MultiplyModifier: -0.5
+  m_AddModifier: 50
+  m_MultiplyModifier: 0.25

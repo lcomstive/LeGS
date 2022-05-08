@@ -7,9 +7,7 @@ Samples~/**/[Ll]ogs/
 Samples~/**/[Uu]ser[Ss]ettings/
 
 # Unity meta files should only be in Modules/ and Samples~/ directories
-*.meta
-!Modules/*.meta
-!Samples~/*.meta
+**/Documentation/**/*.meta
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data

@@ -62,6 +62,8 @@ namespace MOBAExample
 		[Tooltip("In seconds")]
 		[field: SerializeField] public float Cooldown				{ get; private set; } = 2.5f;
 		[field: SerializeField] public DamageTypes DamageType		{ get; private set; } = DamageTypes.Magical;
+
+		[Tooltip("Scaling of appropriate damage type, or exact damage to apply if true damage")]
 		[field: SerializeField] public float AttackDamageScale		{ get; private set; } = 1.0f;
 		[field: SerializeField] public IStatusEffect CasterEffect	{ get; private set; } = null;
 		[field: SerializeField] public IStatusEffect ReceiverEffect	{ get; private set; } = null;
