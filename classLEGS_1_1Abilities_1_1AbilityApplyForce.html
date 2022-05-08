@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=11" />
 	<meta name="generator" content="Doxygen 1.9.2" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>LeGS: LEGS.Abilities.Ability Class Reference</title>
+	<title>LeGS: LEGS.Abilities.AbilityApplyForce Class Reference</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('classLEGS_1_1Abilities_1_1Ability.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classLEGS_1_1Abilities_1_1AbilityApplyForce.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -100,47 +100,45 @@ $(document).ready(function(){initNavTree('classLEGS_1_1Abilities_1_1Ability.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="classLEGS_1_1Abilities_1_1Ability-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">LEGS.Abilities.Ability Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+<a href="classLEGS_1_1Abilities_1_1AbilityApplyForce-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">LEGS.Abilities.AbilityApplyForce Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>ScriptableObject version of an <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html" title="An activateable script that modifies a character or the world in some form">IAbility</a> for convenience  
+<p>Adds instant force to attached Rigidbody  
 </p>
 <div class="dynheader">
-Inheritance diagram for LEGS.Abilities.Ability:</div>
+Inheritance diagram for LEGS.Abilities.AbilityApplyForce:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classLEGS_1_1Abilities_1_1Ability.png" usemap="#LEGS.Abilities.Ability_map" alt=""/>
-  <map id="LEGS.Abilities.Ability_map" name="LEGS.Abilities.Ability_map">
-<area href="interfaceLEGS_1_1Abilities_1_1IAbility.html" title="An activateable script that modifies a character or the world in some form" alt="LEGS.Abilities.IAbility" shape="rect" coords="346,0,567,24"/>
-<area href="classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html" title="Applies a status effect to the casting entity" alt="LEGS.Abilities.AbilityAddStatusEffect" shape="rect" coords="0,112,221,136"/>
-<area href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html" title="Adds instant force to attached Rigidbody" alt="LEGS.Abilities.AbilityApplyForce" shape="rect" coords="231,112,452,136"/>
-<area href="classLEGS_1_1Abilities_1_1AbilitySpawnObject.html" alt="LEGS.Abilities.AbilitySpawnObject" shape="rect" coords="462,112,683,136"/>
+  <img src="classLEGS_1_1Abilities_1_1AbilityApplyForce.png" usemap="#LEGS.Abilities.AbilityApplyForce_map" alt=""/>
+  <map id="LEGS.Abilities.AbilityApplyForce_map" name="LEGS.Abilities.AbilityApplyForce_map">
+<area href="classLEGS_1_1Abilities_1_1Ability.html" title="ScriptableObject version of an IAbility for convenience" alt="LEGS.Abilities.Ability" shape="rect" coords="104,56,302,80"/>
+<area href="interfaceLEGS_1_1Abilities_1_1IAbility.html" title="An activateable script that modifies a character or the world in some form" alt="LEGS.Abilities.IAbility" shape="rect" coords="208,0,406,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2fe7e8a9e9c005f04319a298fe324ee"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">Activate</a> (<a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> caster, GameObject gameObject)</td></tr>
-<tr class="memdesc:af2fe7e8a9e9c005f04319a298fe324ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates this ability on the desired <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a>, with reference to it's associated GameObject for convenience  <a href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">More...</a><br /></td></tr>
-<tr class="separator:af2fe7e8a9e9c005f04319a298fe324ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8aff239f64608936c758985c659095"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html#a6c8aff239f64608936c758985c659095">Activate</a> (<a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> caster, GameObject gameObject)</td></tr>
+<tr class="memdesc:a6c8aff239f64608936c758985c659095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates this ability on the desired <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a>, with reference to it's associated GameObject for convenience  <a href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html#a6c8aff239f64608936c758985c659095">More...</a><br /></td></tr>
+<tr class="separator:a6c8aff239f64608936c758985c659095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="memItemLeft" align="right" valign="top"><a id="a2eca95cbdfd6d47e20c59d5dffe60247" name="a2eca95cbdfd6d47e20c59d5dffe60247"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header properties_classLEGS_1_1Abilities_1_1Ability"><td colspan="2" onclick="javascript:toggleInherit('properties_classLEGS_1_1Abilities_1_1Ability')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html">LEGS.Abilities.Ability</a></td></tr>
+<tr class="memitem:a2eca95cbdfd6d47e20c59d5dffe60247 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memItemLeft" align="right" valign="top"><a id="a2eca95cbdfd6d47e20c59d5dffe60247" name="a2eca95cbdfd6d47e20c59d5dffe60247"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b> = &quot;Ability&quot;<code> [get]</code></td></tr>
-<tr class="memdesc:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for debugging and/or UI <br /></td></tr>
-<tr class="separator:a2eca95cbdfd6d47e20c59d5dffe60247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="memItemLeft" align="right" valign="top"><a id="aeb6bc9f7b82ee23b6f7386c8e3d963f1" name="aeb6bc9f7b82ee23b6f7386c8e3d963f1"></a>
+<tr class="memdesc:a2eca95cbdfd6d47e20c59d5dffe60247 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for debugging and/or UI <br /></td></tr>
+<tr class="separator:a2eca95cbdfd6d47e20c59d5dffe60247 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6bc9f7b82ee23b6f7386c8e3d963f1 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memItemLeft" align="right" valign="top"><a id="aeb6bc9f7b82ee23b6f7386c8e3d963f1" name="aeb6bc9f7b82ee23b6f7386c8e3d963f1"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Description</b> = &quot;Ability description&quot;<code> [get]</code></td></tr>
-<tr class="memdesc:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description to show to players <br /></td></tr>
-<tr class="separator:aeb6bc9f7b82ee23b6f7386c8e3d963f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="memItemLeft" align="right" valign="top"><a id="a05603810d8a7a59a7cc2b51a197c0bd4" name="a05603810d8a7a59a7cc2b51a197c0bd4"></a>
+<tr class="memdesc:aeb6bc9f7b82ee23b6f7386c8e3d963f1 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description to show to players <br /></td></tr>
+<tr class="separator:aeb6bc9f7b82ee23b6f7386c8e3d963f1 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05603810d8a7a59a7cc2b51a197c0bd4 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memItemLeft" align="right" valign="top"><a id="a05603810d8a7a59a7cc2b51a197c0bd4" name="a05603810d8a7a59a7cc2b51a197c0bd4"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Cooldown</b> = 2.5f<code> [get]</code></td></tr>
-<tr class="memdesc:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum time, in seconds, between activations <br /></td></tr>
-<tr class="separator:a05603810d8a7a59a7cc2b51a197c0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a05603810d8a7a59a7cc2b51a197c0bd4 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum time, in seconds, between activations <br /></td></tr>
+<tr class="separator:a05603810d8a7a59a7cc2b51a197c0bd4 inherit properties_classLEGS_1_1Abilities_1_1Ability"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfaceLEGS_1_1Abilities_1_1IAbility"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceLEGS_1_1Abilities_1_1IAbility')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">LEGS.Abilities.IAbility</a></td></tr>
 <tr class="memitem:a70a4d7a5e9ef60c04be48266f0aa611e inherit properties_interfaceLEGS_1_1Abilities_1_1IAbility"><td class="memItemLeft" align="right" valign="top"><a id="a70a4d7a5e9ef60c04be48266f0aa611e" name="a70a4d7a5e9ef60c04be48266f0aa611e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Cooldown</b><code> [get]</code></td></tr>
@@ -152,8 +150,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
 <tr class="separator:a42ad92276a93db1114f0343d7c2d5cbd inherit properties_interfaceLEGS_1_1Abilities_1_1IAbility"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af2fe7e8a9e9c005f04319a298fe324ee" name="af2fe7e8a9e9c005f04319a298fe324ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2fe7e8a9e9c005f04319a298fe324ee">&#9670;&nbsp;</a></span>Activate()</h2>
+<a id="a6c8aff239f64608936c758985c659095" name="a6c8aff239f64608936c758985c659095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8aff239f64608936c758985c659095">&#9670;&nbsp;</a></span>Activate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +160,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract void LEGS.Abilities.Ability.Activate </td>
+          <td class="memname">override void LEGS.Abilities.AbilityApplyForce.Activate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a>&#160;</td>
           <td class="paramname"><em>caster</em>, </td>
@@ -181,26 +179,24 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayName</b><cod
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html#a7edd07d2c01542e58ceff035c4a778bf">LEGS.Abilities.IAbility</a>.</p>
-
-<p>Implemented in <a class="el" href="classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html#a8387438b8b36972ecd5c0d598d56bd63">LEGS.Abilities.AbilityAddStatusEffect</a>, <a class="el" href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html#a6c8aff239f64608936c758985c659095">LEGS.Abilities.AbilityApplyForce</a>, and <a class="el" href="classLEGS_1_1Abilities_1_1AbilitySpawnObject.html#a2f6656400f7a6591c3d28e16b322f2e2">LEGS.Abilities.AbilitySpawnObject</a>.</p>
+<p>Implements <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#af2fe7e8a9e9c005f04319a298fe324ee">LEGS.Abilities.Ability</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Modules/LeGS.Abilities/Scripts/ScriptableObjects/Abilities/Ability.cs</li>
+<li>Modules/LeGS.Abilities/Scripts/ScriptableObjects/Abilities/AbilityApplyForce.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceLEGS.html">LEGS</a></li><li class="navelem"><a class="el" href="namespaceLEGS_1_1Abilities.html">Abilities</a></li><li class="navelem"><a class="el" href="classLEGS_1_1Abilities_1_1Ability.html">Ability</a></li>
+    <li class="navelem"><a class="el" href="namespaceLEGS.html">LEGS</a></li><li class="navelem"><a class="el" href="namespaceLEGS_1_1Abilities.html">Abilities</a></li><li class="navelem"><a class="el" href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html">AbilityApplyForce</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

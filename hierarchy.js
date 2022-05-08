@@ -4,7 +4,9 @@ var hierarchy =
     [ "LEGS.Shop.Currency", "structLEGS_1_1Shop_1_1Currency.html", null ],
     [ "LEGS.Abilities.IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", [
       [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", [
-        [ "LEGS.Abilities.AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", null ]
+        [ "LEGS.Abilities.AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", null ],
+        [ "LEGS.Abilities.AbilityApplyForce", "classLEGS_1_1Abilities_1_1AbilityApplyForce.html", null ],
+        [ "LEGS.Abilities.AbilitySpawnObject", "classLEGS_1_1Abilities_1_1AbilitySpawnObject.html", null ]
       ] ]
     ] ],
     [ "LEGS.Characters.IAttributeHolder", "interfaceLEGS_1_1Characters_1_1IAttributeHolder.html", [
@@ -50,6 +52,8 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "LEGS.Abilities.AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
       [ "LEGS.Abilities.SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", null ],
+      [ "LEGS.ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+      [ "LEGS.DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
       [ "LEGS.Entity", "classLEGS_1_1Entity.html", null ],
       [ "LEGS.TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", null ]
     ] ],

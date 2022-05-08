@@ -59,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structLEGS_1_1Shop_1_1Currency.html"
+"md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

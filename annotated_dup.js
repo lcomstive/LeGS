@@ -4,7 +4,9 @@ var annotated_dup =
       [ "Abilities", "namespaceLEGS_1_1Abilities.html", [
         [ "Ability", "classLEGS_1_1Abilities_1_1Ability.html", "classLEGS_1_1Abilities_1_1Ability" ],
         [ "AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect" ],
+        [ "AbilityApplyForce", "classLEGS_1_1Abilities_1_1AbilityApplyForce.html", "classLEGS_1_1Abilities_1_1AbilityApplyForce" ],
         [ "AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
+        [ "AbilitySpawnObject", "classLEGS_1_1Abilities_1_1AbilitySpawnObject.html", "classLEGS_1_1Abilities_1_1AbilitySpawnObject" ],
         [ "IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", "interfaceLEGS_1_1Abilities_1_1IAbility" ],
         [ "SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster" ]
       ] ],
@@ -33,7 +35,9 @@ var annotated_dup =
       [ "Shop", "namespaceLEGS_1_1Shop.html", [
         [ "Currency", "structLEGS_1_1Shop_1_1Currency.html", null ]
       ] ],
+      [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
       [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
+      [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
       [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
       [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
       [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
