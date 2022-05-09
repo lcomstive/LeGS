@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4637fd074f6e234f98eb6ed43cd1171, type: 3}
-  m_Name: Super Jump
+  m_Name: Hover
   m_EditorClassIdentifier: 
-  <DisplayName>k__BackingField: Super Jump
-  <Description>k__BackingField: Jumps incredibly high
-  <Cooldown>k__BackingField: 3
-  m_Force: {x: 0, y: 6, z: 0}
+  <DisplayName>k__BackingField: Ability
+  <Description>k__BackingField: Ability description
+  <Cooldown>k__BackingField: 0.05
+  m_Force: {x: 0, y: 1, z: 0}
   m_IgnoreMass: 1
   m_EffectPrefab: {fileID: 0}
   m_EffectSpawnOffset: {x: 0, y: 0, z: 0}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DisplayName>k__BackingField: Throw Sphere!
   <Description>k__BackingField: Throws a spherical object that spawns from the nothingness
-  <Cooldown>k__BackingField: 0
+  <Cooldown>k__BackingField: 0.35
   m_Prefab: {fileID: 6372928707327375222, guid: 343f4951ff84b434a8cbd2b16f56339b, type: 3}
   m_SpawnOffset: {x: 0.5, y: 1.1, z: 0.75}
   m_ChildOfSpawner: 0

@@ -16,5 +16,5 @@ MonoBehaviour:
   m_MaxStackSize: 1
   Duration: 3
   m_AttributeName: Health
-  m_AddModifier: 50
-  m_MultiplyModifier: 0.25
+  m_AddModifier: 20
+  m_MultiplyModifier: 0

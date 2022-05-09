@@ -34,27 +34,17 @@ namespace LEGS.Abilities
 		public bool CanCast => CooldownRemaining <= 0;
 		public float CooldownRemaining { get; private set; } = 0;
 
-		private void Start()
-		{
-			Entity = GetComponent<IEntity>();
-
-#if ENABLE_INPUT_SYSTEM
-			m_CastAction.action.performed += OnCastInput;
-#endif
-		}
-
-#if ENABLE_INPUT_SYSTEM
-		private void OnDestroy() => m_CastAction.action.performed -= OnCastInput;
-
-		private void OnCastInput(InputAction.CallbackContext obj) => Cast();
-#endif
+		private void Start() => Entity = GetComponent<IEntity>();
 
 		private void Update()
 		{
 			CooldownRemaining = Mathf.Clamp(CooldownRemaining - Time.deltaTime, 0.0f, float.MaxValue);
 
-#if !ENABLE_INPUT_SYSTEM
-			if(Input.GetKeyDown(m_CastKey))
+#if ENABLE_INPUT_SYSTEM
+			if(m_CastAction.action.IsPressed() && CanCast)
+				Cast();
+#else
+			if(Input.GetKeyDown(m_CastKey) && CanCast)
 				Cast();
 #endif
 		}

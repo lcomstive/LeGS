@@ -29,7 +29,7 @@ namespace MOBAExample
 		/// </summary>
 
 		[SerializeField, HideInInspector]
-		public AnimationCurve[] m_BaseTraits = new AnimationCurve[Enum.GetValues(typeof(CharacterTrait)).Length];
+		private AnimationCurve[] m_BaseTraits = new AnimationCurve[Enum.GetValues(typeof(CharacterTrait)).Length];
 
 		public int GetCurrentLevel(float experience) => (int)Mathf.Floor(ExperienceLevels.Evaluate(experience));
 
