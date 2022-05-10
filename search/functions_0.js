@@ -4,5 +4,6 @@ var searchData=
   ['addattribute_1',['AddAttribute',['../interfaceLEGS_1_1Characters_1_1IAttributeHolder.html#a9622acf2c2064883a522be88140cda54',1,'LEGS.Characters.IAttributeHolder.AddAttribute()'],['../classLEGS_1_1Characters_1_1Character.html#af75d20d4a57328c1a0d075735b6881ff',1,'LEGS.Characters.Character.AddAttribute(Attribute attribute)']]],
   ['addstatuseffect_2',['AddStatusEffect',['../classLEGS_1_1Characters_1_1Character.html#a457b943bb47caf933785795489a723ba',1,'LEGS.Characters.Character.AddStatusEffect()'],['../interfaceLEGS_1_1IStatusEffectReceiver.html#aae212e5d6316a94922686e59f660b5f6',1,'LEGS.IStatusEffectReceiver.AddStatusEffect()']]],
   ['applydamage_3',['ApplyDamage',['../classLEGS_1_1Characters_1_1Character.html#ac69d5c24c0715a6ddbd05cdcdbb2794c',1,'LEGS.Characters.Character.ApplyDamage()'],['../interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88',1,'LEGS.IDamageable.ApplyDamage()'],['../classLEGS_1_1Damageable.html#ab9e2366408c1a2e4e56a1256a2c66a27',1,'LEGS.Damageable.ApplyDamage()']]],
-  ['attributeeventargs_4',['AttributeEventArgs',['../classLEGS_1_1Characters_1_1AttributeEventArgs.html#a33c536ae3b5034d35d5c7be45a49d213',1,'LEGS::Characters::AttributeEventArgs']]]
+  ['attribute_4',['Attribute',['../classLEGS_1_1Characters_1_1Attribute.html#ab97c3911e112a4321e989d587c2fda6a',1,'LEGS::Characters::Attribute']]],
+  ['attributeeventargs_5',['AttributeEventArgs',['../classLEGS_1_1Characters_1_1AttributeEventArgs.html#a33c536ae3b5034d35d5c7be45a49d213',1,'LEGS::Characters::AttributeEventArgs']]]
 ];

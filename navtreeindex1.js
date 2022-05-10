@@ -1,5 +1,16 @@
 var NAVTREEINDEX1 =
 {
+"interfaceLEGS_1_1IStatusEffectReceiver.html":[12,0,0,20],
+"interfaceLEGS_1_1IStatusEffectReceiver.html":[11,0,0,20],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#a0bca7d20c1364a2827ad32b77b7644e4":[11,0,0,20,1],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#a0bca7d20c1364a2827ad32b77b7644e4":[12,0,0,20,1],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#aae212e5d6316a94922686e59f660b5f6":[11,0,0,20,0],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#aae212e5d6316a94922686e59f660b5f6":[12,0,0,20,0],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#ab76ba1affa0d23f9489ec57f33f697f7":[11,0,0,20,2],
+"interfaceLEGS_1_1IStatusEffectReceiver.html#ab76ba1affa0d23f9489ec57f33f697f7":[12,0,0,20,2],
+"interfaceLEGS_1_1Inventory_1_1IInventoryItem.html":[12,0,0,3,0],
+"interfaceLEGS_1_1Inventory_1_1IInventoryItem.html":[11,0,0,3,0],
+"interfaceLEGS_1_1Items_1_1IItem.html":[11,0,0,4,0],
 "interfaceLEGS_1_1Items_1_1IItem.html":[12,0,0,4,0],
 "md_Modules_LeGS_Abilities_Documentation_LeGS_Abilities.html":[1],
 "md_Modules_LeGS_Characters_Documentation_LeGS_Characters.html":[2],

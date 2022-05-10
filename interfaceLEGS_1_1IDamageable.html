@@ -115,7 +115,7 @@ Inheritance diagram for LEGS.IDamageable:</div>
   <img src="interfaceLEGS_1_1IDamageable.png" usemap="#LEGS.IDamageable_map" alt=""/>
   <map id="LEGS.IDamageable_map" name="LEGS.IDamageable_map">
 <area href="interfaceLEGS_1_1Characters_1_1ICharacter.html" title="For characters that can receive damage &amp; status effects." alt="LEGS.Characters.ICharacter" shape="rect" coords="0,56,175,80"/>
-<area href="classLEGS_1_1Damageable.html" alt="LEGS.Damageable" shape="rect" coords="185,56,360,80"/>
+<area href="classLEGS_1_1Damageable.html" title="Basic implementation of IDamageable" alt="LEGS.Damageable" shape="rect" coords="185,56,360,80"/>
 <area href="interfaceLEGS_1_1ICharacter.html" title="For characters that can receive damage &amp; status effects." alt="LEGS.ICharacter" shape="rect" coords="370,56,545,80"/>
 <area href="classLEGS_1_1Characters_1_1Character.html" title="Simple class for an ICharacter &amp; IAttributeHolder implementation." alt="LEGS.Characters.Character" shape="rect" coords="0,112,175,136"/>
   </map>
@@ -124,13 +124,14 @@ Inheritance diagram for LEGS.IDamageable:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa054565c2773bd2659a84dcdc1b58a88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">ApplyDamage</a> (float amount, <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> sender)</td></tr>
-<tr class="memdesc:aa054565c2773bd2659a84dcdc1b58a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases Health by <em>amount</em> . Healing is negative damage.  <a href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">More...</a><br /></td></tr>
+<tr class="memdesc:aa054565c2773bd2659a84dcdc1b58a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases <a class="el" href="interfaceLEGS_1_1IDamageable.html#a19bb82d3b6e232e9da75df3730c8b369" title="How much damage an object can take before d">Health</a> by <em>amount</em> . Healing is negative damage.  <a href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">More...</a><br /></td></tr>
 <tr class="separator:aa054565c2773bd2659a84dcdc1b58a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a19bb82d3b6e232e9da75df3730c8b369"><td class="memItemLeft" align="right" valign="top"><a id="a19bb82d3b6e232e9da75df3730c8b369" name="a19bb82d3b6e232e9da75df3730c8b369"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b><code> [get]</code></td></tr>
+<tr class="memdesc:a19bb82d3b6e232e9da75df3730c8b369"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much damage an object can take before d <br /></td></tr>
 <tr class="separator:a19bb82d3b6e232e9da75df3730c8b369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e65a51cb91ac614af4eff945dc5c5f"><td class="memItemLeft" align="right" valign="top"><a id="a43e65a51cb91ac614af4eff945dc5c5f" name="a43e65a51cb91ac614af4eff945dc5c5f"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHealth</b><code> [get]</code></td></tr>
@@ -162,7 +163,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHealth</b><code> 
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Health may not be decreased by <em>amount</em>  exactly due to attached IDamageModifiers</p>
+<p ><a class="el" href="interfaceLEGS_1_1IDamageable.html#a19bb82d3b6e232e9da75df3730c8b369" title="How much damage an object can take before d">Health</a> may not be decreased by <em>amount</em>  exactly due to attached IDamageModifiers</p>
 
 <p>Implemented in <a class="el" href="classLEGS_1_1Characters_1_1Character.html#ac69d5c24c0715a6ddbd05cdcdbb2794c">LEGS.Characters.Character</a>, and <a class="el" href="classLEGS_1_1Damageable.html#ab9e2366408c1a2e4e56a1256a2c66a27">LEGS.Damageable</a>.</p>
 

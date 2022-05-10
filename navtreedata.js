@@ -25,9 +25,7 @@
 var NAVTREE =
 [
   [ "LeGS", "index.html", [
-    [ "Installation", "installation.html", [
-      [ "License", "installation.html#autotoc_md0", null ]
-    ] ],
+    [ "Installation", "installation.html", null ],
     [ "LeGS Abilities", "md_Modules_LeGS_Abilities_Documentation_LeGS_Abilities.html", null ],
     [ "LeGS Characters", "md_Modules_LeGS_Characters_Documentation_LeGS_Characters.html", null ],
     [ "Core", "core.html", null ],
@@ -59,7 +57,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"interfaceLEGS_1_1Items_1_1IItem.html"
+"interfaceLEGS_1_1IStatusEffectReceiver.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
