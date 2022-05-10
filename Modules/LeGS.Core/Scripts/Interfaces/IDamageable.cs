@@ -5,7 +5,10 @@
 	/// </summary>
 	public interface IDamageable
 	{
-		float Health { get; }
+		/// <summary>
+		/// How much damage an object can take before d
+		/// </summary>
+		float Health	{ get; }
 		float MaxHealth { get;}
 
 		/// <summary>

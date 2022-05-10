@@ -1,5 +1,8 @@
-namespace LEGS
+﻿namespace LEGS
 {
+	/// <summary>
+	/// LeGS event arguments base, for all events from <see cref="EventManager"/>
+	/// </summary>
 	public class LEGEventArgs
 	{
 		/// <summary>

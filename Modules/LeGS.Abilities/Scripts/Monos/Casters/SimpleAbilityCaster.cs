@@ -13,6 +13,10 @@ namespace LEGS.Abilities
 	[RequireComponent(typeof(IEntity))]
 	public class SimpleAbilityCaster : MonoBehaviour
 	{
+		/// <summary>
+		/// Ability to cast
+		/// </summary>
+		[Tooltip("Ability to cast")]
 		[field: SerializeField] public Ability Ability { get; private set; }
 		
 		/// <summary>
@@ -31,7 +35,14 @@ namespace LEGS.Abilities
 		[SerializeField] private KeyCode m_CastKey = KeyCode.F;
 		#endif
 
+		/// <summary>
+		/// True if casting requirements are met
+		/// </summary>
 		public bool CanCast => CooldownRemaining <= 0;
+
+		/// <summary>
+		/// Minimim time remaining, in seconds, before ability can be cast again
+		/// </summary>
 		public float CooldownRemaining { get; private set; } = 0;
 
 		private void Start() => Entity = GetComponent<IEntity>();
@@ -49,6 +60,9 @@ namespace LEGS.Abilities
 #endif
 		}
 
+		/// <summary>
+		/// Attempts to call <see cref="IAbility.Activate(IEntity, GameObject)"/> on <see cref="Ability"/>
+		/// </summary>
 		public void Cast()
 		{
 			if(!CanCast || !Ability)

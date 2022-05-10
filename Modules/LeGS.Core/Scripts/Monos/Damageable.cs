@@ -1,8 +1,11 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace LEGS
 {
+	/// <summary>
+	/// Basic implementation of <see cref="IDamageable"/>
+	/// </summary>
 	[RequireComponent(typeof(IEntity))]
     public class Damageable : MonoBehaviour, IDamageable
     {

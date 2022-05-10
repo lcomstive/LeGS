@@ -6,8 +6,8 @@ namespace LEGS.Characters
 	/// <summary>
 	/// An attribute on a character with modifiers.
 	///
-	/// <para>Can be used or instance as character's health, attack speed, or strength values.</para>
-	/// <para>Final value is calculated as <code>(BaseValue + ModifierAdd) * ModifierMultiply</code></para>
+	/// <para>Can be used for instance as character's health, attack speed, or strength values.</para>
+	/// <para>Final value is calculated as `(BaseValue + ModifierAdd) * ModifierMultiply`</para>
 	/// </summary>
 	[Serializable]
 	public class Attribute
@@ -61,7 +61,7 @@ namespace LEGS.Characters
 		private float m_ModifierMultiply = 1.0f;
 
 		/// <summary>
-		/// Value to multiply by <code>BaseValue + ModifierAdd</code>
+		/// Value to multiply by `BaseValue + ModifierAdd`
 		/// </summary>
 		public float ModifierMultiplier
 		{
@@ -99,6 +99,8 @@ namespace LEGS.Characters
 		/// </summary>
 		protected bool m_IsDirty = true;
 
+		/// <param name="name">Display name of this attribute</param>
+		/// <param name="baseValue">Sets <see cref="BaseValue"/></param>
 		public Attribute(string name = "Attribute", float baseValue = 0.0f)
 		{
 			Name = name;
@@ -109,7 +111,7 @@ namespace LEGS.Characters
 		/// Sets <see cref="CurrentValue"/> using <see cref="BaseValue"/>,
 		/// <see cref="ModifierAdd"/> and <see cref="ModifierMultiplier"/>.
 		///
-		/// <para>Sets <see cref="m_IsDirty"/> to false.</para>
+		/// Sets <see cref="m_IsDirty"/> to false.
 		/// </summary>
 		protected virtual void CalculateCurrentValue()
 		{

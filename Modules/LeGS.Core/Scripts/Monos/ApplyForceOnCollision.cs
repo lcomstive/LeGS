@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS
 {
+	/// <summary>
+	/// Applies force to a <see cref="Rigidbody"/> upon collision
+	/// </summary>
 	[RequireComponent(typeof(Collider))]
 	public class ApplyForceOnCollision : MonoBehaviour
 	{

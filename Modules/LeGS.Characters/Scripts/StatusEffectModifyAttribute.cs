@@ -2,6 +2,10 @@
 
 namespace LEGS.Characters
 {
+	/// <summary>
+	/// A <see cref="TimedStatusEffect"/> that modifies an <see cref="Attribute"/>
+	/// for it's duration.
+	/// </summary>
 	[CreateAssetMenu(menuName = "LeGS/Status Effects/Modify Attribute")]
 	public class StatusEffectModifyAttribute : TimedStatusEffect
 	{

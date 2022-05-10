@@ -11,3 +11,6 @@ Modules:
 - @subpage items
 - @subpage quests
 - @subpage shop
+
+Samples
+- @subpage samplemoba

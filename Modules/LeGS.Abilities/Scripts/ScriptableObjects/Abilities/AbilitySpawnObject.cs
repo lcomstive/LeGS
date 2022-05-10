@@ -1,7 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS.Abilities
 {
+	/// <summary>
+	/// <see cref="Ability"/> that spawns an object
+	/// </summary>
 	[CreateAssetMenu(menuName = "LeGS/Abilities/Spawn Object", fileName = "Spawn Object")]
 	public class AbilitySpawnObject : Ability
 	{
@@ -9,9 +12,6 @@ namespace LEGS.Abilities
 		[SerializeField] private Vector3 m_SpawnOffset;
 		[SerializeField] private bool m_ChildOfSpawner = false;
 
-		/// <summary>
-		/// Force to apply if spawned object has a Rigidbody attached
-		/// </summary>
 		[SerializeField, Tooltip("Force to apply if spawned object has a Rigidbody")]
 		private Vector3 m_Force;
 

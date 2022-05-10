@@ -10,7 +10,7 @@ REPEAT_BRIEF			= NO
 INPUT					= Documentation/Markdown Modules
 RECURSIVE				= YES
 GENERATE_LATEX			= NO
-IMAGE_PATH				= Documentation/Media/
+IMAGE_PATH				= Documentation/
 
 # Theming
 GENERATE_TREEVIEW		= YES

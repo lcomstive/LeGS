@@ -1,7 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LEGS
 {
+	/// <summary>
+	/// Destroys attached <see cref="GameObject"/> after <see cref="m_Seconds"/>
+	/// </summary>
 	public class DestroyAfterSeconds : MonoBehaviour
 	{
 		[SerializeField, Tooltip("Time, in seconds, before destroying this object")]
