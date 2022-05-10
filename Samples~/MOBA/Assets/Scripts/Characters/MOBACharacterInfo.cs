@@ -1,7 +1,7 @@
 ﻿using System;
 using LEGS.Shop;
 using UnityEngine;
-using System.Collections.Generic;
+using LEGS.Abilities;
 
 #if UNITY_EDITOR
 using UnityEditor;

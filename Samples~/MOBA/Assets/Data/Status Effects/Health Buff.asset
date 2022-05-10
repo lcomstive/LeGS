@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Health Buff
   m_MaxStackSize: 1
-  Duration: 3
+  Duration: 10
   m_AttributeName: Health
-  m_AddModifier: 20
-  m_MultiplyModifier: 0
+  m_AddModifier: 35
+  m_MultiplyModifier: 0.35

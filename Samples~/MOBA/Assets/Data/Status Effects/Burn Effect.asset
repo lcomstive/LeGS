@@ -15,4 +15,4 @@ MonoBehaviour:
   m_DisplayName: Burn
   m_MaxStackSize: 1
   Duration: 3
-  TotalDamage: 20
+  TotalDamage: 35

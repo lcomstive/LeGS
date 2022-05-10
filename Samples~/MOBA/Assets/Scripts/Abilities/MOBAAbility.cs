@@ -54,6 +54,7 @@ namespace MOBAExample
 	[CreateAssetMenu(fileName = "Ability", menuName = "MOBA/Abilities/Empty")]
 	public class MOBAAbility : ScriptableObject, IAbility
 	{
+		[field: SerializeField] public Sprite Icon					{ get; private set; }
 		[field: SerializeField] public string DisplayName			{ get; private set; } = "Ability";
 		[field: SerializeField] public float Range					{ get; private set; } = 5.0f;
 		[field: SerializeField] public float Cost					{ get; private set; } = 10.0f;

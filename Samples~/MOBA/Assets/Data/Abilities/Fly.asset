@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d91aa129f1d44b4e8aabc61fdeb1098, type: 3}
-  m_Name: Super Jump
+  m_Name: Fly
   m_EditorClassIdentifier: 
   <Icon>k__BackingField: {fileID: 0}
-  <DisplayName>k__BackingField: Super Jump
+  <DisplayName>k__BackingField: Fly
   <Range>k__BackingField: 5
-  <Cost>k__BackingField: 12.5
-  <CostType>k__BackingField: 1
+  <Cost>k__BackingField: 2.5
+  <CostType>k__BackingField: 2
   <Target>k__BackingField: 4
-  <Cooldown>k__BackingField: 3
+  <Cooldown>k__BackingField: 0.05
   <DamageType>k__BackingField: 1
   <AttackDamageScale>k__BackingField: 1
-  m_Force: {x: 0, y: 6, z: 0}
+  m_Force: {x: 0, y: 1, z: 0}
   m_IgnoreMass: 1
   m_EffectPrefab: {fileID: 0}
   m_EffectSpawnOffset: {x: 0, y: 0, z: 0}

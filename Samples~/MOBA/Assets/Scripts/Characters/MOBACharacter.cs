@@ -13,9 +13,24 @@ namespace MOBAExample
 
 		public static readonly CharacterTrait[] AllTraits = (CharacterTrait[])System.Enum.GetValues(typeof(CharacterTrait));
 		
-		public float Mana { get; private set; }
 		public float MaxMana { get; private set; }
 		public CharacterExperience Experience { get; private set; }
+
+		private float m_Mana;
+		public float Mana
+		{
+			get => m_Mana;
+			set
+			{
+				value = Mathf.Clamp(value, 0, MaxMana);
+				if(m_Mana == value)
+					return;
+
+				m_Mana = value;
+				EventManager.Publish(m_CharacterChangedEventID, new CharacterChangedEventArgs(this));
+			}
+		}
+
 
 		private ushort m_HealthChangedEventID, m_CharacterChangedEventID;
 		private Coroutine m_RegenCoroutine;
@@ -38,7 +53,7 @@ namespace MOBAExample
 
 			m_RegenCoroutine = StartCoroutine(RegenLoop());
 
-			Mana = MaxMana = m_AttributeTraits[CharacterTrait.Mana].CurrentValue;
+			m_Mana = MaxMana = m_AttributeTraits[CharacterTrait.Mana].CurrentValue;
 			Health = MaxHealth = m_AttributeTraits[CharacterTrait.Health].CurrentValue;
 
 			// Register events
@@ -75,8 +90,6 @@ namespace MOBAExample
 			MaxMana = attribute.CurrentValue;
 			if (manaFollow)
 				Mana = MaxMana;
-
-			EventManager.Publish(m_CharacterChangedEventID, new CharacterChangedEventArgs(this));
 		}
 
 		public Attribute GetAttribute(CharacterTrait trait) => m_AttributeTraits[trait];
@@ -163,6 +176,19 @@ namespace MOBAExample
 			ApplyDamage(-this[CharacterTrait.HealthRegen].CurrentValue, this);
 
 			m_RegenCoroutine = StartCoroutine(RegenLoop());
+		}
+
+		public virtual bool CanCast(MOBAAbility ability)
+		{
+			if (ability.CostType == AbilityCost.Mana &&
+				Mana <= ability.Cost)
+				return false; // Not enough mana
+
+			if (ability.CostType == AbilityCost.Health &&
+				Health <= ability.Cost)
+				return false; // Not enough mana
+
+			return true;
 		}
 
 		public Attribute this[CharacterTrait trait] => GetAttribute(trait);

@@ -87,7 +87,7 @@ namespace MOBAExample
 			LevelUp?.Invoke(Level);
 		}
 
-		public float ExperienceForLevel(int level) => m_InverseExperienceCurve.Evaluate(level);
+		public float ExperienceForLevel(int level) => m_InverseExperienceCurve?.Evaluate(level) ?? 0;
 
 		public event System.Action<int> LevelUp;
 

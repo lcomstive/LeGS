@@ -9,10 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af56e525e8fe523468a1ca1d93acef08, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d5627dbd75ae614b922313b84eef804, type: 3}
   m_Name: Heal Ability
   m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 0}
   <DisplayName>k__BackingField: Heal
-  <Description>k__BackingField: Heals a small amount of health over time
-  <Cooldown>k__BackingField: 10
+  <Range>k__BackingField: 5
+  <Cost>k__BackingField: 7.5
+  <CostType>k__BackingField: 1
+  <Target>k__BackingField: 4
+  <Cooldown>k__BackingField: 12.5
+  <DamageType>k__BackingField: 1
+  <AttackDamageScale>k__BackingField: 1
   <Effect>k__BackingField: {fileID: 11400000, guid: fd825f1ff22fa23428695351a8812e1d, type: 2}
