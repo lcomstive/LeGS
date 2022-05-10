@@ -36,8 +36,10 @@ var annotated_dup =
         [ "Currency", "structLEGS_1_1Shop_1_1Currency.html", null ]
       ] ],
       [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+      [ "Damageable", "classLEGS_1_1Damageable.html", "classLEGS_1_1Damageable" ],
       [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
       [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
+      [ "DestroyOnCollision", "classLEGS_1_1DestroyOnCollision.html", null ],
       [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
       [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
       [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"interfaceLEGS_1_1Items_1_1IItem.html":[12,0,0,4,0],
+"md_Modules_LeGS_Abilities_Documentation_LeGS_Abilities.html":[1],
+"md_Modules_LeGS_Characters_Documentation_LeGS_Characters.html":[2],
+"md_Modules_LeGS_Core_Documentation_Usage.html":[4],
+"md_Modules_LeGS_Dialogue_Documentation_LeGS_Dialogue.html":[5],
+"md_Modules_LeGS_Inventory_Documentation_LeGS_Inventory.html":[6],
+"md_Modules_LeGS_Items_Documentation_LeGS_Items.html":[7],
+"md_Modules_LeGS_Quests_Documentation_LeGS_Quests.html":[8],
 "md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html":[9],
 "modules.html":[10],
 "namespaceLEGS.html":[11,0,0],

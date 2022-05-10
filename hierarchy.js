@@ -12,19 +12,20 @@ var hierarchy =
     [ "LEGS.Characters.IAttributeHolder", "interfaceLEGS_1_1Characters_1_1IAttributeHolder.html", [
       [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", null ]
     ] ],
-    [ "LEGS.Dialogue.IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ],
-    [ "LEGS.IEntity", "interfaceLEGS_1_1IEntity.html", [
+    [ "LEGS.IDamageable", "interfaceLEGS_1_1IDamageable.html", [
       [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", [
         [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", null ]
       ] ],
+      [ "LEGS.Damageable", "classLEGS_1_1Damageable.html", null ],
+      [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ]
+    ] ],
+    [ "LEGS.Dialogue.IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ],
+    [ "LEGS.IEntity", "interfaceLEGS_1_1IEntity.html", [
+      [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
       [ "LEGS.Entity", "classLEGS_1_1Entity.html", [
         [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", null ]
       ] ],
       [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ],
-      [ "LEGS.IDamageable", "interfaceLEGS_1_1IDamageable.html", [
-        [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
-        [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ]
-      ] ],
       [ "LEGS.IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", [
         [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
         [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ]
@@ -53,7 +54,9 @@ var hierarchy =
       [ "LEGS.Abilities.AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
       [ "LEGS.Abilities.SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", null ],
       [ "LEGS.ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+      [ "LEGS.Damageable", "classLEGS_1_1Damageable.html", null ],
       [ "LEGS.DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
+      [ "LEGS.DestroyOnCollision", "classLEGS_1_1DestroyOnCollision.html", null ],
       [ "LEGS.Entity", "classLEGS_1_1Entity.html", null ],
       [ "LEGS.TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", null ]
     ] ],
