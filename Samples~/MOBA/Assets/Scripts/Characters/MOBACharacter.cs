@@ -105,7 +105,7 @@ namespace MOBAExample
 			if (sender is AbilityInfo)
 			{
 				AbilityInfo abilityInfo = (AbilityInfo)sender;
-				if (ApplyAbilityDamage(abilityInfo.Ability as MOBAAbility, abilityInfo.Caster as MOBACharacter))
+				if (ApplyAbilityDamage(abilityInfo.Ability as MOBAAbility, abilityInfo.Caster as MOBACharacter) != 0)
 					return;
 			}
 
@@ -115,10 +115,11 @@ namespace MOBAExample
 				EventManager.Publish(EntityDeathEventArgs.EventName, new EntityDeathEventArgs(this, sender));
 		}
 
-		public bool ApplyAbilityDamage(MOBAAbility ability, MOBACharacter sender)
+		/// <returns>Damage applied</returns>
+		public float ApplyAbilityDamage(MOBAAbility ability, MOBACharacter sender)
 		{
 			if (!ability || !sender)
-				return false;
+				return 0;
 
 			// Calculate damage to apply
 			float damage = 0;
@@ -143,7 +144,7 @@ namespace MOBAExample
 			if (ability.ReceiverEffect != null)
 				AddStatusEffect(ability.ReceiverEffect, sender);
 
-			return true;
+			return damage;
 		}
 
 		public void ApplyDamage(float amount, MOBACharacter sender, DamageTypes type)

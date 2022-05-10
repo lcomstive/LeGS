@@ -1,5 +1,6 @@
 using LEGS;
 using UnityEngine;
+using LEGS.Abilities;
 
 namespace MOBAExample
 {
@@ -33,6 +34,11 @@ namespace MOBAExample
 				spawnRot,
 				m_ChildOfSpawner ? gameObject.transform : null
 			);
+
+			AbilityInfo info = spawned.GetComponent<AbilityInfo>();
+			if(!info)
+				info = spawned.AddComponent<AbilityInfo>();
+			info.Initialise(caster, this);
 
 			Vector3 aimDirection = playerAim?.AimDirection ?? gameObject.transform.forward;
 			aimDirection = aimDirection.normalized * m_Force;

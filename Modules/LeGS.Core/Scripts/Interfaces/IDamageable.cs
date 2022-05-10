@@ -1,9 +1,9 @@
 ﻿namespace LEGS
 {
 	/// <summary>
-	/// Represents an <see cref="IEntity"/> that has health and can receive damage
+	/// Represents an object that has health and can receive damage
 	/// </summary>
-	public interface IDamageable : IEntity
+	public interface IDamageable
 	{
 		float Health { get; }
 		float MaxHealth { get;}

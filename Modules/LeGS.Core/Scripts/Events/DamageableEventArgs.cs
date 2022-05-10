@@ -20,12 +20,19 @@ namespace LEGS
 		/// </summary>
 		public IEntity Sender { get; private set; }
 
-		/// <param name="entity"><see cref="IDamageable"/> whose health is being changed</param>
+		/// <summary>
+		/// The <see cref="IDamageable"/> that had health changed
+		/// </summary>
+		public IDamageable Damageable { get; private set; }
+
+		/// <param name="damageable"><see cref="IDamageable"/> whose health is being changed</param>
 		/// <param name="sender"><see cref="IEntity"/> that caused the health change</param>
 		/// <param name="changeAmount">Amount of health being altered</param>
-		public EntityHealthChangeEventArgs(IDamageable entity, IEntity sender, float changeAmount)
+		public EntityHealthChangeEventArgs(IDamageable damageable, IEntity sender, float changeAmount)
 		{
-			Entity = entity;
+			Damageable = damageable;
+			Entity = damageable as IEntity;
+
 			Amount = changeAmount;
 			Sender = sender;
 		}

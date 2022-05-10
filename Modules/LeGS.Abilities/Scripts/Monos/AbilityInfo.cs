@@ -8,8 +8,8 @@ namespace LEGS.Abilities
 	/// </summary>
 	public class AbilityInfo : MonoBehaviour
 	{
-		[field: SerializeField] public IEntity Caster { get; private set; }
-		[field: SerializeField] public IAbility Ability { get; private set; }
+		public IEntity Caster { get; private set; }
+		public IAbility Ability { get; private set; }
 
 		public void Initialise(IEntity caster, IAbility ability)
 		{

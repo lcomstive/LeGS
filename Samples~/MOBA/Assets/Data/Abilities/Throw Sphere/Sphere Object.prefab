@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 6005501912316743321}
   - component: {fileID: -2944181621147533952}
   - component: {fileID: -353062781777837867}
+  - component: {fileID: 6046360038937890909}
+  - component: {fileID: 7044212300687041569}
+  - component: {fileID: -6417511830471970842}
   m_Layer: 0
   m_Name: Sphere Object
   m_TagString: Untagged
@@ -141,5 +144,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59784beae91e6694ba8da11a438915bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: {x: 0, y: 5, z: 0}
+  Force: {x: 0, y: 3, z: 0}
   IgnoreMass: 1
+--- !u!114 &6046360038937890909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372928707327375222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbdc286dd382dd3428dbea501039d314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HitEffectPrefab: {fileID: 0}
+  m_DamagePopupPrefab: {fileID: 5099891060839550346, guid: 321270d28ac687a4cbf399ec796440af, type: 3}
+--- !u!114 &7044212300687041569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372928707327375222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f701762b8a0c043a663af5c4f780b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6417511830471970842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372928707327375222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78deba4e7006fba4dbb6de55db16c932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollisionTags: []
