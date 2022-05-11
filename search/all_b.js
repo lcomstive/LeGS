@@ -1,9 +1,24 @@
 var searchData=
 [
   ['m_5fisdirty_0',['m_IsDirty',['../classLEGS_1_1Characters_1_1Attribute.html#aa5203d117bdc582fd401a9b1e95642be',1,'LEGS::Characters::Attribute']]],
-  ['maxhealth_1',['MaxHealth',['../classLEGS_1_1Characters_1_1Character.html#ae23723126428a5b8437537d73986f7a2',1,'LEGS::Characters::Character']]],
-  ['maxstacksize_2',['MaxStackSize',['../interfaceLEGS_1_1IStatusEffect.html#a1360e44bc5607430a27bbffe1cd898a7',1,'LEGS::IStatusEffect']]],
-  ['modifieradd_3',['ModifierAdd',['../classLEGS_1_1Characters_1_1Attribute.html#ae00a3a4bf72f9130818c0b7e787ed8b8',1,'LEGS::Characters::Attribute']]],
-  ['modifierchanged_4',['ModifierChanged',['../classLEGS_1_1Characters_1_1Attribute.html#a2c834b7bf26d99d149f964288b886953',1,'LEGS::Characters::Attribute']]],
-  ['modifiermultiplier_5',['ModifierMultiplier',['../classLEGS_1_1Characters_1_1Attribute.html#a21f1146cca7bda3ca8810d196b3f46fb',1,'LEGS::Characters::Attribute']]]
+  ['magicpenetration_1',['MagicPenetration',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a3b3439396df5048293f9e97423fb88e4',1,'MOBAExample']]],
+  ['magicresistance_2',['MagicResistance',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583aaf726ab1546c1d14aa12ae4034a51fd7',1,'MOBAExample']]],
+  ['mana_3',['Mana',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a02fcc64668dd1b6a85e60ac9797f2dc7',1,'MOBAExample.Mana()'],['../namespaceMOBAExample.html#ac0d778168435e3fbb42f60c70e800c5ca02fcc64668dd1b6a85e60ac9797f2dc7',1,'MOBAExample.Mana()']]],
+  ['manaregen_4',['ManaRegen',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a8fda0a3035dab05823cf6ea23e79f088',1,'MOBAExample']]],
+  ['maxhealth_5',['MaxHealth',['../classLEGS_1_1Characters_1_1Character.html#ae23723126428a5b8437537d73986f7a2',1,'LEGS::Characters::Character']]],
+  ['maxstacksize_6',['MaxStackSize',['../interfaceLEGS_1_1IStatusEffect.html#a1360e44bc5607430a27bbffe1cd898a7',1,'LEGS::IStatusEffect']]],
+  ['mobaability_7',['MOBAAbility',['../classMOBAExample_1_1MOBAAbility.html',1,'MOBAExample']]],
+  ['mobaabilityaddstatuseffect_8',['MOBAAbilityAddStatusEffect',['../classMOBAExample_1_1MOBAAbilityAddStatusEffect.html',1,'MOBAExample']]],
+  ['mobaabilityapplyforce_9',['MOBAAbilityApplyForce',['../classMOBAExample_1_1MOBAAbilityApplyForce.html',1,'MOBAExample']]],
+  ['mobaabilitycaster_10',['MOBAAbilityCaster',['../classMOBAExample_1_1MOBAAbilityCaster.html',1,'MOBAExample']]],
+  ['mobaabilityspawnobject_11',['MOBAAbilitySpawnObject',['../classMOBAExample_1_1MOBAAbilitySpawnObject.html',1,'MOBAExample']]],
+  ['mobacharacter_12',['MOBACharacter',['../classMOBAExample_1_1MOBACharacter.html',1,'MOBAExample']]],
+  ['mobacharacterinfo_13',['MOBACharacterInfo',['../classMOBAExample_1_1MOBACharacterInfo.html',1,'MOBAExample']]],
+  ['mobaexample_14',['MOBAExample',['../namespaceMOBAExample.html',1,'']]],
+  ['mobasample_15',['MOBASample',['../md_Samples__MOBA_Assets_MOBASample.html',1,'']]],
+  ['modifieradd_16',['ModifierAdd',['../classLEGS_1_1Characters_1_1Attribute.html#ae00a3a4bf72f9130818c0b7e787ed8b8',1,'LEGS::Characters::Attribute']]],
+  ['modifierchanged_17',['ModifierChanged',['../classLEGS_1_1Characters_1_1Attribute.html#a2c834b7bf26d99d149f964288b886953',1,'LEGS::Characters::Attribute']]],
+  ['modifiermultiplier_18',['ModifierMultiplier',['../classLEGS_1_1Characters_1_1Attribute.html#a21f1146cca7bda3ca8810d196b3f46fb',1,'LEGS::Characters::Attribute']]],
+  ['mouselock_19',['MouseLock',['../classMouseLock.html',1,'']]],
+  ['movementspeed_20',['MovementSpeed',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a6ac1a7dc525ac874fef15626633a9c9c',1,'MOBAExample']]]
 ];

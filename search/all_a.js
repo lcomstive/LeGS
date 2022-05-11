@@ -15,6 +15,8 @@ var searchData=
   ['legs_20items_12',['LeGS Items',['../md_Modules_LeGS_Items_Documentation_LeGS_Items.html',1,'']]],
   ['legs_20quests_13',['LeGS Quests',['../md_Modules_LeGS_Quests_Documentation_LeGS_Quests.html',1,'']]],
   ['legs_20shop_14',['LeGS Shop',['../md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html',1,'']]],
-  ['quests_15',['Quests',['../namespaceLEGS_1_1Quests.html',1,'LEGS']]],
-  ['shop_16',['Shop',['../namespaceLEGS_1_1Shop.html',1,'LEGS']]]
+  ['lifesteal_15',['LifeSteal',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a3c13e25d48ccbe37262abc5659ac7dbd',1,'MOBAExample']]],
+  ['lookrotate_16',['LookRotate',['../classLookRotate.html',1,'']]],
+  ['quests_17',['Quests',['../namespaceLEGS_1_1Quests.html',1,'LEGS']]],
+  ['shop_18',['Shop',['../namespaceLEGS_1_1Shop.html',1,'LEGS']]]
 ];

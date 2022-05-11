@@ -35,9 +35,14 @@ var NAVTREE =
     [ "LeGS Items", "md_Modules_LeGS_Items_Documentation_LeGS_Items.html", null ],
     [ "LeGS Quests", "md_Modules_LeGS_Quests_Documentation_LeGS_Quests.html", null ],
     [ "LeGS Shop", "md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html", null ],
+    [ "MOBASample", "md_Samples__MOBA_Assets_MOBASample.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -57,7 +62,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"interfaceLEGS_1_1IStatusEffectReceiver.html"
+"classMOBAExample_1_1StatusEffectChangeMana.html#a5eadcf6545c892b614e39080b5da0c19"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['legeventargs_0',['LEGEventArgs',['../classLEGS_1_1LEGEventArgs.html',1,'LEGS']]]
+  ['giveexperienceondeath_0',['GiveExperienceOnDeath',['../classMOBAExample_1_1GiveExperienceOnDeath.html',1,'MOBAExample']]]
 ];

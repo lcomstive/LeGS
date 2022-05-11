@@ -54,5 +54,31 @@ var annotated_dup =
       [ "StatusEffectChangeArgs", "classLEGS_1_1StatusEffectChangeArgs.html", "classLEGS_1_1StatusEffectChangeArgs" ],
       [ "TimedStatusEffect", "classLEGS_1_1TimedStatusEffect.html", "classLEGS_1_1TimedStatusEffect" ],
       [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", null ]
-    ] ]
+    ] ],
+    [ "MOBAExample", "namespaceMOBAExample.html", [
+      [ "AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", "classMOBAExample_1_1AbilityCastInfo" ],
+      [ "AbilityCastInfoChangedEventArgs", "classMOBAExample_1_1AbilityCastInfoChangedEventArgs.html", null ],
+      [ "AbilityCooldownHUD", "classMOBAExample_1_1AbilityCooldownHUD.html", null ],
+      [ "AbilityCooldownUI", "classMOBAExample_1_1AbilityCooldownUI.html", null ],
+      [ "AbilityDamageOnCollision", "classMOBAExample_1_1AbilityDamageOnCollision.html", null ],
+      [ "CharacterChangedEventArgs", "classMOBAExample_1_1CharacterChangedEventArgs.html", null ],
+      [ "CharacterExperience", "classMOBAExample_1_1CharacterExperience.html", null ],
+      [ "DamagePopup", "classMOBAExample_1_1DamagePopup.html", null ],
+      [ "GiveExperienceOnDeath", "classMOBAExample_1_1GiveExperienceOnDeath.html", null ],
+      [ "MOBAAbility", "classMOBAExample_1_1MOBAAbility.html", "classMOBAExample_1_1MOBAAbility" ],
+      [ "MOBAAbilityAddStatusEffect", "classMOBAExample_1_1MOBAAbilityAddStatusEffect.html", "classMOBAExample_1_1MOBAAbilityAddStatusEffect" ],
+      [ "MOBAAbilityApplyForce", "classMOBAExample_1_1MOBAAbilityApplyForce.html", "classMOBAExample_1_1MOBAAbilityApplyForce" ],
+      [ "MOBAAbilityCaster", "classMOBAExample_1_1MOBAAbilityCaster.html", null ],
+      [ "MOBAAbilitySpawnObject", "classMOBAExample_1_1MOBAAbilitySpawnObject.html", "classMOBAExample_1_1MOBAAbilitySpawnObject" ],
+      [ "MOBACharacter", "classMOBAExample_1_1MOBACharacter.html", "classMOBAExample_1_1MOBACharacter" ],
+      [ "MOBACharacterInfo", "classMOBAExample_1_1MOBACharacterInfo.html", null ],
+      [ "PlayerAim", "classMOBAExample_1_1PlayerAim.html", "classMOBAExample_1_1PlayerAim" ],
+      [ "PlayerHUDBars", "classMOBAExample_1_1PlayerHUDBars.html", null ],
+      [ "StatusEffectChangeMana", "classMOBAExample_1_1StatusEffectChangeMana.html", "classMOBAExample_1_1StatusEffectChangeMana" ]
+    ] ],
+    [ "FollowTarget", "classFollowTarget.html", null ],
+    [ "LookRotate", "classLookRotate.html", null ],
+    [ "MouseLock", "classMouseLock.html", null ],
+    [ "PlayerController", "classPlayerController.html", null ],
+    [ "PlayerRespawn", "classPlayerRespawn.html", null ]
 ];
