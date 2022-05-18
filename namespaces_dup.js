@@ -1,5 +1,5 @@
 var namespaces_dup =
 [
-    [ "LEGS", "namespaceLEGS.html", "namespaceLEGS" ],
-    [ "MOBAExample", "namespaceMOBAExample.html", "namespaceMOBAExample" ]
+    [ "LEGS", "a00246.html", "a00246" ],
+    [ "MOBAExample", "a00254.html", "a00254" ]
 ];
