@@ -15,16 +15,16 @@ jobs:
     - name: Get Project Version
       shell: bash
       run:  |
-        JSON=$(cat package.json)
-        REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\""
-        if $JSON =~ $REGEX; then
-          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
-        fi
+        JSON=$(cat package.json) \
+        REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\"" \
+        $JSON =~ $REGEX \
+        echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
 
     # Generate HTML
     - name: Doxygen
       uses: mattnotmitt/doxygen-action@v1.9.2
       with:
+        working-directory: 'Documentation/'
         doxyfile-path: 'Documentation/Doxyfile'
 
     # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
