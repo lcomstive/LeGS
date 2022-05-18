@@ -11,14 +11,24 @@ jobs:
     # Checkout
     - uses: actions/checkout@v3
 
-    # Install Doxygen
-    - name: Install Doxygen
-      run: sudo apt-get install doxygen -y
+    # Get project version from package.json
+    - name: Get Project Version
+      run:  |
+        JSON=$(cat package.json) \
+        REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\"" \
+        if [[ $JSON =~ $REGEX ]] then \
+          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile \
+        fi
 
-    # Generate Documentation
-    - name: Generate Documentations
-      run: cd Documentation && bash ./GenerateDocs.sh
-      shell: bash
+    # Generate HTML
+    - name: Doxygen
+      uses: mattnotmitt/doxygen-action@v1.9.2
+      with:
+        doxyfile-path: 'Documentation/Doxyfile'
+
+    # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
+    - name: Copy media
+      run: sudo cp -R Documentation/Markdown/Media Documentation/html/Media
     
     # Upload HTML to GitHub Pages site
     - name: Publish
