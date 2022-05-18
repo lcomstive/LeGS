@@ -47,8 +47,8 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html", null ],
-    [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
-    [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
+    [ "Tutorial 2 - Characters", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
+    [ "Tutorial 3 - Abilities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
