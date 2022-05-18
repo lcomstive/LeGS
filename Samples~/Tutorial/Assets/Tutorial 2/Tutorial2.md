@@ -1,1 +1,1 @@
-# Tutorial 1 - Entities
+# Tutorial 2 - Characters
