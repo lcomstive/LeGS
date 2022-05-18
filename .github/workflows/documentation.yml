@@ -13,6 +13,7 @@ jobs:
 
     # Get project version from package.json
     - name: Get Project Version
+      shell: bash
       run:  |
         JSON=$(cat package.json) \
         REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\"" \
