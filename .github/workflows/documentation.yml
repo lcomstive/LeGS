@@ -16,9 +16,7 @@ jobs:
       run:  |
         JSON=$(cat package.json) \
         REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\"" \
-        if [[ $JSON =~ $REGEX ]] then \
-          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile \
-        fi
+        [[ $JSON =~ $REGEX ]] && echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
 
     # Generate HTML
     - name: Doxygen
