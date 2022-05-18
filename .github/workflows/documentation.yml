@@ -11,15 +11,14 @@ jobs:
     # Checkout
     - uses: actions/checkout@v3
 
-    # Generate HTML
-    - name: Doxygen
-      uses: mattnotmitt/doxygen-action@v1.9.2
-      with:
-        doxyfile-path: 'Documentation/Doxyfile'
+    # Install Doxygen
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen -y
 
-    # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
-    - name: Copy media
-      run: sudo cp -R Documentation/Markdown/Media Documentation/html/Media
+    # Generate Documentation
+    - name: Generate Documentations
+      run: cd Documentation && bash ./GenerateDocs.sh
+      shell: bash
     
     # Upload HTML to GitHub Pages site
     - name: Publish
