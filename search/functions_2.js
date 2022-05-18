@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['entityhealthchangeeventargs_0',['EntityHealthChangeEventArgs',['../classLEGS_1_1EntityHealthChangeEventArgs.html#a0d930aa383abda6d28c3d7298b315fb5',1,'LEGS::EntityHealthChangeEventArgs']]],
-  ['entityspawneventargs_1',['EntitySpawnEventArgs',['../classLEGS_1_1EntitySpawnEventArgs.html#a9210188523d62e86d73990a035e3a69e',1,'LEGS::EntitySpawnEventArgs']]]
+  ['deregisterevent_259',['DeregisterEvent',['../classLEGS_1_1EventManager.html#ac9f8c0dc5b27bae2d5a8dde9544efd88',1,'LEGS.EventManager.DeregisterEvent(string name)'],['../classLEGS_1_1EventManager.html#a1b7d21185be190034b56f0eaea168643',1,'LEGS.EventManager.DeregisterEvent(ushort id)']]]
 ];

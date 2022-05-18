@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sender_0',['Sender',['../classLEGS_1_1EntityHealthChangeEventArgs.html#a59e497b6869f1affc05e9c7ade9f2b36',1,'LEGS::EntityHealthChangeEventArgs']]]
+  ['receiver_340',['Receiver',['../classLEGS_1_1StatusEffectChangeArgs.html#ac08a6c885c346cf3c788454343825c55',1,'LEGS::StatusEffectChangeArgs']]]
 ];

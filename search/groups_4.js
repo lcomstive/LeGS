@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quests_0',['Quests',['../group__Quests.html',1,'']]]
+  ['samples_351',['Samples',['../group__Samples.html',1,'']]],
+  ['shop_352',['Shop',['../group__Shop.html',1,'']]]
 ];

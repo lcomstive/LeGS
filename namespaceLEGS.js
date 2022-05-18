@@ -7,7 +7,7 @@ var namespaceLEGS =
     [ "Items", "namespaceLEGS_1_1Items.html", "namespaceLEGS_1_1Items" ],
     [ "Quests", "namespaceLEGS_1_1Quests.html", "namespaceLEGS_1_1Quests" ],
     [ "Shop", "namespaceLEGS_1_1Shop.html", "namespaceLEGS_1_1Shop" ],
-    [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+    [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", "classLEGS_1_1ApplyForceOnCollision" ],
     [ "Damageable", "classLEGS_1_1Damageable.html", "classLEGS_1_1Damageable" ],
     [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
     [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
@@ -15,8 +15,9 @@ var namespaceLEGS =
     [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
     [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
     [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
-    [ "EntitySpawnEventArgs", "classLEGS_1_1EntitySpawnEventArgs.html", "classLEGS_1_1EntitySpawnEventArgs" ],
-    [ "ICharacter", "interfaceLEGS_1_1ICharacter.html", null ],
+    [ "EventManager", "classLEGS_1_1EventManager.html", "classLEGS_1_1EventManager" ],
+    [ "Extensions", "classLEGS_1_1Extensions.html", "classLEGS_1_1Extensions" ],
+    [ "ICharacter", "interfaceLEGS_1_1ICharacter.html", "interfaceLEGS_1_1ICharacter" ],
     [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
     [ "IEntity", "interfaceLEGS_1_1IEntity.html", "interfaceLEGS_1_1IEntity" ],
     [ "IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", "interfaceLEGS_1_1IStatusEffect" ],
@@ -25,5 +26,5 @@ var namespaceLEGS =
     [ "StatusEffect", "classLEGS_1_1StatusEffect.html", "classLEGS_1_1StatusEffect" ],
     [ "StatusEffectChangeArgs", "classLEGS_1_1StatusEffectChangeArgs.html", "classLEGS_1_1StatusEffectChangeArgs" ],
     [ "TimedStatusEffect", "classLEGS_1_1TimedStatusEffect.html", "classLEGS_1_1TimedStatusEffect" ],
-    [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", null ]
+    [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", "classLEGS_1_1TriggerApplyStatus" ]
 ];

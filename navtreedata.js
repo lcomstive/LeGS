@@ -1,41 +1,48 @@
 /*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
 
- The MIT License (MIT)
+Copyright (C) 1997-2019 by Dimitri van Heesch
 
- Copyright (C) 1997-2020 by Dimitri van Heesch
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
+@licend  The above is the entire license notice
+for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "LeGS", "index.html", [
+    [ "Ability System", "abilities.html", null ],
+    [ "Characters", "md_Markdown_Characters_Characters.html", null ],
+    [ "LeGS Dialogue", "md_Markdown_Dialogue_LeGS_Dialogue.html", null ],
     [ "Installation", "installation.html", null ],
-    [ "LeGS Abilities", "md_Modules_LeGS_Abilities_Documentation_LeGS_Abilities.html", null ],
-    [ "LeGS Characters", "md_Modules_LeGS_Characters_Documentation_LeGS_Characters.html", null ],
-    [ "Core", "core.html", null ],
-    [ "Usage", "md_Modules_LeGS_Core_Documentation_Usage.html", null ],
-    [ "LeGS Dialogue", "md_Modules_LeGS_Dialogue_Documentation_LeGS_Dialogue.html", null ],
-    [ "LeGS Inventory", "md_Modules_LeGS_Inventory_Documentation_LeGS_Inventory.html", null ],
-    [ "LeGS Items", "md_Modules_LeGS_Items_Documentation_LeGS_Items.html", null ],
-    [ "LeGS Quests", "md_Modules_LeGS_Quests_Documentation_LeGS_Quests.html", null ],
-    [ "LeGS Shop", "md_Modules_LeGS_Shop_Documentation_LeGS_Shop.html", null ],
-    [ "MOBASample", "md_Samples__MOBA_Assets_MOBASample.html", null ],
+    [ "LeGS Inventory", "md_Markdown_Inventory_LeGS_Inventory.html", null ],
+    [ "LeGS Items", "md_Markdown_Items_LeGS_Items.html", null ],
+    [ "LeGS Quests", "md_Markdown_Quests_LeGS_Quests.html", null ],
+    [ "LeGS Shop", "md_Markdown_Shop_LeGS_Shop.html", null ],
+    [ "~_MOBA_Assets_MOBASample MOBASample", "md__home_runner_work_LeGS_LeGS_Samples.html", [
+      [ "Interfaces", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md1", null ],
+      [ "Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md2", [
+        [ "Creating Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md3", [
+          [ "Example", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md4", null ]
+        ] ],
+        [ "Listening to Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md5", [
+          [ "Example", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md6", null ],
+          [ "Built-In Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md7", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -61,8 +68,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classMOBAExample_1_1StatusEffectChangeMana.html#a5eadcf6545c892b614e39080b5da0c19"
+"abilities.html",
+"classMOBAExample_1_1GiveExperienceOnDeath.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

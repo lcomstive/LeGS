@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['characters_0',['Characters',['../group__Characters.html',1,'']]]
+  ['dialogue_347',['Dialogue',['../group__Dialogue.html',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['totaldamage_0',['TotalDamage',['../classLEGS_1_1DamageOverTimeStatusEffect.html#aedce1732b3c3eeeb13063b68449303d9',1,'LEGS::DamageOverTimeStatusEffect']]],
-  ['totalmana_1',['TotalMana',['../classMOBAExample_1_1StatusEffectChangeMana.html#aa87ab5271232c000a5c7221d43dafdb9',1,'MOBAExample::StatusEffectChangeMana']]]
+  ['m_5fisdirty_290',['m_IsDirty',['../classLEGS_1_1Characters_1_1Attribute.html#aa5203d117bdc582fd401a9b1e95642be',1,'LEGS::Characters::Attribute']]]
 ];

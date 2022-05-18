@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timeremaining_0',['TimeRemaining',['../classLEGS_1_1TimedStatusEffect.html#a8fd1bf9e9b20e10cc0dbd7e6e199cf49',1,'LEGS::TimedStatusEffect']]]
+  ['sender_341',['Sender',['../classLEGS_1_1EntityHealthChangeEventArgs.html#a59e497b6869f1affc05e9c7ade9f2b36',1,'LEGS::EntityHealthChangeEventArgs']]]
 ];

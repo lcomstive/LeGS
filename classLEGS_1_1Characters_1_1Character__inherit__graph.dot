@@ -1,0 +1,25 @@
+digraph "LEGS.Characters.Character"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LEGS.Characters.Character",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Simple class for an ICharacter & IAttributeHolder implementation."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Entity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLEGS_1_1Entity.html",tooltip="MonoBehaviour base implementation of an IEntity"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="IEntity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceLEGS_1_1IEntity.html",tooltip="Represents a LeGS object. This is the base type for most LeGS types."];
+  Node5 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ICharacter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceLEGS_1_1Characters_1_1ICharacter.html",tooltip="For characters that can receive damage & status effects."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IDamageable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceLEGS_1_1IDamageable.html",tooltip="Represents an object that has health and can receive damage"];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="IStatusEffectReceiver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceLEGS_1_1IStatusEffectReceiver.html",tooltip="An IEntity that can have IStatusEffects added and removed"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="IAttributeHolder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceLEGS_1_1Characters_1_1IAttributeHolder.html",tooltip="Object that can have Attributes added & removed"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MOBAExample.MOBACharacter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMOBAExample_1_1MOBACharacter.html",tooltip=" "];
+}

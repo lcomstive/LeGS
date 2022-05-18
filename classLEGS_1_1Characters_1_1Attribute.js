@@ -3,6 +3,7 @@ var classLEGS_1_1Characters_1_1Attribute =
     [ "Attribute", "classLEGS_1_1Characters_1_1Attribute.html#ab97c3911e112a4321e989d587c2fda6a", null ],
     [ "CalculateCurrentValue", "classLEGS_1_1Characters_1_1Attribute.html#a78febdbe52e0e5cea52748fdc522719f", null ],
     [ "FireModifierChangedEvent", "classLEGS_1_1Characters_1_1Attribute.html#aef1f6e4df43f85b0773b6482d966219f", null ],
+    [ "OnAttributeChange", "classLEGS_1_1Characters_1_1Attribute.html#a81fbe08ad9aa5972c63b3cd578314f41", null ],
     [ "m_IsDirty", "classLEGS_1_1Characters_1_1Attribute.html#aa5203d117bdc582fd401a9b1e95642be", null ],
     [ "BaseValue", "classLEGS_1_1Characters_1_1Attribute.html#aaf6c9fe72cc1ff236f772eb7e44cef23", null ],
     [ "CurrentValue", "classLEGS_1_1Characters_1_1Attribute.html#a87f9a2d8897accdf66de77de52b4818f", null ],
