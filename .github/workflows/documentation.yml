@@ -15,10 +15,10 @@ jobs:
     - name: Get Project Version
       shell: bash
       run:  |
-        JSON=$(cat package.json) \
-        REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\"" \
-        if [ $JSON =~ $REGEX ]; then \
-          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile \
+        JSON=$(cat package.json)
+        REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\""
+        if $JSON =~ $REGEX; then
+          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
         fi
 
     # Generate HTML
