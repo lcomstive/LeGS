@@ -17,7 +17,7 @@ namespace LEGS
 		public uint MaxStackSize => m_MaxStackSize;
 
 		public IEntity Sender { get; private set; }
-		public IEntity Receiver { get; private set; }
+		public IStatusEffectReceiver Receiver { get; private set; }
 
 		public virtual void OnAdded(IEntity sender, IStatusEffectReceiver receiver)
 		{

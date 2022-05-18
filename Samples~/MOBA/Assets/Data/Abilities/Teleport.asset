@@ -21,7 +21,10 @@ MonoBehaviour:
   <Cooldown>k__BackingField: 2.5
   <DamageType>k__BackingField: 1
   <AttackDamageScale>k__BackingField: 1
-  m_Force: {x: 0, y: 0, z: 350}
+  m_Force: 350
+  m_Direction: {x: 0, y: 0, z: 1}
+  m_RelativeToPlayer: 1
+  m_AimOverrideDirection: 0
   m_IgnoreMass: 1
   m_EffectPrefab: {fileID: 0}
   m_EffectSpawnOffset: {x: 0, y: 0, z: 0}

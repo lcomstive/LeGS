@@ -17,9 +17,9 @@ namespace LEGS
 
 		protected virtual void Awake()
 		{
-			m_SpawnEventID = EventManager.RegisterEvent<EntitySpawnEventArgs>(EntitySpawnEventArgs.EventName);
+			m_SpawnEventID = EventManager.RegisterEvent<LEGEventArgs>("EntitySpawn");
 
-			EventManager.Publish(m_SpawnEventID, new EntitySpawnEventArgs(this));
+			EventManager.Publish(m_SpawnEventID, new LEGEventArgs(this));
 		}
 	}
 }

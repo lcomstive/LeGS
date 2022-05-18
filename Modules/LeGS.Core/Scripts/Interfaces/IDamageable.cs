@@ -6,9 +6,10 @@
 	public interface IDamageable
 	{
 		/// <summary>
-		/// How much damage an object can take before d
+		/// How much damage an object can take before dying
 		/// </summary>
 		float Health	{ get; }
+
 		float MaxHealth { get;}
 
 		/// <summary>

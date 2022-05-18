@@ -180,7 +180,7 @@ namespace LEGS
 		/// <summary>
 		/// Raises an event and informs listeners. Uses default <see cref="LEGEventArgs"/> as event type.
 		/// </summary>
-		public static bool Publish(ushort eventID) => Publish(eventID, new LEGEventArgs());
+		public static bool Publish(ushort eventID) => Publish(eventID, new LEGEventArgs(null));
 
 		/// <summary>
 		/// Raises an event and informs listeners

@@ -1,23 +1,30 @@
 DOXYFILE_ENCODING		= UTF-8
-PROJECT_NAME			= "LeGS"
+PROJECT_NAME			= LeGS
 # PROJECT_LOGO			= "Icon.png"
-OUTPUT_DIRECTORY		= Documentation/
+OUTPUT_DIRECTORY		= ./
 CREATE_SUBDIRS			= NO
 ALLOW_UNICODE_NAMES		= NO
 OUTPUT_LANGUAGE			= English
 BRIEF_MEMBER_DESC		= YES
 REPEAT_BRIEF			= NO
-INPUT					= Documentation/Markdown Modules Samples~/MOBA/Assets/
+INPUT					= Markdown \
+							../Modules \
+							../Samples~/MOBA/Assets/ \
+							../Samples~/Tutorial/Assets/
 RECURSIVE				= YES
 GENERATE_LATEX			= NO
-IMAGE_PATH				= Documentation/
+INLINE_INHERITED_MEMB 	= YES
+SORT_BY_SCOPE_NAME		= YES
+WARN_IF_UNDOCUMENTED	= NO
+EXTRACT_STATIC 			= YES
+FULL_PATH_NAMES			= NO
 
 # Theming
 GENERATE_TREEVIEW		= YES
-HTML_HEADER				= Documentation/header.html
-HTML_EXTRA_FILES		= Documentation/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
-						  Documentation/doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js
-HTML_EXTRA_STYLESHEET	= Documentation/doxygen-awesome-css/doxygen-awesome.css \
-						  Documentation/doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
-						  Documentation/doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
-						  Documentation/custom.css
+HTML_HEADER				= header.html
+HTML_EXTRA_FILES		= doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
+						  doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js
+HTML_EXTRA_STYLESHEET	= doxygen-awesome-css/doxygen-awesome.css \
+						  doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
+						  doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
+						  custom.css

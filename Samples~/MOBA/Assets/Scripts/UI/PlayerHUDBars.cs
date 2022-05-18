@@ -5,13 +5,6 @@ using UnityEngine.UI;
 
 namespace MOBAExample
 {
-	public enum HealthTextStyle
-	{
-		Hidden,
-		Percentage,
-		Value
-	}
-
 	public class PlayerHUDBars : MonoBehaviour
 	{
 		[SerializeField] private int m_TextStyleDecimalPlaces = 2;

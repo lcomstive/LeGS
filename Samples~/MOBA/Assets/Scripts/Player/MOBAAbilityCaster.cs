@@ -78,7 +78,7 @@ namespace MOBAExample
 
 			Abilities = new AbilityCastInfo[Character.Info.Abilities.Length];
 			for(int i = 0; i < Character.Info.Abilities.Length; i++)
-				Abilities[i]= new AbilityCastInfo(i, Character.Info.Abilities[i], this);
+				Abilities[i] = new AbilityCastInfo(i, Character.Info.Abilities[i], this);
 		}
 
 		private void Update()
@@ -91,24 +91,28 @@ namespace MOBAExample
 
 			for (int i = 0; i < m_AbilityInputs.Length; i++)
 			{
-				MOBAAbility ability = Abilities[i].Ability;
-				if (Abilities[i].CanCast &&
-					Character.CanCast(ability) &&
 #if ENABLE_INPUT_SYSTEM
-					m_AbilityInputs[i].action.IsPressed()
+					if(m_AbilityInputs[i].action.IsPressed())
 #else
-					Input.GetKeyDown(m_AbilityInputs[i])
+					if(Input.GetKeyDown(m_AbilityInputs[i]))
 #endif
-						)
-				{
-					if(ability.CostType == AbilityCost.Mana) Character.Mana -= ability.Cost;
-					if(ability.CostType == AbilityCost.Health) Character.ApplyDamage(ability.Cost, Character, DamageTypes.True);
-
-					ability.Activate(Character, Character.gameObject);
-					Abilities[i].ResetCooldown();
-					break;
-				}
+						CastAbility(i);
 			}
+		}
+
+		public void CastAbility(int index)
+		{
+			if(index < 0 || index >= Abilities.Length)
+				return;
+			MOBAAbility ability = Abilities[index].Ability;
+			if (!Abilities[index].CanCast || !Character.CanCast(ability))
+				return;
+
+			if (ability.CostType == AbilityCost.Mana)	Character.Mana -= ability.Cost;
+			if (ability.CostType == AbilityCost.Health) Character.ApplyDamage(ability.Cost, Character, DamageTypes.True);
+
+			ability.Activate(Character, Character.gameObject);
+			Abilities[index].ResetCooldown();
 		}
 	}
 }

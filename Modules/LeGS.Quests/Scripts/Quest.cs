@@ -33,7 +33,7 @@ namespace LEGS.Quests
 	{
 		public Quest Quest { get; private set; }
 
-		public QuestEventArgs(Quest quest) => Quest = quest;
+		public QuestEventArgs(IEntity entity, Quest quest) : base(entity) => Quest = quest;
 	}
 
 	[System.Serializable]
@@ -80,7 +80,7 @@ namespace LEGS.Quests
 			Parameters[name].Value = value;
 
 			ParameterChanged?.Invoke(this, name, value);
-			EventManager.Publish(QuestParameterUpdateEventID, new QuestEventArgs(this));
+			EventManager.Publish(QuestParameterUpdateEventID, new QuestEventArgs(null, this));
 		}
 
 		public (string[], QuestParameter[]) GetParameters() => (Parameters.Keys.ToArray(), Parameters.Values.ToArray());
@@ -94,14 +94,14 @@ namespace LEGS.Quests
 
 			// Check if quest is beginning
 			if (State == QuestState.InProgress)
-				EventManager.Publish(QuestBeginEventID, new QuestEventArgs(this));
+				EventManager.Publish(QuestBeginEventID, new QuestEventArgs(null, this));
 
 			// Check if quest is going into a state representing finished
 			if ((byte)State > (byte)QuestState.InProgress)
-				EventManager.Publish(QuestEndEventID, new QuestEventArgs(this));
+				EventManager.Publish(QuestEndEventID, new QuestEventArgs(null, this));
 
 			StateChanged?.Invoke(this);
-			EventManager.Publish(QuestStatusChangeEventID, new QuestEventArgs(this));
+			EventManager.Publish(QuestStatusChangeEventID, new QuestEventArgs(null, this));
 		}
 
 		/// <summary>

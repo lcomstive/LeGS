@@ -42,7 +42,7 @@ namespace LEGS
 		private IEntity m_Entity;
 		private ushort m_EntityHealthChangeEventID, m_EntityDeathEventID;
 
-		private void Start()
+		private void Awake()
 		{
 			m_Entity = GetComponent<IEntity>();
 			m_EntityDeathEventID = EventManager.RegisterEvent<EntityDeathEventArgs>(EntityDeathEventArgs.EventName);
@@ -54,8 +54,9 @@ namespace LEGS
 		public void ApplyDamage(float amount, IEntity sender)
 		{
 			Health = Mathf.Clamp(Health - amount, 0.0f, MaxHealth);
+			EventManager.Publish(m_EntityHealthChangeEventID, new EntityHealthChangeEventArgs(m_Entity, this, sender, amount));
 
-			if(Health == 0)
+			if (Health == 0)
 			{
 				EventManager.Publish(m_EntityDeathEventID, new EntityDeathEventArgs(m_Entity, sender));
 				OnDied?.Invoke();

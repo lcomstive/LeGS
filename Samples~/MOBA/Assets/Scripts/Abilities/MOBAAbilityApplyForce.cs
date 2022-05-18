@@ -9,7 +9,15 @@ namespace MOBAExample
 	[CreateAssetMenu(menuName = "MOBA/Abilities/Apply Force", fileName = "Apply Force")]
     public class MOBAAbilityApplyForce : MOBAAbility
     {
-		[SerializeField] private Vector3 m_Force;
+		[SerializeField] private float m_Force;
+		[SerializeField] private Vector3 m_Direction;
+
+		[SerializeField, Tooltip("If enabled, direction is relative to entity forward")]
+		private bool m_RelativeToPlayer = true;
+
+		[SerializeField, Tooltip("If enabled, direction is overridden by PlayerAim.AimDirection")]
+		private bool m_AimOverrideDirection;
+
 		[SerializeField] private bool m_IgnoreMass = false;
 
 		/// <summary>
@@ -24,8 +32,14 @@ namespace MOBAExample
 		{
 			if(!gameObject.TryGetComponent(out Rigidbody rigidbody))
 				return;
-			rigidbody.AddRelativeForce(
-				m_Force,
+			Vector3 force = m_Direction * m_Force;
+			if(m_AimOverrideDirection && gameObject.TryGetComponent(out PlayerAim aim))
+				force = aim.AimDirection * m_Force;
+			else if(m_RelativeToPlayer)
+				force = gameObject.transform.TransformDirection(m_Direction) * m_Force;
+
+			rigidbody.AddForce(
+				force,
 				m_IgnoreMass ? ForceMode.VelocityChange : ForceMode.Impulse
 			);
 

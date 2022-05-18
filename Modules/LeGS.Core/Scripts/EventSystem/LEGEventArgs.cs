@@ -13,6 +13,8 @@
 		/// <summary>
 		/// <see cref="IEntity"/> that sent this event
 		/// </summary>
-		public IEntity Entity { get; protected set; }
+		public IEntity Entity { get; private set; }
+
+		public LEGEventArgs(IEntity sender) => Entity = sender;
 	}
 }

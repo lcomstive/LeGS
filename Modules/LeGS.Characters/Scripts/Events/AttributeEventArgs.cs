@@ -12,10 +12,6 @@
 		public Attribute Attribute { get; private set; }
 
 		/// <param name="entity"><see cref="IEntity"/> causing change to <paramref name="attribute"/></param>
-		public AttributeEventArgs(IEntity entity, Attribute attribute)
-		{
-			Entity = entity;
-			Attribute = attribute;
-		}
+		public AttributeEventArgs(IEntity entity, Attribute attribute) : base(entity) => Attribute = attribute;
 	}
 }

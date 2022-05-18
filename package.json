@@ -11,7 +11,12 @@
 		{
 			"displayName": "MOBA Sample",
 			"description": "MOBA-style gameplay example game",
-			"path": "Samples~/MOBA"
+			"path": "Samples~/MOBA/Assets"
+		},
+		{
+			"displayName": "Tutorial",
+			"description": "Example project with walkthrough on basic usage",
+			"path": "Samples~/Tutorial/Assets"
 		}
 	]
 }
