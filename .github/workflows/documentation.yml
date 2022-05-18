@@ -18,6 +18,7 @@ jobs:
         JSON=$(cat package.json)
         REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\""
         if [[ $JSON =~ $REGEX ]]; then
+          echo LeGS v${BASH_REMATCH[1]}
           echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
         fi
 
@@ -26,7 +27,7 @@ jobs:
       uses: mattnotmitt/doxygen-action@v1.9.2
       with:
         working-directory: 'Documentation/'
-        doxyfile-path: 'Documentation/Doxyfile'
+        doxyfile-path: 'Doxyfile'
 
     # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
     - name: Copy media
