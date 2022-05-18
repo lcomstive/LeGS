@@ -5,6 +5,5 @@ var interfaceLEGS_1_1Characters_1_1ICharacter =
     [ "GetStatusEffect< T >", "interfaceLEGS_1_1Characters_1_1ICharacter.html#a0bca7d20c1364a2827ad32b77b7644e4", null ],
     [ "RemoveStatusEffect", "interfaceLEGS_1_1Characters_1_1ICharacter.html#ab76ba1affa0d23f9489ec57f33f697f7", null ],
     [ "DisplayName", "interfaceLEGS_1_1Characters_1_1ICharacter.html#abd51de275db84cc01174741858a13907", null ],
-    [ "Health", "interfaceLEGS_1_1Characters_1_1ICharacter.html#a19bb82d3b6e232e9da75df3730c8b369", null ],
-    [ "MaxHealth", "interfaceLEGS_1_1Characters_1_1ICharacter.html#a43e65a51cb91ac614af4eff945dc5c5f", null ]
+    [ "Health", "interfaceLEGS_1_1Characters_1_1ICharacter.html#a19bb82d3b6e232e9da75df3730c8b369", null ]
 ];

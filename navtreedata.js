@@ -1,24 +1,26 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -31,18 +33,22 @@ var NAVTREE =
     [ "LeGS Items", "md_Markdown_Items_LeGS_Items.html", null ],
     [ "LeGS Quests", "md_Markdown_Quests_LeGS_Quests.html", null ],
     [ "LeGS Shop", "md_Markdown_Shop_LeGS_Shop.html", null ],
-    [ "~_MOBA_Assets_MOBASample MOBASample", "md__home_runner_work_LeGS_LeGS_Samples.html", [
-      [ "Interfaces", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md1", null ],
-      [ "Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md2", [
-        [ "Creating Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md3", [
-          [ "Example", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md4", null ]
+    [ "MOBASample", "md__github_workspace_Samples__MOBA_Assets_MOBASample.html", null ],
+    [ "LeGS Basics", "md__github_workspace_Samples__Tutorial_Assets_Index.html", [
+      [ "Interfaces", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md1", null ],
+      [ "Events", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md2", [
+        [ "Creating Events", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md3", [
+          [ "Example", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md4", null ]
         ] ],
-        [ "Listening to Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md5", [
-          [ "Example", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md6", null ],
-          [ "Built-In Events", "md__home_runner_work_LeGS_LeGS_Samples.html#autotoc_md7", null ]
+        [ "Listening to Events", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md5", [
+          [ "Example", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md6", null ],
+          [ "Built-In Events", "md__github_workspace_Samples__Tutorial_Assets_Index.html#autotoc_md7", null ]
         ] ]
       ] ]
     ] ],
+    [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html", null ],
+    [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
+    [ "Tutorial 1 - Entities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -69,7 +75,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "abilities.html",
-"classMOBAExample_1_1GiveExperienceOnDeath.html"
+"classLEGS_1_1Quests_1_1QuestManager.html",
+"md_Markdown_Shop_LeGS_Shop.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
