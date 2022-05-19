@@ -97,7 +97,7 @@ Transform:
   m_Children:
   - {fileID: 2618386365888856961}
   m_Father: {fileID: 7304447489377203025}
-  m_RootOrder: -1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3465169733834086417
 GameObject:
@@ -129,7 +129,7 @@ Transform:
   m_Children:
   - {fileID: 882097690000478521}
   m_Father: {fileID: 2618386365888856961}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4469448385804018940
 GameObject:
@@ -162,7 +162,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2618386365888856961}
-  m_RootOrder: -1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &207905114713092579
 MeshFilter:
@@ -244,7 +244,7 @@ Transform:
   m_Children:
   - {fileID: 7135125742126650281}
   m_Father: {fileID: 2618386365888856961}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5485800488805170519
 GameObject:
@@ -277,7 +277,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2618386365888856961}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8126025635762677832
 MeshFilter:
@@ -359,7 +359,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7304447489377203025}
-  m_RootOrder: -1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2192055747540131133
 SkinnedMeshRenderer:
@@ -449,7 +449,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2618386365888856961}
-  m_RootOrder: -1
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.754}
 --- !u!33 &7292125312868704341
 MeshFilter:
@@ -537,7 +537,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 19641857816993736, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
@@ -587,6 +586,10 @@ PrefabInstance:
     - target: {fileID: 4518261817062435920, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553445071829131909, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
+      propertyPath: m_Experience
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4767841321134419031, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
       propertyPath: m_Mass
@@ -653,13 +656,6 @@ PrefabInstance:
       value: Slime 3 Crown Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6216532115693788942, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3552650316251074937}
-    - targetCorrespondingSourceObject: {fileID: 6216532115693788942, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5909590959506908469}
   m_SourcePrefab: {fileID: 100100000, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
 --- !u!4 &7304447489377203025 stripped
 Transform:

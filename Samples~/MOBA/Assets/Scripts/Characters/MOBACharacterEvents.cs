@@ -1,4 +1,4 @@
-using LEGS;
+﻿using LEGS;
 
 namespace MOBAExample
 {
@@ -11,7 +11,7 @@ namespace MOBAExample
 
 		public MOBACharacter Character { get; private set; }
 
-		public CharacterChangedEventArgs(MOBACharacter character) => Entity = Character = character;
+		public CharacterChangedEventArgs(MOBACharacter character) : base(character) => Character = character;
 	}
 
 	/// <summary>
@@ -24,11 +24,8 @@ namespace MOBAExample
 		
 		public AbilityCastInfo Info { get; private set; }
 
-		public AbilityCastInfoChangedEventArgs(AbilityCastInfo info)
-		{
-			Info = info;
-			Entity = info.Caster.Character;
-		}
+		public AbilityCastInfoChangedEventArgs(AbilityCastInfo info) : base(info.Caster.Character)
+			=> Info = info;
 	}
 
 }

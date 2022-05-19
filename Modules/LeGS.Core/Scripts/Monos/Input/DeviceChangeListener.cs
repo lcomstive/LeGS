@@ -1,4 +1,4 @@
-#if ENABLE_INPUT_SYSTEM
+﻿#if ENABLE_INPUT_SYSTEM
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -20,11 +20,8 @@ namespace LEGS
 		public string NewControlScheme => Input.currentControlScheme;
 		public PlayerInput Input { get; private set; }
 
-		public DeviceChangeEventArgs(PlayerInput input, IEntity sender = null)
-		{
-			Input = input;
-			Entity = sender;
-		}
+		public DeviceChangeEventArgs(PlayerInput input, IEntity sender = null) : base(sender)
+			=> Input = input;
 	}
 
 	public class DeviceChangeListener : MonoBehaviour

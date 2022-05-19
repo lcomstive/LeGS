@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace LEGS
@@ -53,6 +54,8 @@ namespace LEGS
 			m_EventNames.Add(eventID, name);
 			m_Queues.Add(eventID, new EventQueue<T>());
 
+			EventRegistered?.Invoke(eventID, typeof(T));
+
 			return eventID;
 		}
 
@@ -71,8 +74,11 @@ namespace LEGS
 		/// </summary>
 		public static void DeregisterEvent(ushort id)
 		{
-			if (m_Queues.ContainsKey(id))
+			if(m_Queues.ContainsKey(id))
+			{
+				EventDeregistered(id, m_Queues[id].GetType());
 				m_Queues.Remove(id);
+			}
 		}
 
 		/// <summary>
@@ -172,6 +178,8 @@ namespace LEGS
 			}
 
 			queue.Invoke(args);
+
+			EventPublished?.Invoke(eventID, args);
 			// UnityEngine.Debug.Log($"Successfully published event {GetEventName(eventID)} [{typeof(T).Name}]");
 
 			return true;
@@ -192,5 +200,20 @@ namespace LEGS
 		/// Raises an event and informs listeners. Uses default <see cref="LEGEventArgs"/> as event type.
 		/// </summary>
 		public static bool Publish(string eventName) => Publish<LEGEventArgs>(GetEventID(eventName), null);
+
+		/// <summary>
+		/// Gets all registered event IDs
+		/// </summary>
+		/// <returns></returns>
+		public static List<ushort> GetEventIDs() => m_EventIDs.Values.ToList();
+
+		public static Type GetEventType(ushort id) => m_Queues.ContainsKey(id) ? m_Queues[id].GetType() : null;
+
+		public delegate void OnEventChanged(ushort id, Type eventType);
+		public delegate void OnEventPublished(ushort id, object args);
+
+		public static event OnEventChanged EventRegistered;
+		public static event OnEventChanged EventDeregistered;
+		public static event OnEventPublished EventPublished;
 	}
 }

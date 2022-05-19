@@ -1,4 +1,4 @@
-#if ENABLE_INPUT_SYSTEM
+﻿#if ENABLE_INPUT_SYSTEM
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,9 +11,8 @@ namespace LEGS
 		public PlayerInput PlayerInput { get; private set; }
 		public InputAction.CallbackContext Context { get; private set; }
 
-		public LEGInputEventArgs(IEntity sender, InputAction.CallbackContext context, PlayerInput input)
+		public LEGInputEventArgs(IEntity sender, InputAction.CallbackContext context, PlayerInput input) : base(sender)
 		{
-			Entity = sender;
 			Context = context;
 			PlayerInput = input;
 		}

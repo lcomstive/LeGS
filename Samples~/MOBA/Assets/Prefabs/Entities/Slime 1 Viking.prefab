@@ -5,9 +5,20 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19641857816993736, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19641857816993736, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527227584172887372, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2172340102021178599, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -65,5 +76,4 @@ PrefabInstance:
       value: Slime 1 Viking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f43d19450c09634bb0cbaccc118748a, type: 3}
