@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['totaldamage_0',['TotalDamage',['../a00390.html#aedce1732b3c3eeeb13063b68449303d9',1,'LEGS::DamageOverTimeStatusEffect']]],
-  ['totalmana_1',['TotalMana',['../a00510.html#aa87ab5271232c000a5c7221d43dafdb9',1,'MOBAExample::StatusEffectChangeMana']]]
+  ['name_0',['Name',['../a00441.html#ad0a63d05e49f1abb1c913457ec233675',1,'LEGS::Quests::Quest']]]
 ];

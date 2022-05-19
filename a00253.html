@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=11" />
 	<meta name="generator" content="Doxygen 1.9.2" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>LeGS: LEGS.Shop Namespace Reference</title>
+	<title>LeGS: LEGS.Abilities Namespace Reference</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -98,37 +98,41 @@ $(document).ready(function(){initNavTree('a00253.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
-  <div class="headertitle"><div class="title">LEGS.Shop Namespace Reference</div></div>
+<a href="#nested-classes">Classes</a>  </div>
+  <div class="headertitle"><div class="title">LEGS.Abilities Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00430.html">Currency</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a currency, with value ranging from 0-999 with an accompanying enum for units (thousands, millions, etc.).  <a href="a00430.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00285.html">Ability</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ScriptableObject version of an <a class="el" href="a00273.html" title="An activateable script that modifies a character or the world in some form">IAbility</a> for convenience  <a href="a00285.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a0bb8ab24d2e5673f1b2844a95a29c420"><td class="memItemLeft" align="right" valign="top"><a id="a0bb8ab24d2e5673f1b2844a95a29c420" name="a0bb8ab24d2e5673f1b2844a95a29c420"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CurrencyUnit</b> : byte { <br />
-&#160;&#160;<b>None</b> = 0
-, <b>Thousand</b>
-, <b>Million</b>
-, <b>Billion</b>
-, <br />
-&#160;&#160;<b>Trillion</b>
-<br />
- }</td></tr>
-<tr class="separator:a0bb8ab24d2e5673f1b2844a95a29c420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00289.html">AbilityAddStatusEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a status effect to the casting entity  <a href="a00289.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">AbilityApplyForce</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds instant force to attached Rigidbody  <a href="a00293.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00277.html">AbilityInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended to be added to GameObjects that have been cast from abilities. Helpful for projectile-based abilities and identifying who cast them.  <a href="a00277.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00297.html">AbilitySpawnObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00285.html" title="ScriptableObject version of an IAbility for convenience">Ability</a> that spawns an object  <a href="a00297.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html">IAbility</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An activateable script that modifies a character or the world in some form  <a href="a00273.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00281.html">SimpleAbilityCaster</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic class that activates an ability on keypress, with cooldown functionality  <a href="a00281.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00246.html">LEGS</a></li><li class="navelem"><a class="el" href="a00253.html">Shop</a></li>
+    <li class="navelem"><a class="el" href="a00252.html">LEGS</a></li><li class="navelem"><a class="el" href="a00253.html">Abilities</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

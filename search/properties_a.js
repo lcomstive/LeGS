@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sender_0',['Sender',['../a00318.html#a59e497b6869f1affc05e9c7ade9f2b36',1,'LEGS::EntityHealthChangeEventArgs']]]
+  ['quest_0',['Quest',['../a00437.html#aacc1e283d4a18e3ac90b36724cc0c985',1,'LEGS::Quests::QuestEventArgs']]]
 ];

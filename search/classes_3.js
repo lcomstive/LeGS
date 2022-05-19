@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['entity_0',['Entity',['../a00382.html',1,'LEGS']]],
-  ['entitydeatheventargs_1',['EntityDeathEventArgs',['../a00322.html',1,'LEGS']]],
-  ['entityhealthchangeeventargs_2',['EntityHealthChangeEventArgs',['../a00318.html',1,'LEGS']]],
-  ['eventmanager_3',['EventManager',['../a00330.html',1,'LEGS']]],
-  ['extensions_4',['Extensions',['../a00342.html',1,'LEGS']]]
+  ['damageable_0',['Damageable',['../a00389.html',1,'LEGS']]],
+  ['damageovertimestatuseffect_1',['DamageOverTimeStatusEffect',['../a00409.html',1,'LEGS']]],
+  ['damagepopup_2',['DamagePopup',['../a00541.html',1,'MOBAExample']]],
+  ['destroyafterseconds_3',['DestroyAfterSeconds',['../a00393.html',1,'LEGS']]],
+  ['destroyoncollision_4',['DestroyOnCollision',['../a00397.html',1,'LEGS']]]
 ];

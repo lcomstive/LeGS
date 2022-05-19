@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['simpleabilitycaster_0',['SimpleAbilityCaster',['../a00274.html',1,'LEGS::Abilities']]],
-  ['statuseffect_1',['StatusEffect',['../a00394.html',1,'LEGS']]],
-  ['statuseffectchangeargs_2',['StatusEffectChangeArgs',['../a00326.html',1,'LEGS']]],
-  ['statuseffectchangemana_3',['StatusEffectChangeMana',['../a00510.html',1,'MOBAExample']]],
-  ['statuseffectmodifyattribute_4',['StatusEffectModifyAttribute',['../a00314.html',1,'LEGS::Characters']]]
+  ['quest_0',['Quest',['../a00441.html',1,'LEGS::Quests']]],
+  ['questeventargs_1',['QuestEventArgs',['../a00437.html',1,'LEGS::Quests']]],
+  ['questmanager_2',['QuestManager',['../a00445.html',1,'LEGS::Quests']]],
+  ['questparameter_3',['QuestParameter',['../a00433.html',1,'LEGS::Quests']]]
 ];

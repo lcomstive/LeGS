@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=11" />
 	<meta name="generator" content="Doxygen 1.9.2" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>LeGS: LEGS.Characters.Attribute Class Reference</title>
+	<title>LeGS: Member List</title>
 	<link href="tabs.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('a00294.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('a00297.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,189 +97,21 @@ $(document).ready(function(){initNavTree('a00294.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="#events">Events</a> &#124;
-<a href="a00291.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">LEGS.Characters.Attribute Class Reference</div></div>
+  <div class="headertitle"><div class="title">LEGS.Abilities.AbilitySpawnObject Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>An attribute on a character with modifiers.  
- <a href="a00294.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab97c3911e112a4321e989d587c2fda6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#ab97c3911e112a4321e989d587c2fda6a">Attribute</a> (string name=&quot;Attribute&quot;, float baseValue=0.0f)</td></tr>
-<tr class="separator:ab97c3911e112a4321e989d587c2fda6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81fbe08ad9aa5972c63b3cd578314f41"><td class="memItemLeft" align="right" valign="top"><a id="a81fbe08ad9aa5972c63b3cd578314f41" name="a81fbe08ad9aa5972c63b3cd578314f41"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAttributeChange</b> (<a class="el" href="a00294.html">Attribute</a> attribute)</td></tr>
-<tr class="separator:a81fbe08ad9aa5972c63b3cd578314f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a78febdbe52e0e5cea52748fdc522719f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a78febdbe52e0e5cea52748fdc522719f">CalculateCurrentValue</a> ()</td></tr>
-<tr class="memdesc:a78febdbe52e0e5cea52748fdc522719f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <a class="el" href="a00294.html#a87f9a2d8897accdf66de77de52b4818f" title="Final calculated value. This is equal to">CurrentValue</a> using <a class="el" href="a00294.html#aaf6c9fe72cc1ff236f772eb7e44cef23" title="Base value for calculations">BaseValue</a>, <a class="el" href="a00294.html#ae00a3a4bf72f9130818c0b7e787ed8b8" title="Value to add to base value, before multiplication">ModifierAdd</a> and <a class="el" href="a00294.html#a21f1146cca7bda3ca8810d196b3f46fb" title="Value to multiply by BaseValue + ModifierAdd">ModifierMultiplier</a>.  <a href="a00294.html#a78febdbe52e0e5cea52748fdc522719f">More...</a><br /></td></tr>
-<tr class="separator:a78febdbe52e0e5cea52748fdc522719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1f6e4df43f85b0773b6482d966219f"><td class="memItemLeft" align="right" valign="top"><a id="aef1f6e4df43f85b0773b6482d966219f" name="aef1f6e4df43f85b0773b6482d966219f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FireModifierChangedEvent</b> ()</td></tr>
-<tr class="memdesc:aef1f6e4df43f85b0773b6482d966219f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs listeners that a modifier has been changed <br /></td></tr>
-<tr class="separator:aef1f6e4df43f85b0773b6482d966219f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aa5203d117bdc582fd401a9b1e95642be"><td class="memItemLeft" align="right" valign="top"><a id="aa5203d117bdc582fd401a9b1e95642be" name="aa5203d117bdc582fd401a9b1e95642be"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_IsDirty</b> = true</td></tr>
-<tr class="memdesc:aa5203d117bdc582fd401a9b1e95642be"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if <a class="el" href="a00294.html#a78febdbe52e0e5cea52748fdc522719f" title="Sets CurrentValue using BaseValue, ModifierAdd and ModifierMultiplier.">CalculateCurrentValue</a> needs to be called when next appropriate <br /></td></tr>
-<tr class="separator:aa5203d117bdc582fd401a9b1e95642be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:adad367a3ef35e2ba40bc6448bb6925c4"><td class="memItemLeft" align="right" valign="top"><a id="adad367a3ef35e2ba40bc6448bb6925c4" name="adad367a3ef35e2ba40bc6448bb6925c4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [getset]</code></td></tr>
-<tr class="memdesc:adad367a3ef35e2ba40bc6448bb6925c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name <br /></td></tr>
-<tr class="separator:adad367a3ef35e2ba40bc6448bb6925c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6c9fe72cc1ff236f772eb7e44cef23"><td class="memItemLeft" align="right" valign="top"><a id="aaf6c9fe72cc1ff236f772eb7e44cef23" name="aaf6c9fe72cc1ff236f772eb7e44cef23"></a>
-float?&#160;</td><td class="memItemRight" valign="bottom"><b>BaseValue</b><code> [getset]</code></td></tr>
-<tr class="memdesc:aaf6c9fe72cc1ff236f772eb7e44cef23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base value for calculations <br /></td></tr>
-<tr class="separator:aaf6c9fe72cc1ff236f772eb7e44cef23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae00a3a4bf72f9130818c0b7e787ed8b8"><td class="memItemLeft" align="right" valign="top"><a id="ae00a3a4bf72f9130818c0b7e787ed8b8" name="ae00a3a4bf72f9130818c0b7e787ed8b8"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>ModifierAdd</b><code> [getset]</code></td></tr>
-<tr class="memdesc:ae00a3a4bf72f9130818c0b7e787ed8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to add to base value, before multiplication <br /></td></tr>
-<tr class="separator:ae00a3a4bf72f9130818c0b7e787ed8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21f1146cca7bda3ca8810d196b3f46fb"><td class="memItemLeft" align="right" valign="top"><a id="a21f1146cca7bda3ca8810d196b3f46fb" name="a21f1146cca7bda3ca8810d196b3f46fb"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>ModifierMultiplier</b><code> [getset]</code></td></tr>
-<tr class="memdesc:a21f1146cca7bda3ca8810d196b3f46fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to multiply by <code>BaseValue + ModifierAdd</code> <br /></td></tr>
-<tr class="separator:a21f1146cca7bda3ca8810d196b3f46fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f9a2d8897accdf66de77de52b4818f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a87f9a2d8897accdf66de77de52b4818f">CurrentValue</a><code> [get]</code></td></tr>
-<tr class="memdesc:a87f9a2d8897accdf66de77de52b4818f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final calculated value. This is equal to  <a href="a00294.html#a87f9a2d8897accdf66de77de52b4818f">More...</a><br /></td></tr>
-<tr class="separator:a87f9a2d8897accdf66de77de52b4818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
-Events</h2></td></tr>
-<tr class="memitem:ae15fe6778842eca7019ba58887b4d479"><td class="memItemLeft" align="right" valign="top"><a id="ae15fe6778842eca7019ba58887b4d479" name="ae15fe6778842eca7019ba58887b4d479"></a>
-OnAttributeChange&#160;</td><td class="memItemRight" valign="bottom"><b>BaseValueChanged</b></td></tr>
-<tr class="memdesc:ae15fe6778842eca7019ba58887b4d479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs when <a class="el" href="a00294.html#aaf6c9fe72cc1ff236f772eb7e44cef23" title="Base value for calculations">BaseValue</a> has changed <br /></td></tr>
-<tr class="separator:ae15fe6778842eca7019ba58887b4d479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c834b7bf26d99d149f964288b886953"><td class="memItemLeft" align="right" valign="top"><a id="a2c834b7bf26d99d149f964288b886953" name="a2c834b7bf26d99d149f964288b886953"></a>
-OnAttributeChange&#160;</td><td class="memItemRight" valign="bottom"><b>ModifierChanged</b></td></tr>
-<tr class="memdesc:a2c834b7bf26d99d149f964288b886953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs when either <a class="el" href="a00294.html#ae00a3a4bf72f9130818c0b7e787ed8b8" title="Value to add to base value, before multiplication">ModifierAdd</a> or <a class="el" href="a00294.html#a21f1146cca7bda3ca8810d196b3f46fb" title="Value to multiply by BaseValue + ModifierAdd">ModifierMultiplier</a> has been changed <br /></td></tr>
-<tr class="separator:a2c834b7bf26d99d149f964288b886953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e0fbd39a375655b99115eb27de3f3e"><td class="memItemLeft" align="right" valign="top"><a id="a29e0fbd39a375655b99115eb27de3f3e" name="a29e0fbd39a375655b99115eb27de3f3e"></a>
-OnAttributeChange&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentValueChanged</b></td></tr>
-<tr class="memdesc:a29e0fbd39a375655b99115eb27de3f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs when the <a class="el" href="a00294.html#a87f9a2d8897accdf66de77de52b4818f" title="Final calculated value. This is equal to">CurrentValue</a> has been changed <br /></td></tr>
-<tr class="separator:a29e0fbd39a375655b99115eb27de3f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Can be used for instance as character's health, attack speed, or strength values.</p>
-<p >Final value is calculated as <code>(BaseValue + ModifierAdd) * ModifierMultiply</code></p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab97c3911e112a4321e989d587c2fda6a" name="ab97c3911e112a4321e989d587c2fda6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab97c3911e112a4321e989d587c2fda6a">&#9670;&nbsp;</a></span>Attribute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LEGS.Characters.Attribute.Attribute </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;Attribute&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>baseValue</em> = <code>0.0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Display name of this attribute</td></tr>
-    <tr><td class="paramname">baseValue</td><td>Sets <a class="el" href="a00294.html#aaf6c9fe72cc1ff236f772eb7e44cef23" title="Base value for calculations">BaseValue</a></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a78febdbe52e0e5cea52748fdc522719f" name="a78febdbe52e0e5cea52748fdc522719f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78febdbe52e0e5cea52748fdc522719f">&#9670;&nbsp;</a></span>CalculateCurrentValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void LEGS.Characters.Attribute.CalculateCurrentValue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Sets <a class="el" href="a00294.html#aa5203d117bdc582fd401a9b1e95642be" title="True if CalculateCurrentValue needs to be called when next appropriate">m_IsDirty</a> to false. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a87f9a2d8897accdf66de77de52b4818f" name="a87f9a2d8897accdf66de77de52b4818f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87f9a2d8897accdf66de77de52b4818f">&#9670;&nbsp;</a></span>CurrentValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float LEGS.Characters.Attribute.CurrentValue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p ><code>(BaseValue + ModifierAdd) * ModifierMultiply</code> </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Attribute.cs</li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00297.html">LEGS.Abilities.AbilitySpawnObject</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00297.html#a2f6656400f7a6591c3d28e16b322f2e2">Activate</a>(IEntity caster, GameObject gameObject)</td><td class="entry"><a class="el" href="a00297.html">LEGS.Abilities.AbilitySpawnObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00285.html#a05603810d8a7a59a7cc2b51a197c0bd4">Cooldown</a></td><td class="entry"><a class="el" href="a00285.html">LEGS.Abilities.Ability</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00285.html#aeb6bc9f7b82ee23b6f7386c8e3d963f1">Description</a></td><td class="entry"><a class="el" href="a00285.html">LEGS.Abilities.Ability</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00285.html#a2eca95cbdfd6d47e20c59d5dffe60247">DisplayName</a></td><td class="entry"><a class="el" href="a00285.html">LEGS.Abilities.Ability</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00246.html">LEGS</a></li><li class="navelem"><a class="el" href="a00248.html">Characters</a></li><li class="navelem"><a class="el" href="a00294.html">Attribute</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

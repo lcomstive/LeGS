@@ -1,87 +1,89 @@
 var annotated_dup =
 [
-    [ "LEGS", "a00246.html", [
-      [ "Abilities", "a00247.html", [
-        [ "Ability", "a00278.html", "a00278" ],
-        [ "AbilityAddStatusEffect", "a00282.html", "a00282" ],
-        [ "AbilityApplyForce", "a00286.html", "a00286" ],
-        [ "AbilityInfo", "a00270.html", null ],
-        [ "AbilitySpawnObject", "a00290.html", "a00290" ],
-        [ "IAbility", "a00266.html", "a00266" ],
-        [ "SimpleAbilityCaster", "a00274.html", "a00274" ]
+    [ "LEGS", "a00252.html", [
+      [ "Abilities", "a00253.html", [
+        [ "Ability", "a00285.html", "a00285" ],
+        [ "AbilityAddStatusEffect", "a00289.html", "a00289" ],
+        [ "AbilityApplyForce", "a00293.html", "a00293" ],
+        [ "AbilityInfo", "a00277.html", null ],
+        [ "AbilitySpawnObject", "a00297.html", "a00297" ],
+        [ "IAbility", "a00273.html", "a00273" ],
+        [ "SimpleAbilityCaster", "a00281.html", "a00281" ]
       ] ],
-      [ "Characters", "a00248.html", [
-        [ "Attribute", "a00294.html", "a00294" ],
-        [ "AttributeEventArgs", "a00298.html", "a00298" ],
-        [ "Character", "a00310.html", "a00310" ],
-        [ "IAttributeHolder", "a00302.html", "a00302" ],
-        [ "ICharacter", "a00306.html", "a00306" ],
-        [ "StatusEffectModifyAttribute", "a00314.html", "a00314" ]
+      [ "Characters", "a00254.html", [
+        [ "Attribute", "a00301.html", "a00301" ],
+        [ "AttributeEventArgs", "a00305.html", "a00305" ],
+        [ "Character", "a00317.html", "a00317" ],
+        [ "IAttributeHolder", "a00309.html", "a00309" ],
+        [ "ICharacter", "a00313.html", "a00313" ],
+        [ "StatusEffectModifyAttribute", "a00321.html", "a00321" ]
       ] ],
-      [ "Dialogue", "a00249.html", [
-        [ "IDialogue", "a00402.html", null ]
+      [ "Dialogue", "a00255.html", [
+        [ "IDialogue", "a00421.html", null ]
       ] ],
-      [ "Inventory", "a00250.html", [
-        [ "IInventoryItem", "a00406.html", null ]
+      [ "Inventory", "a00256.html", [
+        [ "IInventoryItem", "a00425.html", null ]
       ] ],
-      [ "Items", "a00251.html", [
-        [ "IItem", "a00410.html", null ]
+      [ "Items", "a00257.html", [
+        [ "IItem", "a00429.html", null ]
       ] ],
-      [ "Quests", "a00252.html", [
-        [ "Quest", "a00422.html", "a00422" ],
-        [ "QuestEventArgs", "a00418.html", "a00418" ],
-        [ "QuestManager", "a00426.html", null ],
-        [ "QuestParameter", "a00414.html", null ]
+      [ "Quests", "a00258.html", [
+        [ "Quest", "a00441.html", "a00441" ],
+        [ "QuestEventArgs", "a00437.html", "a00437" ],
+        [ "QuestManager", "a00445.html", "a00445" ],
+        [ "QuestParameter", "a00433.html", "a00433" ]
       ] ],
-      [ "Shop", "a00253.html", [
-        [ "Currency", "a00430.html", null ]
+      [ "Shop", "a00259.html", [
+        [ "Currency", "a00449.html", null ]
       ] ],
-      [ "ApplyForceOnCollision", "a00366.html", null ],
-      [ "Damageable", "a00370.html", "a00370" ],
-      [ "DamageOverTimeStatusEffect", "a00390.html", "a00390" ],
-      [ "DestroyAfterSeconds", "a00374.html", null ],
-      [ "DestroyOnCollision", "a00378.html", null ],
-      [ "Entity", "a00382.html", "a00382" ],
-      [ "EntityDeathEventArgs", "a00322.html", "a00322" ],
-      [ "EntityHealthChangeEventArgs", "a00318.html", "a00318" ],
-      [ "EventManager", "a00330.html", "a00330" ],
-      [ "Extensions", "a00342.html", null ],
-      [ "ICharacter", "a00346.html", "a00346" ],
-      [ "IDamageable", "a00350.html", "a00350" ],
-      [ "IEntity", "a00354.html", "a00354" ],
-      [ "IStatusEffect", "a00358.html", "a00358" ],
-      [ "IStatusEffectReceiver", "a00362.html", "a00362" ],
-      [ "LEGEventArgs", "a00338.html", "a00338" ],
-      [ "StatusEffect", "a00394.html", "a00394" ],
-      [ "StatusEffectChangeArgs", "a00326.html", "a00326" ],
-      [ "TimedStatusEffect", "a00398.html", "a00398" ],
-      [ "TriggerApplyStatus", "a00386.html", null ]
+      [ "ApplyForceOnCollision", "a00381.html", null ],
+      [ "Billboard", "a00385.html", null ],
+      [ "Damageable", "a00389.html", "a00389" ],
+      [ "DamageOverTimeStatusEffect", "a00409.html", "a00409" ],
+      [ "DestroyAfterSeconds", "a00393.html", null ],
+      [ "DestroyOnCollision", "a00397.html", null ],
+      [ "Entity", "a00401.html", "a00401" ],
+      [ "EntityDeathEventArgs", "a00337.html", "a00337" ],
+      [ "EntityHealthChangeEventArgs", "a00333.html", "a00333" ],
+      [ "EventDebugger", "a00325.html", null ],
+      [ "EventManager", "a00345.html", "a00345" ],
+      [ "Extensions", "a00357.html", null ],
+      [ "ICharacter", "a00361.html", "a00361" ],
+      [ "IDamageable", "a00365.html", "a00365" ],
+      [ "IEntity", "a00369.html", "a00369" ],
+      [ "IStatusEffect", "a00373.html", "a00373" ],
+      [ "IStatusEffectReceiver", "a00377.html", "a00377" ],
+      [ "LEGEventArgs", "a00353.html", "a00353" ],
+      [ "StatusEffect", "a00413.html", "a00413" ],
+      [ "StatusEffectChangeArgs", "a00341.html", "a00341" ],
+      [ "TimedStatusEffect", "a00417.html", "a00417" ],
+      [ "TriggerApplyStatus", "a00405.html", null ]
     ] ],
-    [ "MOBAExample", "a00254.html", [
-      [ "AbilityCastInfo", "a00486.html", "a00486" ],
-      [ "AbilityCastInfoChangedEventArgs", "a00470.html", "a00470" ],
-      [ "AbilityCooldownHUD", "a00518.html", null ],
-      [ "AbilityCooldownUI", "a00514.html", null ],
-      [ "AbilityDamageOnCollision", "a00434.html", null ],
-      [ "CharacterChangedEventArgs", "a00466.html", "a00466" ],
-      [ "CharacterExperience", "a00454.html", null ],
-      [ "DamagePopup", "a00522.html", null ],
-      [ "GiveExperienceOnDeath", "a00458.html", null ],
-      [ "HealthHUDBar", "a00526.html", null ],
-      [ "MOBAAbility", "a00438.html", "a00438" ],
-      [ "MOBAAbilityAddStatusEffect", "a00442.html", "a00442" ],
-      [ "MOBAAbilityApplyForce", "a00446.html", "a00446" ],
-      [ "MOBAAbilityCaster", "a00490.html", null ],
-      [ "MOBAAbilitySpawnObject", "a00450.html", "a00450" ],
-      [ "MOBACharacter", "a00462.html", "a00462" ],
-      [ "MOBACharacterInfo", "a00474.html", null ],
-      [ "PlayerAim", "a00498.html", "a00498" ],
-      [ "PlayerHUDBars", "a00530.html", null ],
-      [ "StatusEffectChangeMana", "a00510.html", "a00510" ]
+    [ "MOBAExample", "a00260.html", [
+      [ "AbilityCastInfo", "a00505.html", "a00505" ],
+      [ "AbilityCastInfoChangedEventArgs", "a00489.html", "a00489" ],
+      [ "AbilityCooldownHUD", "a00537.html", null ],
+      [ "AbilityCooldownUI", "a00533.html", null ],
+      [ "AbilityDamageOnCollision", "a00453.html", null ],
+      [ "CharacterChangedEventArgs", "a00485.html", "a00485" ],
+      [ "CharacterExperience", "a00473.html", null ],
+      [ "DamagePopup", "a00541.html", null ],
+      [ "GiveExperienceOnDeath", "a00477.html", null ],
+      [ "HealthHUDBar", "a00545.html", null ],
+      [ "MOBAAbility", "a00457.html", "a00457" ],
+      [ "MOBAAbilityAddStatusEffect", "a00461.html", "a00461" ],
+      [ "MOBAAbilityApplyForce", "a00465.html", "a00465" ],
+      [ "MOBAAbilityCaster", "a00509.html", null ],
+      [ "MOBAAbilitySpawnObject", "a00469.html", "a00469" ],
+      [ "MOBACharacter", "a00481.html", "a00481" ],
+      [ "MOBACharacterInfo", "a00493.html", null ],
+      [ "PlayerAim", "a00517.html", "a00517" ],
+      [ "PlayerHUDBars", "a00549.html", null ],
+      [ "StatusEffectChangeMana", "a00529.html", "a00529" ]
     ] ],
-    [ "FollowTarget", "a00478.html", null ],
-    [ "LookRotate", "a00482.html", null ],
-    [ "MouseLock", "a00494.html", null ],
-    [ "PlayerController", "a00502.html", null ],
-    [ "PlayerRespawn", "a00506.html", null ]
+    [ "FollowTarget", "a00497.html", null ],
+    [ "LookRotate", "a00501.html", null ],
+    [ "MouseLock", "a00513.html", null ],
+    [ "PlayerController", "a00521.html", null ],
+    [ "PlayerRespawn", "a00525.html", null ]
 ];

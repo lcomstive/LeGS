@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['giveexperienceondeath_0',['GiveExperienceOnDeath',['../a00458.html',1,'MOBAExample']]]
+  ['followtarget_0',['FollowTarget',['../a00497.html',1,'']]]
 ];

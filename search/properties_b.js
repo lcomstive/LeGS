@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timeremaining_0',['TimeRemaining',['../a00398.html#a8fd1bf9e9b20e10cc0dbd7e6e199cf49',1,'LEGS::TimedStatusEffect']]]
+  ['receiver_0',['Receiver',['../a00341.html#ac08a6c885c346cf3c788454343825c55',1,'LEGS::StatusEffectChangeArgs']]]
 ];
