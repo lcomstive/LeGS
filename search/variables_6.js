@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parameters_0',['Parameters',['../a00441.html#a8b08e81c4656285b362260898906a70a',1,'LEGS::Quests::Quest']]]
+  ['optional_0',['Optional',['../classLEGS_1_1Quests_1_1QuestParameter.html#a52291c718305c7ff30cecd5bc78e877d',1,'LEGS::Quests::QuestParameter']]]
 ];

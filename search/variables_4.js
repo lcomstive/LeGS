@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_0',['Name',['../a00441.html#ad0a63d05e49f1abb1c913457ec233675',1,'LEGS::Quests::Quest']]]
+  ['m_5fisdirty_0',['m_IsDirty',['../classLEGS_1_1Characters_1_1Attribute.html#aa5203d117bdc582fd401a9b1e95642be',1,'LEGS::Characters::Attribute']]],
+  ['maxvalue_1',['MaxValue',['../classLEGS_1_1Quests_1_1QuestParameter.html#aa9790778cd2951e29cfe88cd2d718d98',1,'LEGS::Quests::QuestParameter']]]
 ];

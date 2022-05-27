@@ -1,10 +1,10 @@
 var modules =
 [
-    [ "Characters", "a00245.html", null ],
-    [ "Dialogue", "a00246.html", null ],
-    [ "Inventory", "a00247.html", null ],
-    [ "Items", "a00248.html", null ],
-    [ "Quests", "a00249.html", null ],
-    [ "Shop", "a00250.html", null ],
-    [ "Samples", "a00251.html", null ]
+    [ "Characters", "group__Characters.html", null ],
+    [ "Dialogue", "group__Dialogue.html", null ],
+    [ "Inventory", "group__Inventory.html", null ],
+    [ "Items", "group__Items.html", null ],
+    [ "Quests", "group__Quests.html", null ],
+    [ "Shop", "group__Shop.html", null ],
+    [ "Samples", "group__Samples.html", null ]
 ];

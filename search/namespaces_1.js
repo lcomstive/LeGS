@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mobaexample_0',['MOBAExample',['../a00260.html',1,'']]]
+  ['mobaexample_0',['MOBAExample',['../namespaceMOBAExample.html',1,'']]]
 ];

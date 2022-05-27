@@ -1,103 +1,106 @@
 var hierarchy =
 [
     [ "EditorWindow", null, [
-      [ "LEGS.EventDebugger", "a00325.html", null ]
+      [ "LEGS.EventDebugger", "classLEGS_1_1EventDebugger.html", null ]
     ] ],
-    [ "LEGS.Abilities.IAbility", "a00273.html", [
-      [ "LEGS.Abilities.Ability", "a00285.html", [
-        [ "LEGS.Abilities.AbilityAddStatusEffect", "a00289.html", null ],
-        [ "LEGS.Abilities.AbilityApplyForce", "a00293.html", null ],
-        [ "LEGS.Abilities.AbilitySpawnObject", "a00297.html", null ]
+    [ "LEGS.Abilities.IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", [
+      [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", [
+        [ "LEGS.Abilities.AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", null ],
+        [ "LEGS.Abilities.AbilityApplyForce", "classLEGS_1_1Abilities_1_1AbilityApplyForce.html", null ],
+        [ "LEGS.Abilities.AbilitySpawnObject", "classLEGS_1_1Abilities_1_1AbilitySpawnObject.html", null ]
       ] ],
-      [ "MOBAExample.MOBAAbility", "a00457.html", [
-        [ "MOBAExample.MOBAAbilityAddStatusEffect", "a00461.html", null ],
-        [ "MOBAExample.MOBAAbilityApplyForce", "a00465.html", null ],
-        [ "MOBAExample.MOBAAbilitySpawnObject", "a00469.html", null ]
+      [ "MOBAExample.MOBAAbility", "classMOBAExample_1_1MOBAAbility.html", [
+        [ "MOBAExample.MOBAAbilityAddStatusEffect", "classMOBAExample_1_1MOBAAbilityAddStatusEffect.html", null ],
+        [ "MOBAExample.MOBAAbilityApplyForce", "classMOBAExample_1_1MOBAAbilityApplyForce.html", null ],
+        [ "MOBAExample.MOBAAbilitySpawnObject", "classMOBAExample_1_1MOBAAbilitySpawnObject.html", null ]
       ] ]
     ] ],
-    [ "LEGS.Characters.Attribute", "a00301.html", null ],
-    [ "LEGS.Characters.IAttributeHolder", "a00309.html", [
-      [ "LEGS.Characters.Character", "a00317.html", [
-        [ "MOBAExample.MOBACharacter", "a00481.html", null ]
+    [ "LEGS.Characters.Attribute", "classLEGS_1_1Characters_1_1Attribute.html", null ],
+    [ "LEGS.Characters.IAttributeHolder", "interfaceLEGS_1_1Characters_1_1IAttributeHolder.html", [
+      [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", [
+        [ "MOBAExample.MOBACharacter", "classMOBAExample_1_1MOBACharacter.html", null ]
       ] ]
     ] ],
-    [ "LEGS.Dialogue.IDialogue", "a00421.html", null ],
-    [ "LEGS.EventManager", "a00345.html", null ],
-    [ "LEGS.Extensions", "a00357.html", null ],
-    [ "LEGS.IDamageable", "a00365.html", [
-      [ "LEGS.Characters.ICharacter", "a00313.html", [
-        [ "LEGS.Characters.Character", "a00317.html", null ]
+    [ "LEGS.Dialogue.IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ],
+    [ "LEGS.EventManager", "classLEGS_1_1EventManager.html", null ],
+    [ "LEGS.Extensions", "classLEGS_1_1Extensions.html", null ],
+    [ "LEGS.IDamageable", "interfaceLEGS_1_1IDamageable.html", [
+      [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", [
+        [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", null ]
       ] ],
-      [ "LEGS.Damageable", "a00389.html", null ],
-      [ "LEGS.ICharacter", "a00361.html", null ]
+      [ "LEGS.Damageable", "classLEGS_1_1Damageable.html", null ],
+      [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ]
     ] ],
-    [ "LEGS.IEntity", "a00369.html", [
-      [ "LEGS.Characters.ICharacter", "a00313.html", null ],
-      [ "LEGS.Entity", "a00401.html", [
-        [ "LEGS.Characters.Character", "a00317.html", null ]
+    [ "LEGS.IEntity", "interfaceLEGS_1_1IEntity.html", [
+      [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
+      [ "LEGS.Entity", "classLEGS_1_1Entity.html", [
+        [ "LEGS.Characters.Character", "classLEGS_1_1Characters_1_1Character.html", null ]
       ] ],
-      [ "LEGS.ICharacter", "a00361.html", null ],
-      [ "LEGS.IStatusEffectReceiver", "a00377.html", [
-        [ "LEGS.Characters.ICharacter", "a00313.html", null ],
-        [ "LEGS.ICharacter", "a00361.html", null ]
+      [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ],
+      [ "LEGS.IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", [
+        [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ],
+        [ "LEGS.ICharacter", "interfaceLEGS_1_1ICharacter.html", null ]
       ] ]
     ] ],
-    [ "LEGS.IStatusEffect", "a00373.html", [
-      [ "LEGS.StatusEffect", "a00413.html", [
-        [ "LEGS.TimedStatusEffect", "a00417.html", [
-          [ "LEGS.Characters.StatusEffectModifyAttribute", "a00321.html", null ],
-          [ "LEGS.DamageOverTimeStatusEffect", "a00409.html", null ],
-          [ "MOBAExample.StatusEffectChangeMana", "a00529.html", null ]
+    [ "LEGS.IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", [
+      [ "LEGS.StatusEffect", "classLEGS_1_1StatusEffect.html", [
+        [ "LEGS.TimedStatusEffect", "classLEGS_1_1TimedStatusEffect.html", [
+          [ "LEGS.Characters.StatusEffectModifyAttribute", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html", null ],
+          [ "LEGS.DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", null ],
+          [ "MOBAExample.StatusEffectChangeMana", "classMOBAExample_1_1StatusEffectChangeMana.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "LEGS.Items.IItem", "a00429.html", [
-      [ "LEGS.Inventory.IInventoryItem", "a00425.html", null ]
+    [ "LEGS.Items.IItem", "interfaceLEGS_1_1Items_1_1IItem.html", [
+      [ "LEGS.Inventory.IInventoryItem", "interfaceLEGS_1_1Inventory_1_1IInventoryItem.html", null ]
     ] ],
-    [ "LEGS.LEGEventArgs", "a00353.html", [
-      [ "LEGS.Characters.AttributeEventArgs", "a00305.html", null ],
-      [ "LEGS.EntityDeathEventArgs", "a00337.html", null ],
-      [ "LEGS.EntityHealthChangeEventArgs", "a00333.html", null ],
-      [ "LEGS.Quests.QuestEventArgs", "a00437.html", null ],
-      [ "LEGS.StatusEffectChangeArgs", "a00341.html", null ],
-      [ "MOBAExample.AbilityCastInfoChangedEventArgs", "a00489.html", null ],
-      [ "MOBAExample.CharacterChangedEventArgs", "a00485.html", null ]
+    [ "LEGS.LEGEventArgs", "classLEGS_1_1LEGEventArgs.html", [
+      [ "LEGS.Characters.AttributeEventArgs", "classLEGS_1_1Characters_1_1AttributeEventArgs.html", null ],
+      [ "LEGS.EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", null ],
+      [ "LEGS.EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", null ],
+      [ "LEGS.Quests.QuestEventArgs", "classLEGS_1_1Quests_1_1QuestEventArgs.html", null ],
+      [ "LEGS.StatusEffectChangeArgs", "classLEGS_1_1StatusEffectChangeArgs.html", null ],
+      [ "MOBAExample.AbilityCastInfoChangedEventArgs", "classMOBAExample_1_1AbilityCastInfoChangedEventArgs.html", null ],
+      [ "MOBAExample.CharacterChangedEventArgs", "classMOBAExample_1_1CharacterChangedEventArgs.html", null ]
     ] ],
-    [ "LEGS.Quests.Quest", "a00441.html", null ],
-    [ "LEGS.Quests.QuestManager", "a00445.html", null ],
-    [ "LEGS.Quests.QuestParameter", "a00433.html", null ],
-    [ "LEGS.Shop.Currency", "a00449.html", null ],
-    [ "MOBAExample.AbilityCastInfo", "a00505.html", null ],
-    [ "MOBAExample.AbilityCooldownUI", "a00533.html", null ],
+    [ "LEGS.Quests.Quest", "classLEGS_1_1Quests_1_1Quest.html", null ],
+    [ "LEGS.Quests.QuestManager", "classLEGS_1_1Quests_1_1QuestManager.html", null ],
+    [ "LEGS.Quests.QuestParameter", "classLEGS_1_1Quests_1_1QuestParameter.html", null ],
+    [ "LEGS.Shop.Currency", "structLEGS_1_1Shop_1_1Currency.html", null ],
+    [ "MOBAExample.AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", null ],
+    [ "MOBAExample.AbilityCooldownUI", "classMOBAExample_1_1AbilityCooldownUI.html", null ],
     [ "MonoBehaviour", null, [
-      [ "FollowTarget", "a00497.html", null ],
-      [ "LEGS.Abilities.AbilityInfo", "a00277.html", null ],
-      [ "LEGS.Abilities.SimpleAbilityCaster", "a00281.html", null ],
-      [ "LEGS.ApplyForceOnCollision", "a00381.html", null ],
-      [ "LEGS.Billboard", "a00385.html", null ],
-      [ "LEGS.Damageable", "a00389.html", null ],
-      [ "LEGS.DestroyAfterSeconds", "a00393.html", null ],
-      [ "LEGS.DestroyOnCollision", "a00397.html", null ],
-      [ "LEGS.Entity", "a00401.html", null ],
-      [ "LEGS.TriggerApplyStatus", "a00405.html", null ],
-      [ "LookRotate", "a00501.html", null ],
-      [ "MOBAExample.AbilityCooldownHUD", "a00537.html", null ],
-      [ "MOBAExample.AbilityDamageOnCollision", "a00453.html", null ],
-      [ "MOBAExample.CharacterExperience", "a00473.html", null ],
-      [ "MOBAExample.DamagePopup", "a00541.html", null ],
-      [ "MOBAExample.GiveExperienceOnDeath", "a00477.html", null ],
-      [ "MOBAExample.HealthHUDBar", "a00545.html", null ],
-      [ "MOBAExample.MOBAAbilityCaster", "a00509.html", null ],
-      [ "MOBAExample.PlayerAim", "a00517.html", null ],
-      [ "MOBAExample.PlayerHUDBars", "a00549.html", null ],
-      [ "MouseLock", "a00513.html", null ],
-      [ "PlayerController", "a00521.html", null ],
-      [ "PlayerRespawn", "a00525.html", null ]
+      [ "FollowTarget", "classFollowTarget.html", null ],
+      [ "LEGS.Abilities.AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
+      [ "LEGS.Abilities.SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", null ],
+      [ "LEGS.ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+      [ "LEGS.Billboard", "classLEGS_1_1Billboard.html", null ],
+      [ "LEGS.Damageable", "classLEGS_1_1Damageable.html", null ],
+      [ "LEGS.DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
+      [ "LEGS.DestroyOnCollision", "classLEGS_1_1DestroyOnCollision.html", null ],
+      [ "LEGS.Entity", "classLEGS_1_1Entity.html", null ],
+      [ "LEGS.SpawnOnDestroy", "classLEGS_1_1SpawnOnDestroy.html", null ],
+      [ "LEGS.TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", null ],
+      [ "LEGS.Tutorial.MouseLook", "classLEGS_1_1Tutorial_1_1MouseLook.html", null ],
+      [ "LEGS.Tutorial.PlayerMovement", "classLEGS_1_1Tutorial_1_1PlayerMovement.html", null ],
+      [ "LookRotate", "classLookRotate.html", null ],
+      [ "MOBAExample.AbilityCooldownHUD", "classMOBAExample_1_1AbilityCooldownHUD.html", null ],
+      [ "MOBAExample.AbilityDamageOnCollision", "classMOBAExample_1_1AbilityDamageOnCollision.html", null ],
+      [ "MOBAExample.CharacterExperience", "classMOBAExample_1_1CharacterExperience.html", null ],
+      [ "MOBAExample.DamagePopup", "classMOBAExample_1_1DamagePopup.html", null ],
+      [ "MOBAExample.GiveExperienceOnDeath", "classMOBAExample_1_1GiveExperienceOnDeath.html", null ],
+      [ "MOBAExample.HealthHUDBar", "classMOBAExample_1_1HealthHUDBar.html", null ],
+      [ "MOBAExample.MOBAAbilityCaster", "classMOBAExample_1_1MOBAAbilityCaster.html", null ],
+      [ "MOBAExample.PlayerAim", "classMOBAExample_1_1PlayerAim.html", null ],
+      [ "MOBAExample.PlayerHUDBars", "classMOBAExample_1_1PlayerHUDBars.html", null ],
+      [ "MouseLock", "classMouseLock.html", null ],
+      [ "PlayerController", "classPlayerController.html", null ],
+      [ "PlayerRespawn", "classPlayerRespawn.html", null ]
     ] ],
     [ "ScriptableObject", null, [
-      [ "LEGS.Abilities.Ability", "a00285.html", null ],
-      [ "LEGS.StatusEffect", "a00413.html", null ],
-      [ "MOBAExample.MOBAAbility", "a00457.html", null ],
-      [ "MOBAExample.MOBACharacterInfo", "a00493.html", null ]
+      [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", null ],
+      [ "LEGS.StatusEffect", "classLEGS_1_1StatusEffect.html", null ],
+      [ "MOBAExample.MOBAAbility", "classMOBAExample_1_1MOBAAbility.html", null ],
+      [ "MOBAExample.MOBACharacterInfo", "classMOBAExample_1_1MOBACharacterInfo.html", null ]
     ] ]
 ];

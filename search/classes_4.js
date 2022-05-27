@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['entity_0',['Entity',['../a00401.html',1,'LEGS']]],
-  ['entitydeatheventargs_1',['EntityDeathEventArgs',['../a00337.html',1,'LEGS']]],
-  ['entityhealthchangeeventargs_2',['EntityHealthChangeEventArgs',['../a00333.html',1,'LEGS']]],
-  ['eventdebugger_3',['EventDebugger',['../a00325.html',1,'LEGS']]],
-  ['eventmanager_4',['EventManager',['../a00345.html',1,'LEGS']]],
-  ['extensions_5',['Extensions',['../a00357.html',1,'LEGS']]]
+  ['entity_0',['Entity',['../classLEGS_1_1Entity.html',1,'LEGS']]],
+  ['entitydeatheventargs_1',['EntityDeathEventArgs',['../classLEGS_1_1EntityDeathEventArgs.html',1,'LEGS']]],
+  ['entityhealthchangeeventargs_2',['EntityHealthChangeEventArgs',['../classLEGS_1_1EntityHealthChangeEventArgs.html',1,'LEGS']]],
+  ['eventdebugger_3',['EventDebugger',['../classLEGS_1_1EventDebugger.html',1,'LEGS']]],
+  ['eventmanager_4',['EventManager',['../classLEGS_1_1EventManager.html',1,'LEGS']]],
+  ['extensions_5',['Extensions',['../classLEGS_1_1Extensions.html',1,'LEGS']]]
 ];

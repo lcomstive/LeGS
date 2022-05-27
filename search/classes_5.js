@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['followtarget_0',['FollowTarget',['../a00497.html',1,'']]]
+  ['followtarget_0',['FollowTarget',['../classFollowTarget.html',1,'']]]
 ];

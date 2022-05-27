@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['samples_0',['Samples',['../a00251.html',1,'']]],
-  ['shop_1',['Shop',['../a00250.html',1,'']]]
+  ['samples_0',['Samples',['../group__Samples.html',1,'']]],
+  ['shop_1',['Shop',['../group__Shop.html',1,'']]]
 ];

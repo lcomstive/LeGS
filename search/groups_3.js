@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quests_0',['Quests',['../a00249.html',1,'']]]
+  ['quests_0',['Quests',['../group__Quests.html',1,'']]]
 ];

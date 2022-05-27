@@ -1,89 +1,94 @@
 var annotated_dup =
 [
-    [ "LEGS", "a00252.html", [
-      [ "Abilities", "a00253.html", [
-        [ "Ability", "a00285.html", "a00285" ],
-        [ "AbilityAddStatusEffect", "a00289.html", "a00289" ],
-        [ "AbilityApplyForce", "a00293.html", "a00293" ],
-        [ "AbilityInfo", "a00277.html", null ],
-        [ "AbilitySpawnObject", "a00297.html", "a00297" ],
-        [ "IAbility", "a00273.html", "a00273" ],
-        [ "SimpleAbilityCaster", "a00281.html", "a00281" ]
+    [ "LEGS", "namespaceLEGS.html", [
+      [ "Abilities", "namespaceLEGS_1_1Abilities.html", [
+        [ "Ability", "classLEGS_1_1Abilities_1_1Ability.html", "classLEGS_1_1Abilities_1_1Ability" ],
+        [ "AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect" ],
+        [ "AbilityApplyForce", "classLEGS_1_1Abilities_1_1AbilityApplyForce.html", "classLEGS_1_1Abilities_1_1AbilityApplyForce" ],
+        [ "AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
+        [ "AbilitySpawnObject", "classLEGS_1_1Abilities_1_1AbilitySpawnObject.html", "classLEGS_1_1Abilities_1_1AbilitySpawnObject" ],
+        [ "IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", "interfaceLEGS_1_1Abilities_1_1IAbility" ],
+        [ "SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster" ]
       ] ],
-      [ "Characters", "a00254.html", [
-        [ "Attribute", "a00301.html", "a00301" ],
-        [ "AttributeEventArgs", "a00305.html", "a00305" ],
-        [ "Character", "a00317.html", "a00317" ],
-        [ "IAttributeHolder", "a00309.html", "a00309" ],
-        [ "ICharacter", "a00313.html", "a00313" ],
-        [ "StatusEffectModifyAttribute", "a00321.html", "a00321" ]
+      [ "Characters", "namespaceLEGS_1_1Characters.html", [
+        [ "Attribute", "classLEGS_1_1Characters_1_1Attribute.html", "classLEGS_1_1Characters_1_1Attribute" ],
+        [ "AttributeEventArgs", "classLEGS_1_1Characters_1_1AttributeEventArgs.html", "classLEGS_1_1Characters_1_1AttributeEventArgs" ],
+        [ "Character", "classLEGS_1_1Characters_1_1Character.html", "classLEGS_1_1Characters_1_1Character" ],
+        [ "IAttributeHolder", "interfaceLEGS_1_1Characters_1_1IAttributeHolder.html", "interfaceLEGS_1_1Characters_1_1IAttributeHolder" ],
+        [ "ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", "interfaceLEGS_1_1Characters_1_1ICharacter" ],
+        [ "StatusEffectModifyAttribute", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute" ]
       ] ],
-      [ "Dialogue", "a00255.html", [
-        [ "IDialogue", "a00421.html", null ]
+      [ "Dialogue", "namespaceLEGS_1_1Dialogue.html", [
+        [ "IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ]
       ] ],
-      [ "Inventory", "a00256.html", [
-        [ "IInventoryItem", "a00425.html", null ]
+      [ "Inventory", "namespaceLEGS_1_1Inventory.html", [
+        [ "IInventoryItem", "interfaceLEGS_1_1Inventory_1_1IInventoryItem.html", null ]
       ] ],
-      [ "Items", "a00257.html", [
-        [ "IItem", "a00429.html", null ]
+      [ "Items", "namespaceLEGS_1_1Items.html", [
+        [ "IItem", "interfaceLEGS_1_1Items_1_1IItem.html", null ]
       ] ],
-      [ "Quests", "a00258.html", [
-        [ "Quest", "a00441.html", "a00441" ],
-        [ "QuestEventArgs", "a00437.html", "a00437" ],
-        [ "QuestManager", "a00445.html", "a00445" ],
-        [ "QuestParameter", "a00433.html", "a00433" ]
+      [ "Quests", "namespaceLEGS_1_1Quests.html", [
+        [ "Quest", "classLEGS_1_1Quests_1_1Quest.html", "classLEGS_1_1Quests_1_1Quest" ],
+        [ "QuestEventArgs", "classLEGS_1_1Quests_1_1QuestEventArgs.html", "classLEGS_1_1Quests_1_1QuestEventArgs" ],
+        [ "QuestManager", "classLEGS_1_1Quests_1_1QuestManager.html", "classLEGS_1_1Quests_1_1QuestManager" ],
+        [ "QuestParameter", "classLEGS_1_1Quests_1_1QuestParameter.html", "classLEGS_1_1Quests_1_1QuestParameter" ]
       ] ],
-      [ "Shop", "a00259.html", [
-        [ "Currency", "a00449.html", null ]
+      [ "Shop", "namespaceLEGS_1_1Shop.html", [
+        [ "Currency", "structLEGS_1_1Shop_1_1Currency.html", null ]
       ] ],
-      [ "ApplyForceOnCollision", "a00381.html", null ],
-      [ "Billboard", "a00385.html", null ],
-      [ "Damageable", "a00389.html", "a00389" ],
-      [ "DamageOverTimeStatusEffect", "a00409.html", "a00409" ],
-      [ "DestroyAfterSeconds", "a00393.html", null ],
-      [ "DestroyOnCollision", "a00397.html", null ],
-      [ "Entity", "a00401.html", "a00401" ],
-      [ "EntityDeathEventArgs", "a00337.html", "a00337" ],
-      [ "EntityHealthChangeEventArgs", "a00333.html", "a00333" ],
-      [ "EventDebugger", "a00325.html", null ],
-      [ "EventManager", "a00345.html", "a00345" ],
-      [ "Extensions", "a00357.html", null ],
-      [ "ICharacter", "a00361.html", "a00361" ],
-      [ "IDamageable", "a00365.html", "a00365" ],
-      [ "IEntity", "a00369.html", "a00369" ],
-      [ "IStatusEffect", "a00373.html", "a00373" ],
-      [ "IStatusEffectReceiver", "a00377.html", "a00377" ],
-      [ "LEGEventArgs", "a00353.html", "a00353" ],
-      [ "StatusEffect", "a00413.html", "a00413" ],
-      [ "StatusEffectChangeArgs", "a00341.html", "a00341" ],
-      [ "TimedStatusEffect", "a00417.html", "a00417" ],
-      [ "TriggerApplyStatus", "a00405.html", null ]
+      [ "Tutorial", "namespaceLEGS_1_1Tutorial.html", [
+        [ "MouseLook", "classLEGS_1_1Tutorial_1_1MouseLook.html", null ],
+        [ "PlayerMovement", "classLEGS_1_1Tutorial_1_1PlayerMovement.html", null ]
+      ] ],
+      [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
+      [ "Billboard", "classLEGS_1_1Billboard.html", null ],
+      [ "Damageable", "classLEGS_1_1Damageable.html", "classLEGS_1_1Damageable" ],
+      [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
+      [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
+      [ "DestroyOnCollision", "classLEGS_1_1DestroyOnCollision.html", null ],
+      [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
+      [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
+      [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
+      [ "EventDebugger", "classLEGS_1_1EventDebugger.html", null ],
+      [ "EventManager", "classLEGS_1_1EventManager.html", "classLEGS_1_1EventManager" ],
+      [ "Extensions", "classLEGS_1_1Extensions.html", null ],
+      [ "ICharacter", "interfaceLEGS_1_1ICharacter.html", "interfaceLEGS_1_1ICharacter" ],
+      [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
+      [ "IEntity", "interfaceLEGS_1_1IEntity.html", "interfaceLEGS_1_1IEntity" ],
+      [ "IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", "interfaceLEGS_1_1IStatusEffect" ],
+      [ "IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", "interfaceLEGS_1_1IStatusEffectReceiver" ],
+      [ "LEGEventArgs", "classLEGS_1_1LEGEventArgs.html", "classLEGS_1_1LEGEventArgs" ],
+      [ "SpawnOnDestroy", "classLEGS_1_1SpawnOnDestroy.html", null ],
+      [ "StatusEffect", "classLEGS_1_1StatusEffect.html", "classLEGS_1_1StatusEffect" ],
+      [ "StatusEffectChangeArgs", "classLEGS_1_1StatusEffectChangeArgs.html", "classLEGS_1_1StatusEffectChangeArgs" ],
+      [ "TimedStatusEffect", "classLEGS_1_1TimedStatusEffect.html", "classLEGS_1_1TimedStatusEffect" ],
+      [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", "classLEGS_1_1TriggerApplyStatus" ]
     ] ],
-    [ "MOBAExample", "a00260.html", [
-      [ "AbilityCastInfo", "a00505.html", "a00505" ],
-      [ "AbilityCastInfoChangedEventArgs", "a00489.html", "a00489" ],
-      [ "AbilityCooldownHUD", "a00537.html", null ],
-      [ "AbilityCooldownUI", "a00533.html", null ],
-      [ "AbilityDamageOnCollision", "a00453.html", null ],
-      [ "CharacterChangedEventArgs", "a00485.html", "a00485" ],
-      [ "CharacterExperience", "a00473.html", null ],
-      [ "DamagePopup", "a00541.html", null ],
-      [ "GiveExperienceOnDeath", "a00477.html", null ],
-      [ "HealthHUDBar", "a00545.html", null ],
-      [ "MOBAAbility", "a00457.html", "a00457" ],
-      [ "MOBAAbilityAddStatusEffect", "a00461.html", "a00461" ],
-      [ "MOBAAbilityApplyForce", "a00465.html", "a00465" ],
-      [ "MOBAAbilityCaster", "a00509.html", null ],
-      [ "MOBAAbilitySpawnObject", "a00469.html", "a00469" ],
-      [ "MOBACharacter", "a00481.html", "a00481" ],
-      [ "MOBACharacterInfo", "a00493.html", null ],
-      [ "PlayerAim", "a00517.html", "a00517" ],
-      [ "PlayerHUDBars", "a00549.html", null ],
-      [ "StatusEffectChangeMana", "a00529.html", "a00529" ]
+    [ "MOBAExample", "namespaceMOBAExample.html", [
+      [ "AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", "classMOBAExample_1_1AbilityCastInfo" ],
+      [ "AbilityCastInfoChangedEventArgs", "classMOBAExample_1_1AbilityCastInfoChangedEventArgs.html", "classMOBAExample_1_1AbilityCastInfoChangedEventArgs" ],
+      [ "AbilityCooldownHUD", "classMOBAExample_1_1AbilityCooldownHUD.html", null ],
+      [ "AbilityCooldownUI", "classMOBAExample_1_1AbilityCooldownUI.html", null ],
+      [ "AbilityDamageOnCollision", "classMOBAExample_1_1AbilityDamageOnCollision.html", null ],
+      [ "CharacterChangedEventArgs", "classMOBAExample_1_1CharacterChangedEventArgs.html", "classMOBAExample_1_1CharacterChangedEventArgs" ],
+      [ "CharacterExperience", "classMOBAExample_1_1CharacterExperience.html", null ],
+      [ "DamagePopup", "classMOBAExample_1_1DamagePopup.html", null ],
+      [ "GiveExperienceOnDeath", "classMOBAExample_1_1GiveExperienceOnDeath.html", null ],
+      [ "HealthHUDBar", "classMOBAExample_1_1HealthHUDBar.html", null ],
+      [ "MOBAAbility", "classMOBAExample_1_1MOBAAbility.html", "classMOBAExample_1_1MOBAAbility" ],
+      [ "MOBAAbilityAddStatusEffect", "classMOBAExample_1_1MOBAAbilityAddStatusEffect.html", "classMOBAExample_1_1MOBAAbilityAddStatusEffect" ],
+      [ "MOBAAbilityApplyForce", "classMOBAExample_1_1MOBAAbilityApplyForce.html", "classMOBAExample_1_1MOBAAbilityApplyForce" ],
+      [ "MOBAAbilityCaster", "classMOBAExample_1_1MOBAAbilityCaster.html", null ],
+      [ "MOBAAbilitySpawnObject", "classMOBAExample_1_1MOBAAbilitySpawnObject.html", "classMOBAExample_1_1MOBAAbilitySpawnObject" ],
+      [ "MOBACharacter", "classMOBAExample_1_1MOBACharacter.html", "classMOBAExample_1_1MOBACharacter" ],
+      [ "MOBACharacterInfo", "classMOBAExample_1_1MOBACharacterInfo.html", null ],
+      [ "PlayerAim", "classMOBAExample_1_1PlayerAim.html", "classMOBAExample_1_1PlayerAim" ],
+      [ "PlayerHUDBars", "classMOBAExample_1_1PlayerHUDBars.html", null ],
+      [ "StatusEffectChangeMana", "classMOBAExample_1_1StatusEffectChangeMana.html", "classMOBAExample_1_1StatusEffectChangeMana" ]
     ] ],
-    [ "FollowTarget", "a00497.html", null ],
-    [ "LookRotate", "a00501.html", null ],
-    [ "MouseLock", "a00513.html", null ],
-    [ "PlayerController", "a00521.html", null ],
-    [ "PlayerRespawn", "a00525.html", null ]
+    [ "FollowTarget", "classFollowTarget.html", null ],
+    [ "LookRotate", "classLookRotate.html", null ],
+    [ "MouseLock", "classMouseLock.html", null ],
+    [ "PlayerController", "classPlayerController.html", null ],
+    [ "PlayerRespawn", "classPlayerRespawn.html", null ]
 ];
