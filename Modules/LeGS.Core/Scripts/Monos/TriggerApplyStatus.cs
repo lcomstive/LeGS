@@ -17,8 +17,18 @@ namespace LEGS
 	[RequireComponent(typeof(Collider))]
 	public class TriggerApplyStatus : MonoBehaviour
 	{
+		/// <summary>
+		/// A <see cref="StatusEffect"/> to apply to entity
+		/// </summary>
 		public StatusEffect Effect;
+
+		/// <summary>
+		/// When to apply <see cref="Effect"/>
+		/// </summary>
 		public TriggerApplyType TriggerType = TriggerApplyType.Enter;
+
+		[Tooltip("When not empty, only applies status effect to colliders with a matching tag")]
+		public string[] FilterTags = new string[0];
 
 		private IEntity m_Entity = null;
 
@@ -31,7 +41,7 @@ namespace LEGS
 
 		private void ApplyTo(Collider collider)
 		{
-			if(!Effect)
+			if(!Effect || (FilterTags.Length != 0 && collider.CompareTags(FilterTags)))
 				return;
 
 			if (collider.TryGetComponent(out IStatusEffectReceiver receiver))

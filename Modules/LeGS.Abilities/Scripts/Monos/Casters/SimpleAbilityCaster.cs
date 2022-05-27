@@ -55,7 +55,7 @@ namespace LEGS.Abilities
 			if(m_CastAction.action.IsPressed() && CanCast)
 				Cast();
 #else
-			if(Input.GetKeyDown(m_CastKey) && CanCast)
+			if(Input.GetKey(m_CastKey) && CanCast)
 				Cast();
 #endif
 		}

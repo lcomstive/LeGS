@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216c9a7aa0f47b64296fbe2f00f21e56, type: 3}
+  m_Name: Health Regen Area
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: 0}
+  <DisplayName>k__BackingField: Health Regen Area
+  <Range>k__BackingField: 5
+  <Cost>k__BackingField: 10
+  <CostType>k__BackingField: 1
+  <Target>k__BackingField: 0
+  <Cooldown>k__BackingField: 10
+  <DamageType>k__BackingField: 1
+  <AttackDamageScale>k__BackingField: 1
+  m_Prefab: {fileID: 3135181606912717841, guid: 39dd14d39fc5a314e9f9c9830bc68f0f, type: 3}
+  m_SpawnOffset: {x: 0, y: 0, z: 0}
+  m_ChildOfSpawner: 0
+  m_Force: 0
