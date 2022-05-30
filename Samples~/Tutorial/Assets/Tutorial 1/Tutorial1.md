@@ -1,4 +1,4 @@
-# Tutorial 1 - Abilities
+# Tutorial 1 - Abilities {#Tutorial1}
 
 ## Helper Classes
 There are a few helper scripts to get started with the ability system before needing to delve deeper into custom implementations.
@@ -25,4 +25,5 @@ Some implementations have been provided, which can be accessed under the `LEGS/A
 | [Add Status Effect](@ref LEGS.Abilities.AbilityAddStatusEffect) | Adds a [status effect](@ref LEGS.StatusEffect) onto the casting [entity](@ref LEGS.IEntity) |
 | [Apply Force](@ref LEGS.Abilities.AbilityApplyForce) | Adds an instant force to casting [entity's](@ref LEGS.IEntity) attached [Rigidbody](https://docs.unity3d.com/ScriptReference/Rigidbody.html) |
 | [Spawn Object](@ref LEGS.Abilities.AbilitySpawnObject) | Spawns a prefab at the casting [entity](@ref LEGS.IEntity), with an optional offset |
+
 

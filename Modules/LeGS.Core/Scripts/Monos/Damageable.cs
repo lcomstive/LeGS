@@ -4,15 +4,19 @@ using UnityEngine;
 namespace LEGS
 {
 	/// <summary>
-	/// Basic implementation of <see cref="IDamageable"/>
+	/// Basic implementation of <see cref="IDamageable"/>.
+	/// Recommended to have an <see cref="IEntity"/> attached to the same GameObject or one of it's children
+	/// for event (<see cref="EntityHealthChangeEventArgs.Sender"/>) parameter.
 	/// </summary>
-	[RequireComponent(typeof(IEntity))]
     public class Damageable : MonoBehaviour, IDamageable
     {
 		[SerializeField] private float m_Health;
 		[SerializeField] private float m_MaxHealth;
 		[SerializeField] private bool m_DestroyOnDeath = true;
 
+		/// <summary>
+		/// Health points available
+		/// </summary>
 		public float Health
 		{
 			get => m_Health;
@@ -26,6 +30,9 @@ namespace LEGS
 			}
 		}
 
+		/// <summary>
+		/// Maximum health points
+		/// </summary>
 		public float MaxHealth
 		{
 			get => m_MaxHealth;
@@ -39,12 +46,24 @@ namespace LEGS
 			}
 		}
 
+		/// <summary>
+		/// <see cref="IEntity"/> attached to GameObject or one of it's children
+		/// </summary>
 		private IEntity m_Entity;
+
+		// Cache event IDs
 		private ushort m_EntityHealthChangeEventID, m_EntityDeathEventID;
 
 		private void Awake()
 		{
-			m_Entity = GetComponent<IEntity>();
+			// Find related entity
+			if(!TryGetComponent(out m_Entity))
+			{
+				m_Entity = GetComponentInChildren<IEntity>();
+				if(m_Entity == null)
+					Debug.LogWarning($"No IEntity found on '{gameObject.name}' or children.\nThe script will function, but events sent from it will have a null sender");
+			}
+
 			m_EntityDeathEventID = EventManager.RegisterEvent<EntityDeathEventArgs>(EntityDeathEventArgs.EventName);
 			m_EntityHealthChangeEventID = EventManager.RegisterEvent<EntityHealthChangeEventArgs>(EntityHealthChangeEventArgs.EventName);
 
@@ -66,6 +85,9 @@ namespace LEGS
 			}
 		}
 
+		/// <summary>
+		/// <see cref="Health"/> has been depleted. (<i>Called after <see cref="EntityDeathEventArgs"/></i>)
+		/// </summary>
 		public event Action OnDied;
     }
 }

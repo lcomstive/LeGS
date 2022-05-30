@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5536789798314732957}
   - component: {fileID: 678646175615738464}
   m_Layer: 0
-  m_Name: Small Cube Destroy Particles
+  m_Name: Small Cube Destroy Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
