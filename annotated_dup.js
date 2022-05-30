@@ -52,7 +52,6 @@ var annotated_dup =
       [ "EventDebugger", "classLEGS_1_1EventDebugger.html", null ],
       [ "EventManager", "classLEGS_1_1EventManager.html", "classLEGS_1_1EventManager" ],
       [ "Extensions", "classLEGS_1_1Extensions.html", null ],
-      [ "ICharacter", "interfaceLEGS_1_1ICharacter.html", "interfaceLEGS_1_1ICharacter" ],
       [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
       [ "IEntity", "interfaceLEGS_1_1IEntity.html", "interfaceLEGS_1_1IEntity" ],
       [ "IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", "interfaceLEGS_1_1IStatusEffect" ],

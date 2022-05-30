@@ -40,7 +40,6 @@
 				<table cellspacing="0" cellpadding="0">
 					<tbody>
 						<tr id="projectrow">
-							<td id="projectlogo"><img alt="Logo" src="Logo.png" /></td>
 							<td id="projectalign">
 								<div id="projectname">LeGS
 								</div>
@@ -79,7 +78,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('Tutorial1.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -101,19 +100,20 @@ $(document).ready(function(){initNavTree('md__github_workspace_Samples__Tutorial
   <div class="headertitle"><div class="title">Tutorial 1 - Abilities </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><p ><a class="anchor" id="md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1"></a> </p>
+<h1><a class="anchor" id="autotoc_md0"></a>
 Helper Classes</h1>
 <p >There are a few helper scripts to get started with the ability system before needing to delve deeper into custom implementations.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md1"></a>
 Simple Ability Caster</h2>
 <p >The <a class="el" href="classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html">Simple Ability Caster</a> component binds a single key input to an <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html">ability</a>.</p>
 <blockquote class="doxtable">
 <p >This script is compatible with both the legacy and newer package input systems </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Ability Info</h2>
 <p >An <a class="el" href="classLEGS_1_1Abilities_1_1AbilityInfo.html">AbilityInfo</a> component holds information about an <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">ability</a> and the <a class="el" href="interfaceLEGS_1_1IEntity.html">entity</a> that cast it.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Ability</h2>
 <p >This abstract class is a <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">ScriptableObject</a> implementation of the <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">IAbility</a> interface, with parameters for a <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#a2eca95cbdfd6d47e20c59d5dffe60247">display name</a>, <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#aeb6bc9f7b82ee23b6f7386c8e3d963f1">description</a>, and <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#a05603810d8a7a59a7cc2b51a197c0bd4">cooldown</a>.</p>
 <p >Some implementations have been provided, which can be accessed under the <code>LEGS/Abilities</code> asset context menu.</p>

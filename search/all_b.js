@@ -5,7 +5,7 @@ var searchData=
   ['magicresistance_2',['MagicResistance',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583aaf726ab1546c1d14aa12ae4034a51fd7',1,'MOBAExample']]],
   ['mana_3',['Mana',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a02fcc64668dd1b6a85e60ac9797f2dc7',1,'MOBAExample.Mana()'],['../namespaceMOBAExample.html#ac0d778168435e3fbb42f60c70e800c5ca02fcc64668dd1b6a85e60ac9797f2dc7',1,'MOBAExample.Mana()']]],
   ['manaregen_4',['ManaRegen',['../namespaceMOBAExample.html#aafbd76c23938e18f1ebf5843c219f583a8fda0a3035dab05823cf6ea23e79f088',1,'MOBAExample']]],
-  ['maxhealth_5',['MaxHealth',['../classLEGS_1_1Characters_1_1Character.html#ae23723126428a5b8437537d73986f7a2',1,'LEGS::Characters::Character']]],
+  ['maxhealth_5',['MaxHealth',['../classLEGS_1_1Damageable.html#a52e4ee542c0d7cca956160d24a4a5bf9',1,'LEGS.Damageable.MaxHealth()'],['../classLEGS_1_1Characters_1_1Character.html#ae23723126428a5b8437537d73986f7a2',1,'LEGS.Characters.Character.MaxHealth()']]],
   ['maxstacksize_6',['MaxStackSize',['../interfaceLEGS_1_1IStatusEffect.html#a1360e44bc5607430a27bbffe1cd898a7',1,'LEGS::IStatusEffect']]],
   ['maxvalue_7',['MaxValue',['../classLEGS_1_1Quests_1_1QuestParameter.html#aa9790778cd2951e29cfe88cd2d718d98',1,'LEGS::Quests::QuestParameter']]],
   ['mobaability_8',['MOBAAbility',['../classMOBAExample_1_1MOBAAbility.html',1,'MOBAExample']]],

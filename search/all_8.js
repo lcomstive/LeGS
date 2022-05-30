@@ -2,7 +2,7 @@ var searchData=
 [
   ['iability_0',['IAbility',['../interfaceLEGS_1_1Abilities_1_1IAbility.html',1,'LEGS::Abilities']]],
   ['iattributeholder_1',['IAttributeHolder',['../interfaceLEGS_1_1Characters_1_1IAttributeHolder.html',1,'LEGS::Characters']]],
-  ['icharacter_2',['ICharacter',['../interfaceLEGS_1_1Characters_1_1ICharacter.html',1,'LEGS.Characters.ICharacter'],['../interfaceLEGS_1_1ICharacter.html',1,'LEGS.ICharacter']]],
+  ['icharacter_2',['ICharacter',['../interfaceLEGS_1_1Characters_1_1ICharacter.html',1,'LEGS::Characters']]],
   ['id_3',['ID',['../classLEGS_1_1Quests_1_1Quest.html#a0e555401f2d85eb637fa998adf6053d0',1,'LEGS::Quests::Quest']]],
   ['idamageable_4',['IDamageable',['../interfaceLEGS_1_1IDamageable.html',1,'LEGS']]],
   ['idialogue_5',['IDialogue',['../interfaceLEGS_1_1Dialogue_1_1IDialogue.html',1,'LEGS::Dialogue']]],

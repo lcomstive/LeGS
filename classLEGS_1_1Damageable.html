@@ -40,7 +40,6 @@
 				<table cellspacing="0" cellpadding="0">
 					<tbody>
 						<tr id="projectrow">
-							<td id="projectlogo"><img alt="Logo" src="Logo.png" /></td>
 							<td id="projectalign">
 								<div id="projectname">LeGS
 								</div>
@@ -107,7 +106,7 @@ $(document).ready(function(){initNavTree('classLEGS_1_1Damageable.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>Basic implementation of <a class="el" href="interfaceLEGS_1_1IDamageable.html" title="Represents an object that has health and can receive damage">IDamageable</a>  
+<p>Basic implementation of <a class="el" href="interfaceLEGS_1_1IDamageable.html" title="Represents an object that has health and can receive damage">IDamageable</a>. Recommended to have an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> attached to the same GameObject or one of it's children for event (<a class="el" href="classLEGS_1_1EntityHealthChangeEventArgs.html#a59e497b6869f1affc05e9c7ade9f2b36" title="IEntity that caused health change">EntityHealthChangeEventArgs.Sender</a>) parameter.  
 </p>
 <div class="dynheader">
 Inheritance diagram for LEGS.Damageable:</div>
@@ -122,22 +121,25 @@ Inheritance diagram for LEGS.Damageable:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9e2366408c1a2e4e56a1256a2c66a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Damageable.html#ab9e2366408c1a2e4e56a1256a2c66a27">ApplyDamage</a> (float amount, <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> sender)</td></tr>
-<tr class="memdesc:ab9e2366408c1a2e4e56a1256a2c66a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases Health by <em>amount</em> . Healing is negative damage.  <a href="classLEGS_1_1Damageable.html#ab9e2366408c1a2e4e56a1256a2c66a27">More...</a><br /></td></tr>
+<tr class="memdesc:ab9e2366408c1a2e4e56a1256a2c66a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases <a class="el" href="classLEGS_1_1Damageable.html#ac90a55eb3f2d870b736c879f1a17f38c" title="Health points available">Health</a> by <em>amount</em> . Healing is negative damage.  <a href="classLEGS_1_1Damageable.html#ab9e2366408c1a2e4e56a1256a2c66a27">More...</a><br /></td></tr>
 <tr class="separator:ab9e2366408c1a2e4e56a1256a2c66a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ac90a55eb3f2d870b736c879f1a17f38c"><td class="memItemLeft" align="right" valign="top"><a id="ac90a55eb3f2d870b736c879f1a17f38c" name="ac90a55eb3f2d870b736c879f1a17f38c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b><code> [getset]</code></td></tr>
+<tr class="memdesc:ac90a55eb3f2d870b736c879f1a17f38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Health points available <br /></td></tr>
 <tr class="separator:ac90a55eb3f2d870b736c879f1a17f38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e4ee542c0d7cca956160d24a4a5bf9"><td class="memItemLeft" align="right" valign="top"><a id="a52e4ee542c0d7cca956160d24a4a5bf9" name="a52e4ee542c0d7cca956160d24a4a5bf9"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHealth</b><code> [getset]</code></td></tr>
+<tr class="memdesc:a52e4ee542c0d7cca956160d24a4a5bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum health points <br /></td></tr>
 <tr class="separator:a52e4ee542c0d7cca956160d24a4a5bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a6f6f92283b8e0d228ef11606dbe4d5ce"><td class="memItemLeft" align="right" valign="top"><a id="a6f6f92283b8e0d228ef11606dbe4d5ce" name="a6f6f92283b8e0d228ef11606dbe4d5ce"></a>
 Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnDied</b></td></tr>
+<tr class="memdesc:a6f6f92283b8e0d228ef11606dbe4d5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLEGS_1_1Damageable.html#ac90a55eb3f2d870b736c879f1a17f38c" title="Health points available">Health</a> has been depleted. (<em>Called after <a class="el" href="classLEGS_1_1EntityDeathEventArgs.html" title="When an IEntity gets destroyed">EntityDeathEventArgs</a></em>) <br /></td></tr>
 <tr class="separator:a6f6f92283b8e0d228ef11606dbe4d5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -174,7 +176,7 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnDied</b></td></tr
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Health may not be decreased by <em>amount</em>  exactly due to attached IDamageModifiers</p>
+<p ><a class="el" href="classLEGS_1_1Damageable.html#ac90a55eb3f2d870b736c879f1a17f38c" title="Health points available">Health</a> may not be decreased by <em>amount</em>  exactly due to attached IDamageModifiers</p>
 
 <p>Implements <a class="el" href="interfaceLEGS_1_1IDamageable.html#aa054565c2773bd2659a84dcdc1b58a88">LEGS.IDamageable</a>.</p>
 

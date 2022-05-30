@@ -34,15 +34,19 @@ var NAVTREE =
     [ "LeGS Quests", "md_Markdown_Quests_LeGS_Quests.html", null ],
     [ "LeGS Shop", "md_Markdown_Shop_LeGS_Shop.html", null ],
     [ "MOBASample", "md__github_workspace_Samples__MOBA_Assets_MOBASample.html", null ],
-    [ "Tutorial 1 - Abilities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html", [
-      [ "Helper Classes", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html#autotoc_md1", [
-        [ "Simple Ability Caster", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html#autotoc_md2", null ],
-        [ "Ability Info", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html#autotoc_md3", null ],
-        [ "Ability", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1.html#autotoc_md4", null ]
+    [ "Tutorial 1 - Abilities", "Tutorial1.html", [
+      [ "Helper Classes", "Tutorial1.html#autotoc_md0", [
+        [ "Simple Ability Caster", "Tutorial1.html#autotoc_md1", null ],
+        [ "Ability Info", "Tutorial1.html#autotoc_md2", null ],
+        [ "Ability", "Tutorial1.html#autotoc_md3", null ]
       ] ]
     ] ],
     [ "Tutorial 2 - Characters", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
     [ "Tutorial 3 - Abilities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
+    [ "Tutorial 0 - Getting Familiar", "Tutorial0.html", [
+      [ "Interfaces", "Tutorial0.html#autotoc_md6", null ],
+      [ "Tutorials", "Tutorial0.html#autotoc_md7", null ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -68,9 +72,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"abilities.html",
-"classLEGS_1_1Quests_1_1Quest.html#a457a235df5cd6a79d4993b0ea1630536",
-"interfaceLEGS_1_1ICharacter.html#a0bca7d20c1364a2827ad32b77b7644e4"
+"Tutorial0.html",
+"classLEGS_1_1EventManager.html#ae7deb96230b62fe500f3a183bf8e6a1e",
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#a19bb82d3b6e232e9da75df3730c8b369"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
