@@ -111,6 +111,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Billboard.html">Billboard</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLEGS_1_1Currency.html">Currency</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a currency, with value ranging from 0-999 with an accompanying enum for units (thousands, millions, etc.).  <a href="structLEGS_1_1Currency.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Damageable.html">Damageable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic implementation of <a class="el" href="interfaceLEGS_1_1IDamageable.html" title="Represents an object that has health and can receive damage">IDamageable</a>. Recommended to have an <a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> attached to the same GameObject or one of it's children for event (<a class="el" href="classLEGS_1_1EntityHealthChangeEventArgs.html#a59e497b6869f1affc05e9c7ade9f2b36" title="IEntity that caused health change">EntityHealthChangeEventArgs.Sender</a>) parameter.  <a href="classLEGS_1_1Damageable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a6ab38b0d7e56dfeb8153f20c52adb339"><td class="memItemLeft" align="right" valign="top"><a id="a6ab38b0d7e56dfeb8153f20c52adb339" name="a6ab38b0d7e56dfeb8153f20c52adb339"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CurrencyUnit</b> : byte { <br />
+&#160;&#160;<b>None</b> = 0
+, <b>Thousand</b>
+, <b>Million</b>
+, <b>Billion</b>
+, <br />
+&#160;&#160;<b>Trillion</b>
+<br />
+ }</td></tr>
+<tr class="separator:a6ab38b0d7e56dfeb8153f20c52adb339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37451fd710834c0009b7f09a06931424"><td class="memItemLeft" align="right" valign="top"><a id="a37451fd710834c0009b7f09a06931424" name="a37451fd710834c0009b7f09a06931424"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TriggerApplyType</b> { <b>None</b> = 0
 , <b>Enter</b> = 1
 , <b>Exit</b> = 2

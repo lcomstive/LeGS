@@ -18,23 +18,11 @@ var annotated_dup =
         [ "ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", "interfaceLEGS_1_1Characters_1_1ICharacter" ],
         [ "StatusEffectModifyAttribute", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute.html", "classLEGS_1_1Characters_1_1StatusEffectModifyAttribute" ]
       ] ],
-      [ "Dialogue", "namespaceLEGS_1_1Dialogue.html", [
-        [ "IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ]
-      ] ],
-      [ "Inventory", "namespaceLEGS_1_1Inventory.html", [
-        [ "IInventoryItem", "interfaceLEGS_1_1Inventory_1_1IInventoryItem.html", null ]
-      ] ],
-      [ "Items", "namespaceLEGS_1_1Items.html", [
-        [ "IItem", "interfaceLEGS_1_1Items_1_1IItem.html", null ]
-      ] ],
       [ "Quests", "namespaceLEGS_1_1Quests.html", [
         [ "Quest", "classLEGS_1_1Quests_1_1Quest.html", "classLEGS_1_1Quests_1_1Quest" ],
         [ "QuestEventArgs", "classLEGS_1_1Quests_1_1QuestEventArgs.html", "classLEGS_1_1Quests_1_1QuestEventArgs" ],
         [ "QuestManager", "classLEGS_1_1Quests_1_1QuestManager.html", "classLEGS_1_1Quests_1_1QuestManager" ],
         [ "QuestParameter", "classLEGS_1_1Quests_1_1QuestParameter.html", "classLEGS_1_1Quests_1_1QuestParameter" ]
-      ] ],
-      [ "Shop", "namespaceLEGS_1_1Shop.html", [
-        [ "Currency", "structLEGS_1_1Shop_1_1Currency.html", null ]
       ] ],
       [ "Tutorial", "namespaceLEGS_1_1Tutorial.html", [
         [ "MouseLook", "classLEGS_1_1Tutorial_1_1MouseLook.html", null ],
@@ -42,6 +30,7 @@ var annotated_dup =
       ] ],
       [ "ApplyForceOnCollision", "classLEGS_1_1ApplyForceOnCollision.html", null ],
       [ "Billboard", "classLEGS_1_1Billboard.html", null ],
+      [ "Currency", "structLEGS_1_1Currency.html", null ],
       [ "Damageable", "classLEGS_1_1Damageable.html", "classLEGS_1_1Damageable" ],
       [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
       [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],

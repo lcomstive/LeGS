@@ -21,7 +21,7 @@ var hierarchy =
         [ "MOBAExample.MOBACharacter", "classMOBAExample_1_1MOBACharacter.html", null ]
       ] ]
     ] ],
-    [ "LEGS.Dialogue.IDialogue", "interfaceLEGS_1_1Dialogue_1_1IDialogue.html", null ],
+    [ "LEGS.Currency", "structLEGS_1_1Currency.html", null ],
     [ "LEGS.EventManager", "classLEGS_1_1EventManager.html", null ],
     [ "LEGS.Extensions", "classLEGS_1_1Extensions.html", null ],
     [ "LEGS.IDamageable", "interfaceLEGS_1_1IDamageable.html", [
@@ -48,9 +48,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "LEGS.Items.IItem", "interfaceLEGS_1_1Items_1_1IItem.html", [
-      [ "LEGS.Inventory.IInventoryItem", "interfaceLEGS_1_1Inventory_1_1IInventoryItem.html", null ]
-    ] ],
     [ "LEGS.LEGEventArgs", "classLEGS_1_1LEGEventArgs.html", [
       [ "LEGS.Characters.AttributeEventArgs", "classLEGS_1_1Characters_1_1AttributeEventArgs.html", null ],
       [ "LEGS.EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", null ],
@@ -63,7 +60,6 @@ var hierarchy =
     [ "LEGS.Quests.Quest", "classLEGS_1_1Quests_1_1Quest.html", null ],
     [ "LEGS.Quests.QuestManager", "classLEGS_1_1Quests_1_1QuestManager.html", null ],
     [ "LEGS.Quests.QuestParameter", "classLEGS_1_1Quests_1_1QuestParameter.html", null ],
-    [ "LEGS.Shop.Currency", "structLEGS_1_1Shop_1_1Currency.html", null ],
     [ "MOBAExample.AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", null ],
     [ "MOBAExample.AbilityCooldownUI", "classMOBAExample_1_1AbilityCooldownUI.html", null ],
     [ "MonoBehaviour", null, [

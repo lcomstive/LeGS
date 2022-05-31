@@ -100,39 +100,85 @@ $(document).ready(function(){initNavTree('Tutorial1.html',''); initResizable(); 
   <div class="headertitle"><div class="title">Tutorial 1 - Abilities </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1"></a> </p>
-<h1><a class="anchor" id="autotoc_md0"></a>
-Helper Classes</h1>
-<p >There are a few helper scripts to get started with the ability system before needing to delve deeper into custom implementations.</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
-Simple Ability Caster</h2>
-<p >The <a class="el" href="classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html">Simple Ability Caster</a> component binds a single key input to an <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html">ability</a>.</p>
+<div class="textblock"><p ><a class="anchor" id="md__github_workspace_Samples__Tutorial_Assets_Tutorial_1_Tutorial1"></a> This tutorial will take you through creating an ability that spawns an object, followed by steps for creating a custom ability that applies an outwards force to nearby rigidbodies.</p>
 <blockquote class="doxtable">
-<p >This script is compatible with both the legacy and newer package input systems </p>
+<p >You can follow the <em>LeGS</em> <a class="el" href="installation.html">installation guide</a> if the package is not already in your project.</p>
+<p >Sample project files can be imported with the package, but are not necessary to follow this tutorial. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md2"></a>
-Ability Info</h2>
-<p >An <a class="el" href="classLEGS_1_1Abilities_1_1AbilityInfo.html">AbilityInfo</a> component holds information about an <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">ability</a> and the <a class="el" href="interfaceLEGS_1_1IEntity.html">entity</a> that cast it.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Ability</h2>
-<p >This abstract class is a <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">ScriptableObject</a> implementation of the <a class="el" href="interfaceLEGS_1_1Abilities_1_1IAbility.html">IAbility</a> interface, with parameters for a <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#a2eca95cbdfd6d47e20c59d5dffe60247">display name</a>, <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#aeb6bc9f7b82ee23b6f7386c8e3d963f1">description</a>, and <a class="el" href="classLEGS_1_1Abilities_1_1Ability.html#a05603810d8a7a59a7cc2b51a197c0bd4">cooldown</a>.</p>
-<p >Some implementations have been provided, which can be accessed under the <code>LEGS/Abilities</code> asset context menu.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadRight">Name   </th><th class="markdownTableHeadLeft">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html">Add Status Effect</a>   </td><td class="markdownTableBodyLeft">Adds a <a class="el" href="classLEGS_1_1StatusEffect.html">status effect</a> onto the casting <a class="el" href="interfaceLEGS_1_1IEntity.html">entity</a>    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1Abilities_1_1AbilityApplyForce.html">Apply Force</a>   </td><td class="markdownTableBodyLeft">Adds an instant force to casting <a class="el" href="interfaceLEGS_1_1IEntity.html">entity's</a> attached <a href="https://docs.unity3d.com/ScriptReference/Rigidbody.html">Rigidbody</a>    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1Abilities_1_1AbilitySpawnObject.html">Spawn Object</a>   </td><td class="markdownTableBodyLeft">Spawns a prefab at the casting <a class="el" href="interfaceLEGS_1_1IEntity.html">entity</a>, with an optional offset   </td></tr>
-</table>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Spawn objects ability</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Creating an ability</h2>
+<p >By using the asset menu (<em>often this is a right click in your assets window</em>), you can see example abilities under <code>Create &gt; LeGS &gt; Abilities</code>. For this tutorial we will select <code>Spawn Object</code>.</p>
+<p ><img src="https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/CreateAbility.png" alt="Unity create ability using context menu" class="inline"/></p>
+<p >Feel free to edit the ability's properties, such as name and description. There are tooltips on each parameter to explain their usage.</p>
+<p >For the tutorial a cube will be used as the spawned prefab, but feel free to use any prefab available. The spawned cube has a <a href="https://docs.unity3d.com/ScriptReference/Rigidbody.html">Rigidbody</a> attached, so the <code>Force</code> parameter will apply that amount of force upon creating the cube.</p>
+<p ><img src="https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/SpawnObjectAbility.png" alt="Inspector of spawn ability" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Using the ability</h2>
+<p >Attach a <a class="el" href="classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html">SimpleAbilityCaster</a> script to any GameObject in the active scene, place your newly created ability in the <code>Ability</code> slot and assign a casting key.</p>
+<p >Press play and activate your new ability!</p>
+<p ><img src="https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/SpawnCubes.gif" alt="Spawning cubes" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Creating a custom ability</h1>
+<p >Create a new script, below is the recommended code to start this new ability.</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code hl_namespace" href="namespaceLEGS.html">LEGS</a>;</div>
+<div class="line"><span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><span class="keyword">using</span> <a class="code hl_namespace" href="namespaceLEGS.html">LEGS</a>.<a class="code hl_namespace" href="namespaceLEGS_1_1Abilities.html">Abilities</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Adds our ability to the asset context menu</span></div>
+<div class="line">[CreateAssetMenu(fileName = <span class="stringliteral">&quot;Explode&quot;</span>, menuName = <span class="stringliteral">&quot;LeGS/Abilities/Explode&quot;</span>)]</div>
+<div class="line"><span class="comment">// Our class, which inherits from LEGS.Abilities.Ability</span></div>
+<div class="line"><span class="comment">//</span></div>
+<div class="line"><span class="comment">// Ability that detects Rigidbodies within a radius of caster and applies an</span></div>
+<div class="line"><span class="comment">// instant force to them, in direction away from caster</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>AbilityExplode : Ability</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// Required</span></div>
+<div class="line">    <span class="comment">// Called whenever the ability is to be cast </span></div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Activate(IEntity caster, GameObject gameObject) { }</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespaceLEGS_1_1Abilities_html"><div class="ttname"><a href="namespaceLEGS_1_1Abilities.html">LEGS.Abilities</a></div><div class="ttdef"><b>Definition:</b> IAbility.cs:4</div></div>
+<div class="ttc" id="anamespaceLEGS_html"><div class="ttname"><a href="namespaceLEGS.html">LEGS</a></div><div class="ttdef"><b>Definition:</b> IAbility.cs:4</div></div>
+</div><!-- fragment --><p >We will add three parameters in the class that will be used in the calculations during ability activation </p><div class="fragment"><div class="line"><span class="comment">// Radius around caster to check for rigidbodies</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> Radius = 10.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Instant force to apply to rigidbodies in area</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> Force = 12.5f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Explosion force to add in an upwards direction</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> UpwardsForce = 2.5f;</div>
+</div><!-- fragment --><p >Next is to fill out the <code>Activate</code> function to execute the explosion</p>
+<div class="fragment"><div class="line"><span class="comment">// Store the source of the explosion</span></div>
+<div class="line">Vector3 center = gameObject.transform.position;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get the collider on the casting object, used to avoid affecting itself</span></div>
+<div class="line">Collider casterCollider = gameObject.GetComponent&lt;Collider&gt;();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Get all colliders within radius of gameObject (this includes colliders attached to the caster gameobject)</span></div>
+<div class="line">Collider[] colliders = Physics.OverlapSphere(center, Radius);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Iterate over all found colliders</span></div>
+<div class="line"><span class="keywordflow">foreach</span>(Collider collider <span class="keywordflow">in</span> colliders)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// Make sure the caster doesn&#39;t explode itself</span></div>
+<div class="line">    <span class="keywordflow">if</span>(collider == casterCollider)</div>
+<div class="line">        <span class="keywordflow">continue</span>; <span class="comment">// Ignore this collider, keep looping</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Check for rigidbody on collider</span></div>
+<div class="line">    <span class="keywordflow">if</span>(collider.TryGetComponent(out Rigidbody rigidbody))</div>
+<div class="line">        <span class="comment">// Apply explosive force</span></div>
+<div class="line">        rigidbody.AddExplosionForce(Force, center, Radius, UpwardsForce, ForceMode.Impulse);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Now you can follow the first part of the tutorial but with your own custom ability!</p>
+<p ><img src="https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/Explosion.gif" alt="Explosions!" class="inline"/> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="index.html">LeGS</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

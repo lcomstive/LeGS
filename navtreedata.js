@@ -25,29 +25,30 @@
 var NAVTREE =
 [
   [ "LeGS", "index.html", [
-    [ "Ability System", "abilities.html", null ],
-    [ "Characters", "md_Markdown_Characters_Characters.html", null ],
-    [ "LeGS Dialogue", "md_Markdown_Dialogue_LeGS_Dialogue.html", null ],
-    [ "Installation", "installation.html", null ],
-    [ "LeGS Inventory", "md_Markdown_Inventory_LeGS_Inventory.html", null ],
-    [ "LeGS Items", "md_Markdown_Items_LeGS_Items.html", null ],
-    [ "LeGS Quests", "md_Markdown_Quests_LeGS_Quests.html", null ],
-    [ "LeGS Shop", "md_Markdown_Shop_LeGS_Shop.html", null ],
-    [ "MOBASample", "md__github_workspace_Samples__MOBA_Assets_MOBASample.html", null ],
-    [ "Tutorial 1 - Abilities", "Tutorial1.html", [
-      [ "Helper Classes", "Tutorial1.html#autotoc_md0", [
-        [ "Simple Ability Caster", "Tutorial1.html#autotoc_md1", null ],
-        [ "Ability Info", "Tutorial1.html#autotoc_md2", null ],
-        [ "Ability", "Tutorial1.html#autotoc_md3", null ]
-      ] ]
+    [ "Characters", "characters.html", null ],
+    [ "Abilities", "abilities.html", null ],
+    [ "Quests", "quests.html", null ],
+    [ "MOBA Sample", "samplemoba.html", null ],
+    [ "Tutorial 0 - Getting Familiar", "Tutorial0.html", [
+      [ "Modules", "index.html#autotoc_md0", null ],
+      [ "Samples", "index.html#autotoc_md1", null ],
+      [ "Installation", "index.html#autotoc_md2", null ],
+      [ "License", "index.html#autotoc_md3", null ],
+      [ "Interfaces", "Tutorial0.html#autotoc_md10", null ],
+      [ "Events", "Tutorial0.html#autotoc_md11", null ],
+      [ "Tutorials", "Tutorial0.html#autotoc_md12", null ]
     ] ],
+    [ "Tutorial 1 - Abilities", "Tutorial1.html", [
+      [ "Spawn objects ability", "Tutorial1.html#autotoc_md4", [
+        [ "Creating an ability", "Tutorial1.html#autotoc_md5", null ],
+        [ "Using the ability", "Tutorial1.html#autotoc_md6", null ]
+      ] ],
+      [ "Creating a custom ability", "Tutorial1.html#autotoc_md7", null ]
+    ] ],
+    [ "Installation", "installation.html", null ],
+    [ "License", "license.html", null ],
     [ "Tutorial 2 - Characters", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
     [ "Tutorial 3 - Abilities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
-    [ "Tutorial 0 - Getting Familiar", "Tutorial0.html", [
-      [ "Interfaces", "Tutorial0.html#autotoc_md6", null ],
-      [ "Tutorials", "Tutorial0.html#autotoc_md7", null ]
-    ] ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -73,8 +74,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Tutorial0.html",
-"classLEGS_1_1EventManager.html#ae7deb96230b62fe500f3a183bf8e6a1e",
-"interfaceLEGS_1_1Characters_1_1ICharacter.html#a19bb82d3b6e232e9da75df3730c8b369"
+"classLEGS_1_1EventManager.html#ada4b8123083a210936b171a006c6355f",
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#aa054565c2773bd2659a84dcdc1b58a88"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

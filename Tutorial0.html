@@ -100,38 +100,35 @@ $(document).ready(function(){initNavTree('Tutorial0.html',''); initResizable(); 
   <div class="headertitle"><div class="title">Tutorial 0 - Getting Familiar </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md__github_workspace_Samples__Tutorial_Assets_Tutorial0"></a> <em>LeGS</em> is built on a base of interface classes, with some simple implementations to get you started, and a handful of higher level classes to showcase how these systems can work together.</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<div class="textblock"><p ><a class="anchor" id="md__github_workspace_Samples__Tutorial_Assets_Tutorial0"></a> <em>LeGS</em> is built on interfaces &amp; events, with some simple implementations to get you started.</p>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Interfaces</h1>
-<p ><a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a>s represent <em>LeGS</em> objects in the game world.</p>
-<blockquote class="doxtable">
-<p >A basic implementation is provided in <a class="el" href="classLEGS_1_1Entity.html">Entity</a> </p>
-</blockquote>
-<p><br  />
-</p>
-<p ><a class="el" href="interfaceLEGS_1_1IStatusEffect.html">IStatusEffect</a>s can be added and removed from an <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a>.</p>
-<blockquote class="doxtable">
-<p >Basic implementations are provided in <a class="el" href="classLEGS_1_1StatusEffect.html">StatusEffect</a> and <a class="el" href="classLEGS_1_1TimedStatusEffect.html">TimedStatusEffect</a> </p>
-</blockquote>
-<p><br  />
-</p>
-<p ><a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a> is an <a class="el" href="classLEGS_1_1Entity.html">IEntity</a> that can have <a class="el" href="interfaceLEGS_1_1IStatusEffect.html">IStatusEffect</a>s added and removed</p>
-<blockquote class="doxtable">
-<p >Basic implementation provided as part of <a href="LEGS.Characters.Character">Character</a> </p>
-</blockquote>
-<p><br  />
-</p>
-<p ><a class="el" href="interfaceLEGS_1_1IDamageable.html">IDamageable</a> objects have health and can receive damage.</p>
-<blockquote class="doxtable">
-<p >Basic implementation is provided in <a class="el" href="classLEGS_1_1Damageable.html">Damageable</a> and part of <a class="el" href="classLEGS_1_1Characters_1_1Character.html">Character</a> </p>
-</blockquote>
-<p><br  />
-</p>
-<p ><a class="el" href="interfaceLEGS_1_1Characters_1_1ICharacter.html">ICharacter</a> inherits from <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a>, <a class="el" href="interfaceLEGS_1_1IDamageable.html">IDamageable</a> &amp; <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a>.</p>
-<blockquote class="doxtable">
-<p >Basic implementation is provided in <a class="el" href="classLEGS_1_1Characters_1_1Character.html">Character</a>. </p>
-</blockquote>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<ul>
+<li><a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a>s represent <em>LeGS</em> objects in the game world.</li>
+<li><a class="el" href="interfaceLEGS_1_1IStatusEffect.html">IStatusEffect</a>s can be added and removed from an <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a></li>
+<li><a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a> is an <a class="el" href="classLEGS_1_1Entity.html">IEntity</a> that can have <a class="el" href="interfaceLEGS_1_1IStatusEffect.html">IStatusEffect</a>s added and removed</li>
+<li><a class="el" href="interfaceLEGS_1_1IDamageable.html">IDamageable</a> objects have health and can receive damage.</li>
+<li><a class="el" href="interfaceLEGS_1_1Characters_1_1ICharacter.html">ICharacter</a> inherits from <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a>, <a class="el" href="interfaceLEGS_1_1IDamageable.html">IDamageable</a> &amp; <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">IStatusEffectReceiver</a>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Events</h1>
+<p >The <a class="el" href="classLEGS_1_1EventManager.html">EventManager</a> handles LeGS events, all of which will be derived from <a class="el" href="classLEGS_1_1LEGEventArgs.html">LEGEventArgs</a>.</p>
+<p >Events can be <a class="el" href="classLEGS_1_1EventManager.html#ae7deb96230b62fe500f3a183bf8e6a1e">registered</a>, <a class="el" href="classLEGS_1_1EventManager.html#a510cbd1dde0633f87d364b8b3bae1bb6">subscribed</a> and <a class="el" href="classLEGS_1_1EventManager.html#a9d05dc47a5710feb9896f0451bb89f2a">published</a>.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadRight">Name   </th><th class="markdownTableHeadLeft">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1EntityHealthChangeEventArgs.html">EntityHealthChangeEventArgs</a>   </td><td class="markdownTableBodyLeft"><a class="el" href="interfaceLEGS_1_1IDamageable.html">Damageable</a>'s health change    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1EntityDeathEventArgs.html">EntityDeathEventArgs</a>   </td><td class="markdownTableBodyLeft"><a class="el" href="interfaceLEGS_1_1IDamageable.html">Damageable</a>'s health has reached zero    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1StatusEffectChangeArgs.html">StatusEffectChangeArgs</a>   </td><td class="markdownTableBodyLeft">A <a class="el" href="interfaceLEGS_1_1IStatusEffect.html">status effect</a> has been added or removed from a <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html">receiver</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1Characters_1_1AttributeEventArgs.html">AttributeEventArgs</a>   </td><td class="markdownTableBodyLeft">An <a class="el" href="interfaceLEGS_1_1Characters_1_1IAttributeHolder.html">IAttributeHolder</a>'s attribute has been added, removed or modified    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyRight"><a class="el" href="classLEGS_1_1Quests_1_1QuestEventArgs.html">QuestEventArgs</a>   </td><td class="markdownTableBodyLeft">Event for changes in a <a class="el" href="classLEGS_1_1Quests_1_1Quest.html">quest</a>   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Tutorials</h1>
 <ul>
 <li><a class="el" href="Tutorial1.html">Abilities</a></li>
@@ -143,6 +140,7 @@ Tutorials</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="index.html">LeGS</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

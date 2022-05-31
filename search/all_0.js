@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['ability_0',['Ability',['../classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html#a5bf6a0d2d3773b7fca51aa9bea03c6c0',1,'LEGS.Abilities.SimpleAbilityCaster.Ability()'],['../classLEGS_1_1Abilities_1_1Ability.html',1,'LEGS.Abilities.Ability']]],
-  ['ability_20system_1',['Ability System',['../abilities.html',1,'index']]],
+  ['abilities_0',['Abilities',['../abilities.html',1,'index']]],
+  ['ability_1',['Ability',['../classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html#a5bf6a0d2d3773b7fca51aa9bea03c6c0',1,'LEGS.Abilities.SimpleAbilityCaster.Ability()'],['../classLEGS_1_1Abilities_1_1Ability.html',1,'LEGS.Abilities.Ability']]],
   ['abilityaddstatuseffect_2',['AbilityAddStatusEffect',['../classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html',1,'LEGS::Abilities']]],
   ['abilityapplyforce_3',['AbilityApplyForce',['../classLEGS_1_1Abilities_1_1AbilityApplyForce.html',1,'LEGS::Abilities']]],
   ['abilitycastinfo_4',['AbilityCastInfo',['../classMOBAExample_1_1AbilityCastInfo.html',1,'MOBAExample']]],
