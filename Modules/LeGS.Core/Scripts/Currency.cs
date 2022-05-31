@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace LEGS.Shop
+namespace LEGS
 {
 	public enum CurrencyUnit : byte
 	{

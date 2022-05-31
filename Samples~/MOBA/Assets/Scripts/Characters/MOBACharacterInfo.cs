@@ -1,5 +1,5 @@
-﻿using System;
-using LEGS.Shop;
+﻿using LEGS;
+using System;
 using UnityEngine;
 using LEGS.Abilities;
 

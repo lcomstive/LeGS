@@ -1,29 +1,94 @@
 # Tutorial 1 - Abilities {#Tutorial1}
 
-## Helper Classes
-There are a few helper scripts to get started with the ability system before needing to delve deeper into custom implementations.
+This tutorial will take you through creating an ability that spawns an object,
+followed by steps for creating a custom ability that applies an outwards force to nearby rigidbodies.
 
-### Simple Ability Caster
-The [Simple Ability Caster](@ref LEGS.Abilities.SimpleAbilityCaster) component binds a single key input to an [ability](@ref LEGS.Abilities.Ability).
+> You can follow the *LeGS* [installation guide](@ref installation) if the package is not already in your project.
+> 
+> Sample project files can be imported with the package, but are not necessary to follow this tutorial.
 
-> This script is compatible with both the legacy and newer package input systems
+## Spawn objects ability
+### Creating an ability
+By using the asset menu (*often this is a right click in your assets window*), you can see example abilities under `Create > LeGS > Abilities`. For this tutorial we will select `Spawn Object`.
 
-### Ability Info
-An [AbilityInfo](@ref LEGS.Abilities.AbilityInfo) component holds information about an
-[ability](@ref LEGS.Abilities.IAbility) and the [entity](@ref LEGS.IEntity) that cast it.
+![Unity create ability using context menu](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/CreateAbility.png)
 
-### Ability
-This abstract class is a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) implementation of
-the [IAbility](@ref LEGS.Abilities.IAbility) interface, with parameters for
-a [display name](@ref LEGS.Abilities.Ability#DisplayName), [description](@ref LEGS.Abilities.Ability#Description),
-and [cooldown](@ref LEGS.Abilities.Ability#Cooldown).
+Feel free to edit the ability's properties, such as name and description. There are tooltips on each parameter to explain their usage.
 
-Some implementations have been provided, which can be accessed under the `LEGS/Abilities` asset context menu.
+For the tutorial a cube will be used as the spawned prefab, but feel free to use any prefab available.
+The spawned cube has a [Rigidbody](https://docs.unity3d.com/ScriptReference/Rigidbody.html) attached,
+so the `Force` parameter will apply that amount of force upon creating the cube.
 
-| Name | Description |
-|-----:|:------------|
-| [Add Status Effect](@ref LEGS.Abilities.AbilityAddStatusEffect) | Adds a [status effect](@ref LEGS.StatusEffect) onto the casting [entity](@ref LEGS.IEntity) |
-| [Apply Force](@ref LEGS.Abilities.AbilityApplyForce) | Adds an instant force to casting [entity's](@ref LEGS.IEntity) attached [Rigidbody](https://docs.unity3d.com/ScriptReference/Rigidbody.html) |
-| [Spawn Object](@ref LEGS.Abilities.AbilitySpawnObject) | Spawns a prefab at the casting [entity](@ref LEGS.IEntity), with an optional offset |
+![Inspector of spawn ability](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/SpawnObjectAbility.png)
 
+### Using the ability
+Attach a [SimpleAbilityCaster](@ref LEGS.Abilities.SimpleAbilityCaster) script to any GameObject in the active scene,
+place your newly created ability in the `Ability` slot and assign a casting key.
 
+Press play and activate your new ability!
+
+![Spawning cubes](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/SpawnCubes.gif)
+
+## Creating a custom ability
+Create a new script, below is the recommended code to start this new ability.
+
+```cs
+using LEGS;
+using UnityEngine;
+using LEGS.Abilities;
+
+// Adds our ability to the asset context menu
+[CreateAssetMenu(fileName = "Explode", menuName = "LeGS/Abilities/Explode")]
+// Our class, which inherits from LEGS.Abilities.Ability
+//
+// Ability that detects Rigidbodies within a radius of caster and applies an
+// instant force to them, in direction away from caster
+public class AbilityExplode : Ability
+{
+	// Required
+	// Called whenever the ability is to be cast 
+	public override void Activate(IEntity caster, GameObject gameObject) { }
+}
+```
+
+We will add three parameters in the class that will be used in the calculations during ability activation
+```cs
+// Radius around caster to check for rigidbodies
+public float Radius = 10.0f;
+
+// Instant force to apply to rigidbodies in area
+public float Force = 12.5f;
+
+// Explosion force to add in an upwards direction
+public float UpwardsForce = 2.5f;
+```
+
+Next is to fill out the `Activate` function to execute the explosion
+
+```cs
+// Store the source of the explosion
+Vector3 center = gameObject.transform.position;
+
+// Get the collider on the casting object, used to avoid affecting itself
+Collider casterCollider = gameObject.GetComponent<Collider>();
+
+// Get all colliders within radius of gameObject (this includes colliders attached to the caster gameobject)
+Collider[] colliders = Physics.OverlapSphere(center, Radius);
+
+// Iterate over all found colliders
+foreach(Collider collider in colliders)
+{
+	// Make sure the caster doesn't explode itself
+	if(collider == casterCollider)
+		continue; // Ignore this collider, keep looping
+
+	// Check for rigidbody on collider
+	if(collider.TryGetComponent(out Rigidbody rigidbody))
+		// Apply explosive force
+		rigidbody.AddExplosionForce(Force, center, Radius, UpwardsForce, ForceMode.Impulse);
+}
+```
+
+Now you can follow the first part of the tutorial but with your own custom ability!
+
+![Explosions!](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial1/Explosion.gif)

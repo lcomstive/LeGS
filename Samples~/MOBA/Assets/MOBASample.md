@@ -1,6 +1,3 @@
-@defgroup Samples
-@addtogroup Samples
-
 # MOBA Sample {#samplemoba}
 Namespace `MOBAExample`
 

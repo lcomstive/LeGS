@@ -20,8 +20,8 @@ namespace LEGS.Abilities
 		/// <summary>
 		/// Minimum time, in seconds, between activations
 		/// </summary>
-		[Tooltip("Minimum time, in seconds, between activations")]
-		[field: SerializeField] public float Cooldown { get; private set; } = 2.5f;
+		[field: SerializeField, Tooltip("Minimum time, in seconds, between activations")] 
+		public float Cooldown { get; private set; } = 2.5f;
 
 		/// <summary>
 		/// Activates this ability on the desired <see cref="IEntity"/>,

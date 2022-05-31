@@ -1,4 +1,4 @@
-# Ability System {#abilities}
+# Abilities {#abilities}
 Namespace `LEGS.Abilities`
 
 Testing, testing

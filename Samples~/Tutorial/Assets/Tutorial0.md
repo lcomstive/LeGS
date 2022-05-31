@@ -1,37 +1,26 @@
 # Tutorial 0 - Getting Familiar {#Tutorial0}
 
-*LeGS* is built on a base of interface classes, with some simple implementations to get you started, and a handful of higher level classes
-to showcase how these systems can work together.
+*LeGS* is built on interfaces & events, with some simple implementations to get you started.
 
 ## Interfaces
+ - [IEntity](@ref LEGS.IEntity)s represent *LeGS* objects in the game world.
+ - [IStatusEffect](@ref LEGS.IStatusEffect)s can be added and removed from an [IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver)
+ - [IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver) is an [IEntity](@ref LEGS.Entity) that can have [IStatusEffect](@ref LEGS.IStatusEffect)s added and removed
+ - [IDamageable](@ref LEGS.IDamageable) objects have health and can receive damage.
+ - [ICharacter](@ref LEGS.Characters.ICharacter) inherits from [IEntity](@ref LEGS.IEntity), [IDamageable](@ref LEGS.IDamageable) & [IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver).
 
-[IEntity](@ref LEGS.IEntity)s represent *LeGS* objects in the game world.
+## Events
+The [EventManager](@ref LEGS.EventManager) handles LeGS events, all of which will be derived from [LEGEventArgs](@ref LEGS.LEGEventArgs).
 
-> A basic implementation is provided in [Entity](@ref LEGS.Entity)
+Events can be [registered](@ref LEGS.EventManager#RegisterEvent), [subscribed](@ref LEGS.EventManager#Subscribe<T>) and [published](@ref LEGS.EventManager#Publish<T>).
 
-<br>
-
-[IStatusEffect](@ref LEGS.IStatusEffect)s can be added and removed from an [IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver).
-
-> Basic implementations are provided in [StatusEffect](@ref LEGS.StatusEffect) and [TimedStatusEffect](@ref LEGS.TimedStatusEffect)
-
-<br>
-
-[IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver) is an [IEntity](@ref LEGS.Entity) that can have [IStatusEffect](@ref LEGS.IStatusEffect)s added and removed
-
-> Basic implementation provided as part of [Character](LEGS.Characters.Character)
-
-<br>
-
-[IDamageable](@ref LEGS.IDamageable) objects have health and can receive damage.
-
-> Basic implementation is provided in [Damageable](@ref LEGS.Damageable) and part of [Character](@ref LEGS.Characters.Character)
-
-<br>
-
-[ICharacter](@ref LEGS.Characters.ICharacter) inherits from [IEntity](@ref LEGS.IEntity), [IDamageable](@ref LEGS.IDamageable) & [IStatusEffectReceiver](@ref LEGS.IStatusEffectReceiver).
-
-> Basic implementation is provided in [Character](@ref LEGS.Characters.Character).
+| Name | Description |
+|-----:|:------------|
+| [EntityHealthChangeEventArgs](@ref LEGS.EntityHealthChangeEventArgs) | [Damageable](@ref LEGS.IDamageable)'s health change |
+| [EntityDeathEventArgs](@ref LEGS.EntityDeathEventArgs) | [Damageable](@ref LEGS.IDamageable)'s health has reached zero |
+| [StatusEffectChangeArgs](@ref LEGS.StatusEffectChangeArgs) | A [status effect](@ref LEGS.IStatusEffect) has been added or removed from a [receiver](@ref LEGS.IStatusEffectReceiver) |
+| [AttributeEventArgs](@ref LEGS.Characters.AttributeEventArgs) | An [IAttributeHolder](@ref LEGS.Characters.IAttributeHolder)'s attribute has been added, removed or modified |
+| [QuestEventArgs](@ref LEGS.Quests.QuestEventArgs) | Event for changes in a [quest](@ref LEGS.Quests.Quest) |
 
 ## Tutorials
  - [Abilities](@ref Tutorial1)

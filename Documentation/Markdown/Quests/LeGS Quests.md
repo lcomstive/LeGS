@@ -1,5 +1,2 @@
-@defgroup Quests
-@addtogroup Quests
-
-# Questing System {#quests}
+# Quests {#quests}
 namespace `LEGS.Quests`
