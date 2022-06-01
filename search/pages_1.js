@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['characters_0',['Characters',['../characters.html',1,'index']]]
+  ['legs_0',['LeGS',['../index.html',1,'']]],
+  ['license_1',['License',['../License.html',1,'']]]
 ];

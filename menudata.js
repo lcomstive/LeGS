@@ -24,7 +24,15 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"},
+{text:"Installation",url:"Installation.html"},
+{text:"Tutorials",url:"[none]",children:[
+{text:"Getting Started",url:"Tutorial0.html"},
+{text:"Abilities",url:"Tutorial1.html"},
+{text:"Characters",url:"Tutorial2.html"},
+{text:"Events",url:"Tutorial3.html"}]},
+{text:"Samples",url:"[none]",children:[
+{text:"MOBA",url:"samplemoba.html"}]},
+{text:"License",url:"License.html"},
 {text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
