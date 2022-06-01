@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deregisterevent_0',['DeregisterEvent',['../classLEGS_1_1EventManager.html#ac9f8c0dc5b27bae2d5a8dde9544efd88',1,'LEGS.EventManager.DeregisterEvent(string name)'],['../classLEGS_1_1EventManager.html#a1b7d21185be190034b56f0eaea168643',1,'LEGS.EventManager.DeregisterEvent(ushort id)']]]
+  ['deregister_0',['Deregister',['../classLEGS_1_1EventManager.html#a5a69791d0552cef49e47ac6df7f9a2c9',1,'LEGS.EventManager.Deregister(string name)'],['../classLEGS_1_1EventManager.html#a101ed8b13fc64b6ed8f7eb5e5d10b2e4',1,'LEGS.EventManager.Deregister(ushort id)']]]
 ];

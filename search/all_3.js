@@ -3,7 +3,7 @@ var searchData=
   ['damageable_0',['Damageable',['../classLEGS_1_1EntityHealthChangeEventArgs.html#ad1b2e30743de78a2411866ce4d6d53c3',1,'LEGS.EntityHealthChangeEventArgs.Damageable()'],['../classLEGS_1_1Damageable.html',1,'LEGS.Damageable']]],
   ['damageovertimestatuseffect_1',['DamageOverTimeStatusEffect',['../classLEGS_1_1DamageOverTimeStatusEffect.html',1,'LEGS']]],
   ['damagepopup_2',['DamagePopup',['../classMOBAExample_1_1DamagePopup.html',1,'MOBAExample']]],
-  ['deregisterevent_3',['DeregisterEvent',['../classLEGS_1_1EventManager.html#ac9f8c0dc5b27bae2d5a8dde9544efd88',1,'LEGS.EventManager.DeregisterEvent(string name)'],['../classLEGS_1_1EventManager.html#a1b7d21185be190034b56f0eaea168643',1,'LEGS.EventManager.DeregisterEvent(ushort id)']]],
+  ['deregister_3',['Deregister',['../classLEGS_1_1EventManager.html#a5a69791d0552cef49e47ac6df7f9a2c9',1,'LEGS.EventManager.Deregister(string name)'],['../classLEGS_1_1EventManager.html#a101ed8b13fc64b6ed8f7eb5e5d10b2e4',1,'LEGS.EventManager.Deregister(ushort id)']]],
   ['description_4',['Description',['../classLEGS_1_1Abilities_1_1Ability.html#aeb6bc9f7b82ee23b6f7386c8e3d963f1',1,'LEGS.Abilities.Ability.Description()'],['../classLEGS_1_1Quests_1_1Quest.html#a9c7875e15285ffc9f626ff7b441a7979',1,'LEGS.Quests.Quest.Description()'],['../classLEGS_1_1Quests_1_1QuestParameter.html#a50f5aa641a30fa17fd696b9ddd464a3a',1,'LEGS.Quests.QuestParameter.Description()']]],
   ['destroyafterseconds_5',['DestroyAfterSeconds',['../classLEGS_1_1DestroyAfterSeconds.html',1,'LEGS']]],
   ['destroyoncollision_6',['DestroyOnCollision',['../classLEGS_1_1DestroyOnCollision.html',1,'LEGS']]],

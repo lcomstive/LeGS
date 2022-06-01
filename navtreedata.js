@@ -34,9 +34,9 @@ var NAVTREE =
       [ "Samples", "index.html#autotoc_md1", null ],
       [ "Installation", "index.html#autotoc_md2", null ],
       [ "License", "index.html#autotoc_md3", null ],
-      [ "Interfaces", "Tutorial0.html#autotoc_md10", null ],
-      [ "Events", "Tutorial0.html#autotoc_md11", null ],
-      [ "Tutorials", "Tutorial0.html#autotoc_md12", null ]
+      [ "Interfaces", "Tutorial0.html#autotoc_md13", null ],
+      [ "Events", "Tutorial0.html#autotoc_md14", null ],
+      [ "Tutorials", "Tutorial0.html#autotoc_md15", null ]
     ] ],
     [ "Tutorial 1 - Abilities", "Tutorial1.html", [
       [ "Spawn objects ability", "Tutorial1.html#autotoc_md4", [
@@ -45,10 +45,17 @@ var NAVTREE =
       ] ],
       [ "Creating a custom ability", "Tutorial1.html#autotoc_md7", null ]
     ] ],
+    [ "Tutorial 2 - Characters", "Tutorial2.html", [
+      [ "Adding a character & attributes", "Tutorial2.html#autotoc_md8", null ],
+      [ "Modifying ability to use the attribute", "Tutorial2.html#autotoc_md9", null ],
+      [ "Testing the attribute", "Tutorial2.html#autotoc_md10", null ]
+    ] ],
+    [ "Tutorial 3 - Events", "Tutorial3.html", [
+      [ "Listening to events", "Tutorial3.html#autotoc_md11", null ],
+      [ "Creating an event", "Tutorial3.html#autotoc_md12", null ]
+    ] ],
     [ "Installation", "installation.html", null ],
     [ "License", "license.html", null ],
-    [ "Tutorial 2 - Characters", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html", null ],
-    [ "Tutorial 3 - Abilities", "md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -74,8 +81,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Tutorial0.html",
-"classLEGS_1_1EventManager.html#ada4b8123083a210936b171a006c6355f",
-"interfaceLEGS_1_1Characters_1_1ICharacter.html#aa054565c2773bd2659a84dcdc1b58a88"
+"classLEGS_1_1EventManager.html#aa6e9f90bc8084f5d0ddf982c9fa8f2d4",
+"interfaceLEGS_1_1Characters_1_1IAttributeHolder.html#a9622acf2c2064883a522be88140cda54"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

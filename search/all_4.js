@@ -6,9 +6,9 @@ var searchData=
   ['entitydeatheventargs_3',['EntityDeathEventArgs',['../classLEGS_1_1EntityDeathEventArgs.html',1,'LEGS']]],
   ['entityhealthchangeeventargs_4',['EntityHealthChangeEventArgs',['../classLEGS_1_1EntityHealthChangeEventArgs.html#a0d930aa383abda6d28c3d7298b315fb5',1,'LEGS.EntityHealthChangeEventArgs.EntityHealthChangeEventArgs(IDamageable damageable, IEntity sender, float changeAmount)'],['../classLEGS_1_1EntityHealthChangeEventArgs.html#af9b67aa545134d32103354f702bb7751',1,'LEGS.EntityHealthChangeEventArgs.EntityHealthChangeEventArgs(IEntity entity, IDamageable damageable, IEntity sender, float changeAmount)'],['../classLEGS_1_1EntityHealthChangeEventArgs.html',1,'LEGS.EntityHealthChangeEventArgs']]],
   ['eventdebugger_5',['EventDebugger',['../classLEGS_1_1EventDebugger.html',1,'LEGS']]],
-  ['eventexists_6',['EventExists',['../classLEGS_1_1EventManager.html#a0c83955e3eec35efe0548f97d80a86db',1,'LEGS.EventManager.EventExists(ushort eventID)'],['../classLEGS_1_1EventManager.html#a80464e0c9731baaa1de85a7c5a529982',1,'LEGS.EventManager.EventExists(string name)']]],
-  ['eventid_7',['EventID',['../classLEGS_1_1LEGEventArgs.html#a48024dd4ce52d17bf5756b7da54e92bd',1,'LEGS::LEGEventArgs']]],
-  ['eventmanager_8',['EventManager',['../classLEGS_1_1EventManager.html',1,'LEGS']]],
-  ['eventname_9',['EventName',['../classLEGS_1_1EntityHealthChangeEventArgs.html#afc19ce061aeabd13c97316d35eecc283',1,'LEGS.EntityHealthChangeEventArgs.EventName()'],['../classLEGS_1_1EntityDeathEventArgs.html#a59000499d1491fc66456a8b035459121',1,'LEGS.EntityDeathEventArgs.EventName()'],['../classLEGS_1_1StatusEffectChangeArgs.html#ae020e3dfa759a8a69ac4ae9d685ab5c8',1,'LEGS.StatusEffectChangeArgs.EventName()']]],
+  ['eventid_6',['EventID',['../classLEGS_1_1LEGEventArgs.html#a48024dd4ce52d17bf5756b7da54e92bd',1,'LEGS::LEGEventArgs']]],
+  ['eventmanager_7',['EventManager',['../classLEGS_1_1EventManager.html',1,'LEGS']]],
+  ['eventname_8',['EventName',['../classLEGS_1_1EntityHealthChangeEventArgs.html#afc19ce061aeabd13c97316d35eecc283',1,'LEGS.EntityHealthChangeEventArgs.EventName()'],['../classLEGS_1_1EntityDeathEventArgs.html#a59000499d1491fc66456a8b035459121',1,'LEGS.EntityDeathEventArgs.EventName()'],['../classLEGS_1_1StatusEffectChangeArgs.html#ae020e3dfa759a8a69ac4ae9d685ab5c8',1,'LEGS.StatusEffectChangeArgs.EventName()']]],
+  ['exists_9',['Exists',['../classLEGS_1_1EventManager.html#af2689a1aab04a8ef89ea9d38a7b7f8ce',1,'LEGS.EventManager.Exists(ushort eventID)'],['../classLEGS_1_1EventManager.html#a8c7004382da433d4622019ae0279b0f0',1,'LEGS.EventManager.Exists(string name)']]],
   ['extensions_10',['Extensions',['../classLEGS_1_1Extensions.html',1,'LEGS']]]
 ];

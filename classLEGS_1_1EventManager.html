@@ -117,45 +117,45 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEventPubli
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab58afa1593550284368c7c52fc6adeff"><td class="memItemLeft" align="right" valign="top"><a id="ab58afa1593550284368c7c52fc6adeff" name="ab58afa1593550284368c7c52fc6adeff"></a>
-static ushort&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventID</b> (string name)</td></tr>
-<tr class="memdesc:ab58afa1593550284368c7c52fc6adeff"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>Event ID associated with <em>name</em> , or ushort.MaxValue if not found</dd></dl>
+<tr class="memitem:a83f124bdf23e9d86930f1c42847d6184"><td class="memItemLeft" align="right" valign="top"><a id="a83f124bdf23e9d86930f1c42847d6184" name="a83f124bdf23e9d86930f1c42847d6184"></a>
+static ushort&#160;</td><td class="memItemRight" valign="bottom"><b>GetID</b> (string name)</td></tr>
+<tr class="memdesc:a83f124bdf23e9d86930f1c42847d6184"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>Event ID associated with <em>name</em> , or ushort.MaxValue if not found</dd></dl>
 <br /></td></tr>
-<tr class="separator:ab58afa1593550284368c7c52fc6adeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b497817fc1acd2d75d892cb033fa01"><td class="memItemLeft" align="right" valign="top"><a id="a93b497817fc1acd2d75d892cb033fa01" name="a93b497817fc1acd2d75d892cb033fa01"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventName</b> (ushort eventID)</td></tr>
-<tr class="memdesc:a93b497817fc1acd2d75d892cb033fa01"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>Event name associated with <em>eventID</em> , or string.Empty if not found</dd></dl>
+<tr class="separator:a83f124bdf23e9d86930f1c42847d6184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9252499f26002943cd2227c0f94732ac"><td class="memItemLeft" align="right" valign="top"><a id="a9252499f26002943cd2227c0f94732ac" name="a9252499f26002943cd2227c0f94732ac"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> (ushort eventID)</td></tr>
+<tr class="memdesc:a9252499f26002943cd2227c0f94732ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>Event name associated with <em>eventID</em> , or string.Empty if not found</dd></dl>
 <br /></td></tr>
-<tr class="separator:a93b497817fc1acd2d75d892cb033fa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90f846e031e54ee6ecf0b5faee14f869"><td class="memItemLeft" align="right" valign="top">static ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1EventManager.html#a90f846e031e54ee6ecf0b5faee14f869">RegisterEvent&lt; T &gt;</a> (string name)</td></tr>
-<tr class="memdesc:a90f846e031e54ee6ecf0b5faee14f869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event by name &amp; type, allowing the event to be published  <a href="classLEGS_1_1EventManager.html#a90f846e031e54ee6ecf0b5faee14f869">More...</a><br /></td></tr>
-<tr class="separator:a90f846e031e54ee6ecf0b5faee14f869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7deb96230b62fe500f3a183bf8e6a1e"><td class="memItemLeft" align="right" valign="top"><a id="ae7deb96230b62fe500f3a183bf8e6a1e" name="ae7deb96230b62fe500f3a183bf8e6a1e"></a>
-static ushort&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEvent</b> (string name)</td></tr>
-<tr class="memdesc:ae7deb96230b62fe500f3a183bf8e6a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event by name, allowing the event to be published. Uses default <a class="el" href="classLEGS_1_1LEGEventArgs.html" title="LeGS event arguments base, for all events from EventManager">LEGEventArgs</a> as event type. <br /></td></tr>
-<tr class="separator:ae7deb96230b62fe500f3a183bf8e6a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9f8c0dc5b27bae2d5a8dde9544efd88"><td class="memItemLeft" align="right" valign="top"><a id="ac9f8c0dc5b27bae2d5a8dde9544efd88" name="ac9f8c0dc5b27bae2d5a8dde9544efd88"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeregisterEvent</b> (string name)</td></tr>
-<tr class="memdesc:ac9f8c0dc5b27bae2d5a8dde9544efd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an event from the registry <br /></td></tr>
-<tr class="separator:ac9f8c0dc5b27bae2d5a8dde9544efd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7d21185be190034b56f0eaea168643"><td class="memItemLeft" align="right" valign="top"><a id="a1b7d21185be190034b56f0eaea168643" name="a1b7d21185be190034b56f0eaea168643"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeregisterEvent</b> (ushort id)</td></tr>
-<tr class="memdesc:a1b7d21185be190034b56f0eaea168643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an event from the registry <br /></td></tr>
-<tr class="separator:a1b7d21185be190034b56f0eaea168643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9252499f26002943cd2227c0f94732ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95884dfe5226c440965f7c3e9f55931a"><td class="memItemLeft" align="right" valign="top">static ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1EventManager.html#a95884dfe5226c440965f7c3e9f55931a">Register&lt; T &gt;</a> (string name)</td></tr>
+<tr class="memdesc:a95884dfe5226c440965f7c3e9f55931a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event by name &amp; type, allowing the event to be published  <a href="classLEGS_1_1EventManager.html#a95884dfe5226c440965f7c3e9f55931a">More...</a><br /></td></tr>
+<tr class="separator:a95884dfe5226c440965f7c3e9f55931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad0352da0b0207e1c1356bd46b28895"><td class="memItemLeft" align="right" valign="top"><a id="afad0352da0b0207e1c1356bd46b28895" name="afad0352da0b0207e1c1356bd46b28895"></a>
+static ushort&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> (string name)</td></tr>
+<tr class="memdesc:afad0352da0b0207e1c1356bd46b28895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event by name, allowing the event to be published. Uses default <a class="el" href="classLEGS_1_1LEGEventArgs.html" title="LeGS event arguments base, for all events from EventManager">LEGEventArgs</a> as event type. <br /></td></tr>
+<tr class="separator:afad0352da0b0207e1c1356bd46b28895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a69791d0552cef49e47ac6df7f9a2c9"><td class="memItemLeft" align="right" valign="top"><a id="a5a69791d0552cef49e47ac6df7f9a2c9" name="a5a69791d0552cef49e47ac6df7f9a2c9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Deregister</b> (string name)</td></tr>
+<tr class="memdesc:a5a69791d0552cef49e47ac6df7f9a2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an event from the registry <br /></td></tr>
+<tr class="separator:a5a69791d0552cef49e47ac6df7f9a2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101ed8b13fc64b6ed8f7eb5e5d10b2e4"><td class="memItemLeft" align="right" valign="top"><a id="a101ed8b13fc64b6ed8f7eb5e5d10b2e4" name="a101ed8b13fc64b6ed8f7eb5e5d10b2e4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Deregister</b> (ushort id)</td></tr>
+<tr class="memdesc:a101ed8b13fc64b6ed8f7eb5e5d10b2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an event from the registry <br /></td></tr>
+<tr class="separator:a101ed8b13fc64b6ed8f7eb5e5d10b2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c638db5275404252067592bc17a673"><td class="memItemLeft" align="right" valign="top"><a id="a50c638db5275404252067592bc17a673" name="a50c638db5275404252067592bc17a673"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="memdesc:a50c638db5275404252067592bc17a673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all registered events <br /></td></tr>
 <tr class="separator:a50c638db5275404252067592bc17a673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c83955e3eec35efe0548f97d80a86db"><td class="memItemLeft" align="right" valign="top"><a id="a0c83955e3eec35efe0548f97d80a86db" name="a0c83955e3eec35efe0548f97d80a86db"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>EventExists</b> (ushort eventID)</td></tr>
-<tr class="memdesc:a0c83955e3eec35efe0548f97d80a86db"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if event is registered</dd></dl>
+<tr class="memitem:af2689a1aab04a8ef89ea9d38a7b7f8ce"><td class="memItemLeft" align="right" valign="top"><a id="af2689a1aab04a8ef89ea9d38a7b7f8ce" name="af2689a1aab04a8ef89ea9d38a7b7f8ce"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exists</b> (ushort eventID)</td></tr>
+<tr class="memdesc:af2689a1aab04a8ef89ea9d38a7b7f8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if event is registered</dd></dl>
 <br /></td></tr>
-<tr class="separator:a0c83955e3eec35efe0548f97d80a86db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80464e0c9731baaa1de85a7c5a529982"><td class="memItemLeft" align="right" valign="top"><a id="a80464e0c9731baaa1de85a7c5a529982" name="a80464e0c9731baaa1de85a7c5a529982"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>EventExists</b> (string name)</td></tr>
-<tr class="memdesc:a80464e0c9731baaa1de85a7c5a529982"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if event is registered</dd></dl>
+<tr class="separator:af2689a1aab04a8ef89ea9d38a7b7f8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7004382da433d4622019ae0279b0f0"><td class="memItemLeft" align="right" valign="top"><a id="a8c7004382da433d4622019ae0279b0f0" name="a8c7004382da433d4622019ae0279b0f0"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exists</b> (string name)</td></tr>
+<tr class="memdesc:a8c7004382da433d4622019ae0279b0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if event is registered</dd></dl>
 <br /></td></tr>
-<tr class="separator:a80464e0c9731baaa1de85a7c5a529982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8c7004382da433d4622019ae0279b0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510cbd1dde0633f87d364b8b3bae1bb6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1EventManager.html#a510cbd1dde0633f87d364b8b3bae1bb6">Subscribe&lt; T &gt;</a> (ushort eventID, Action&lt; T &gt; callback)</td></tr>
 <tr class="memdesc:a510cbd1dde0633f87d364b8b3bae1bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens to an event  <a href="classLEGS_1_1EventManager.html#a510cbd1dde0633f87d364b8b3bae1bb6">More...</a><br /></td></tr>
 <tr class="separator:a510cbd1dde0633f87d364b8b3bae1bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,7 +272,7 @@ static OnEventPublished&#160;</td><td class="memItemRight" valign="bottom"><b>Ev
 <table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>LEGEventArgs</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>Publish</em></td><td>&#160;</td></tr>
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>GetEventID</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>GetID</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>eventName</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>args</em></td><td>&#160;</td></tr>
 </table>
@@ -333,8 +333,8 @@ static OnEventPublished&#160;</td><td class="memItemRight" valign="bottom"><b>Ev
 
 </div>
 </div>
-<a id="a90f846e031e54ee6ecf0b5faee14f869" name="a90f846e031e54ee6ecf0b5faee14f869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90f846e031e54ee6ecf0b5faee14f869">&#9670;&nbsp;</a></span>RegisterEvent&lt; T &gt;()</h2>
+<a id="a95884dfe5226c440965f7c3e9f55931a" name="a95884dfe5226c440965f7c3e9f55931a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95884dfe5226c440965f7c3e9f55931a">&#9670;&nbsp;</a></span>Register&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ static OnEventPublished&#160;</td><td class="memItemRight" valign="bottom"><b>Ev
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static ushort <a class="el" href="classLEGS_1_1EventManager.html#ae7deb96230b62fe500f3a183bf8e6a1e">LEGS.EventManager.RegisterEvent</a>&lt; T &gt; </td>
+          <td class="memname">static ushort <a class="el" href="classLEGS_1_1EventManager.html#afad0352da0b0207e1c1356bd46b28895">LEGS.EventManager.Register</a>&lt; T &gt; </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -539,7 +539,7 @@ static OnEventPublished&#160;</td><td class="memItemRight" valign="bottom"><b>Ev
 <table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>LEGEventArgs</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>Unsubscribe</em></td><td>&#160;</td></tr>
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>GetEventID</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>GetID</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>eventName</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>callback</em></td><td>&#160;</td></tr>
 </table>

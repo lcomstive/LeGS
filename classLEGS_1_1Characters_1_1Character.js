@@ -3,6 +3,7 @@ var classLEGS_1_1Characters_1_1Character =
     [ "AddAttribute", "classLEGS_1_1Characters_1_1Character.html#af75d20d4a57328c1a0d075735b6881ff", null ],
     [ "AddStatusEffect", "classLEGS_1_1Characters_1_1Character.html#a457b943bb47caf933785795489a723ba", null ],
     [ "ApplyDamage", "classLEGS_1_1Characters_1_1Character.html#ac69d5c24c0715a6ddbd05cdcdbb2794c", null ],
+    [ "Awake", "classLEGS_1_1Characters_1_1Character.html#ae09d277604b32f71a206199eabea41b7", null ],
     [ "GetAttribute", "classLEGS_1_1Characters_1_1Character.html#a0368685babf1e9d3c5c0afad6fa18273", null ],
     [ "GetStatusEffect< T >", "classLEGS_1_1Characters_1_1Character.html#acec3053a670b95b093da343e683a2b3c", null ],
     [ "GetStatusEffects", "classLEGS_1_1Characters_1_1Character.html#a590874b34ff7650161d3ae85f523feaa", null ],

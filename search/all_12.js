@@ -8,6 +8,6 @@ var searchData=
   ['triggertype_5',['TriggerType',['../classLEGS_1_1TriggerApplyStatus.html#ab4b7e9b7800959d6af73468e994423c6',1,'LEGS::TriggerApplyStatus']]],
   ['tutorial_200_20_2d_20getting_20familiar_6',['Tutorial 0 - Getting Familiar',['../Tutorial0.html',1,'index']]],
   ['tutorial_201_20_2d_20abilities_7',['Tutorial 1 - Abilities',['../Tutorial1.html',1,'index']]],
-  ['tutorial_202_20_2d_20characters_8',['Tutorial 2 - Characters',['../md__github_workspace_Samples__Tutorial_Assets_Tutorial_2_Tutorial2.html',1,'']]],
-  ['tutorial_203_20_2d_20abilities_9',['Tutorial 3 - Abilities',['../md__github_workspace_Samples__Tutorial_Assets_Tutorial_3_Tutorial3.html',1,'']]]
+  ['tutorial_202_20_2d_20characters_8',['Tutorial 2 - Characters',['../Tutorial2.html',1,'index']]],
+  ['tutorial_203_20_2d_20events_9',['Tutorial 3 - Events',['../Tutorial3.html',1,'index']]]
 ];
