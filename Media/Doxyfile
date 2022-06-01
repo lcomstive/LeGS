@@ -30,4 +30,6 @@ HTML_EXTRA_FILES		= doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
 HTML_EXTRA_STYLESHEET	= doxygen-awesome-css/doxygen-awesome.css \
 						  doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
 						  doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css \
-						  custom.cssPROJECT_NUMBER=0.0.1
+						  custom.css
+
+PROJECT_NUMBER=0.0.1
