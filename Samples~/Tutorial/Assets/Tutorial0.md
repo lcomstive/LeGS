@@ -12,7 +12,7 @@
 ## Events
 The [EventManager](@ref LEGS.EventManager) handles LeGS events, all of which will be derived from [LEGEventArgs](@ref LEGS.LEGEventArgs).
 
-Events can be [registered](@ref LEGS.EventManager#RegisterEvent), [subscribed](@ref LEGS.EventManager#Subscribe<T>) and [published](@ref LEGS.EventManager#Publish<T>).
+Events can be [registered](@ref LEGS.EventManager#Register), [subscribed](@ref LEGS.EventManager#Subscribe<T>) and [published](@ref LEGS.EventManager#Publish<T>).
 
 | Name | Description |
 |-----:|:------------|
@@ -25,3 +25,7 @@ Events can be [registered](@ref LEGS.EventManager#RegisterEvent), [subscribed](@
 ## Tutorials
  - [Abilities](@ref Tutorial1)
  - [Characters](@ref Tutorial2)
+ - [Events](@ref Tutorial3)
+
+<br>
+<b><i>Next: [Tutorial - Abilities](@ref Tutorial1)</i></b>

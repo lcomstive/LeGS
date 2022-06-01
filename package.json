@@ -5,7 +5,7 @@
 	"displayName": "LeGS",
 	"author": "Lewis Comstive",
 	"license": "MIT",
-	"hideInEditor": "false",
+	"documentationUrl": "https://lcomstive.github.io/LeGS/",
 	"keywords": [ "LeGS" ],
 	"samples": [
 		{

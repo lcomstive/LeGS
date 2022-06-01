@@ -19,23 +19,23 @@ jobs:
         REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\""
         if [[ $JSON =~ $REGEX ]]; then
           echo LeGS v${BASH_REMATCH[1]}
-          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation/Doxyfile
+          echo "PROJECT_NUMER=${BASH_REMATCH[1]}" >> Documentation~/Doxyfile
         fi
 
     # Generate HTML
     - name: Doxygen
       uses: mattnotmitt/doxygen-action@v1.9.2
       with:
-        working-directory: 'Documentation/'
+        working-directory: 'Documentation~/'
         doxyfile-path: 'Doxyfile'
 
     # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
     - name: Copy media
-      run: sudo cp -R Documentation/Markdown/Media Documentation/html/Media
+      run: sudo cp -R Documentation~/Markdown/Media Documentation~/html/Media
 
     # Upload HTML to GitHub Pages site
     - name: Publish
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: Documentation/html
+        publish_dir: Documentation~/html

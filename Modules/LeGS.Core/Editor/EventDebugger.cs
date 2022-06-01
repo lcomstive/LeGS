@@ -61,7 +61,7 @@ namespace LEGS
 				foreach(var pair in m_Counters)
 				{
 					EditorGUILayout.BeginHorizontal(GUILayout.Width(size.x - 20));
-					EditorGUILayout.LabelField(EventManager.GetEventName(pair.Key), GUILayout.Width(size.x - 60));
+					EditorGUILayout.LabelField(EventManager.GetName(pair.Key), GUILayout.Width(size.x - 60));
 					EditorGUILayout.LabelField(pair.Value.ToString(), GUILayout.Width(40));
 					EditorGUILayout.EndHorizontal();
 				}

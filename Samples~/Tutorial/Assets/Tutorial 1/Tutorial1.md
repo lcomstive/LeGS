@@ -92,3 +92,6 @@ foreach(Collider collider in colliders)
 Now you can follow the first part of the tutorial but with your own custom ability!
 
 ![Explosions!](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial%201/Explosion.gif)
+
+<br>
+<b><i>Next: [Tutorial - Characters](@ref Tutorial2)</i></b>
