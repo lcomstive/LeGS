@@ -1,6 +1,11 @@
-# Tutorial 0 - Getting Familiar {#Tutorial0}
+# Tutorial 0 - Getting Started {#Tutorial0}
 
 *LeGS* is built on interfaces & events, with some simple implementations to get you started.
+
+## Installation
+You can follow the *LeGS* [installation guide](@ref Installation) to add the package to any new or existing Unity project.
+
+> There is currently no minimum Unity editor version; if the editor has the package manager, you can use *LeGS*.
 
 ## Interfaces
  - [IEntity](@ref LEGS.IEntity)s represent *LeGS* objects in the game world.
@@ -26,6 +31,13 @@ Events can be [registered](@ref LEGS.EventManager#Register), [subscribed](@ref L
  - [Abilities](@ref Tutorial1)
  - [Characters](@ref Tutorial2)
  - [Events](@ref Tutorial3)
+
+## Samples
+There is some example content available for the project, this can be found in Unity's package manager after *LeGS* is in the project. 
+
+As seen in the picture below, there is a `Samples` section with buttons to import content.
+![Inspector of spawn ability](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Tutorial%201/SpawnObjectAbility.png)
+
 
 <br>
 <b><i>Next: [Tutorial - Abilities](@ref Tutorial1)</i></b>

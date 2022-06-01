@@ -1,4 +1,4 @@
-# License {#license}
+# License {#License}
 
 MIT License
 

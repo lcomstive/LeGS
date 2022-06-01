@@ -2,7 +2,7 @@
 
 This tutorial will take you through creating a character that can receive damage and status effects.
 
-> You can follow the *LeGS* [installation guide](@ref installation) if the package is not already in your project.
+> You can follow the *LeGS* [installation guide](@ref Installation) if the package is not already in your project.
 > 
 > Sample project files can be imported with the package, but are not necessary to follow this tutorial.
 

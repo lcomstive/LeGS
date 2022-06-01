@@ -2,6 +2,10 @@
 
 Similar to [C# events](https://docs.microsoft.com/en-us/dotnet/standard/events/) and [UnityEvent](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html)s, [LEGS events](@ref LEGS.LEGEventArgs) can be [registered](@ref LEGS.EventManager#Register), [subscribed](@ref LEGS.EventManager#Subscribe<T>) and [published](@ref LEGS.EventManager#Publish<T>) using the [EventManager](@ref LEGS.EventManager).
 
+> You can follow the *LeGS* [installation guide](@ref Installation) if the package is not already in your project.
+> 
+> Sample project files can be imported with the package, but are not necessary to follow this tutorial.
+
 ## Listening to events
 
 A simple class that listens to entity death events might look like the following

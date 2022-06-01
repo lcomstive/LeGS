@@ -18,8 +18,8 @@ jobs:
         JSON=$(cat package.json)
         REGEX="\"version\":\\s?\"(([0-9]\\.?)+)\""
         if [[ $JSON =~ $REGEX ]]; then
-          echo LeGS v${BASH_REMATCH[1]}
           echo "PROJECT_NUMBER=${BASH_REMATCH[1]}" >> Documentation~/Doxyfile
+          echo LeGS v${BASH_REMATCH[1]}
         fi
 
     # Generate HTML
@@ -32,6 +32,9 @@ jobs:
     # Copy Documentation/Markdown/Media directory into Documentation/html for publishing
     - name: Copy media
       run: sudo cp -R Documentation~/Markdown/Media Documentation~/html/Media
+
+    - name: Debug Doxyfile
+      run: sudo cp Documentation~/Doxyfile Documentation~/html/Media/Doxyfile
 
     # Upload HTML to GitHub Pages site
     - name: Publish

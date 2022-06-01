@@ -1,4 +1,4 @@
-# Installation {#installation}
+# Installation {#Installation}
 Lewis' Game Systems
 
 > *LeGS* is available through the Unity Package Manager
