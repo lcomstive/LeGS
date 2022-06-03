@@ -24,7 +24,7 @@ namespace MOBAExample
 			m_Character = GetComponent<MOBACharacter>();
 			EventManager.Subscribe<EntityDeathEventArgs>(EntityDeathEventArgs.EventName, OnEntityDeath, true);
 
-			m_CharacterChangedEventID = EventManager.RegisterEvent<CharacterChangedEventArgs>(CharacterChangedEventArgs.EventName);
+			m_CharacterChangedEventID = EventManager.Register<CharacterChangedEventArgs>(CharacterChangedEventArgs.EventName);
 
 			CreateInvertedExperienceCurve();
 		}

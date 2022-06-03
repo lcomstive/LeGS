@@ -43,7 +43,7 @@ namespace MOBAExample
 			Caster = caster;
 			Ability = ability;
 
-			s_AbilityCastInfoChangedEventID = EventManager.RegisterEvent<AbilityCastInfoChangedEventArgs>(AbilityCastInfoChangedEventArgs.EventName);
+			s_AbilityCastInfoChangedEventID = EventManager.Register<AbilityCastInfoChangedEventArgs>(AbilityCastInfoChangedEventArgs.EventName);
 
 			ResetCooldown();
 		}

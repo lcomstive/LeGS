@@ -18,7 +18,7 @@ namespace LEGS
 
 		private void Start()
 		{
-			m_InputEventID = EventManager.RegisterEvent<LEGInputEventArgs>(LEGInputEventArgs.Name);
+			m_InputEventID = EventManager.Register<LEGInputEventArgs>(LEGInputEventArgs.Name);
 			m_Input = GetComponent<PlayerInput>();
 
 			m_Input.notificationBehavior = PlayerNotifications.InvokeCSharpEvents;

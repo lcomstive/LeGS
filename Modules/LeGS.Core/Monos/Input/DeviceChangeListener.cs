@@ -34,7 +34,7 @@ namespace LEGS
 
 		private void Start()
 		{
-			m_DeviceChangeEventID = EventManager.RegisterEvent<DeviceChangeEventArgs>(DeviceChangeEventArgs.Name);
+			m_DeviceChangeEventID = EventManager.Register<DeviceChangeEventArgs>(DeviceChangeEventArgs.Name);
 
 			PlayerInput playerInput;
 			if(!TryGetComponent(out playerInput))

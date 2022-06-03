@@ -15,7 +15,7 @@ MonoBehaviour:
   Abilities:
   - {fileID: 11400000, guid: 9c4273e2d44d0c44cbed1f24edf8499a, type: 2}
   - {fileID: 11400000, guid: a78c73fbbbfb17f4e8329e454177812b, type: 2}
-  - {fileID: 11400000, guid: 770970f5bfb8b864b90eeae9e0c17f1d, type: 2}
+  - {fileID: 11400000, guid: 81ddbefe06976494383eefbe82c2fb1b, type: 2}
   - {fileID: 11400000, guid: c9d83e8873bb0df4da37d6f553f6901a, type: 2}
   m_KillRewardEXP: 35
   m_KillReward:

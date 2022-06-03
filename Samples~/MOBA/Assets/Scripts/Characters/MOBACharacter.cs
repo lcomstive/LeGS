@@ -57,8 +57,8 @@ namespace MOBAExample
 			Health = MaxHealth = m_AttributeTraits[CharacterTrait.Health].CurrentValue;
 
 			// Register events
-			m_HealthChangedEventID = EventManager.RegisterEvent<EntityHealthChangeEventArgs>(EntityHealthChangeEventArgs.EventName);
-			m_CharacterChangedEventID = EventManager.RegisterEvent<CharacterChangedEventArgs>(CharacterChangedEventArgs.EventName);
+			m_HealthChangedEventID = EventManager.Register<EntityHealthChangeEventArgs>(EntityHealthChangeEventArgs.EventName);
+			m_CharacterChangedEventID = EventManager.Register<CharacterChangedEventArgs>(CharacterChangedEventArgs.EventName);
 
 			// Listen to relevant events
 			m_AttributeTraits[CharacterTrait.Mana].CurrentValueChanged += OnAttributeManaChanged;
