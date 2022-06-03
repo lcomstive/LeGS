@@ -62,7 +62,7 @@ var NAVTREEINDEX =
 [
 "Installation.html",
 "classLEGS_1_1Extensions.html",
-"interfaceLEGS_1_1IDamageable.html"
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#ab76ba1affa0d23f9489ec57f33f697f7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

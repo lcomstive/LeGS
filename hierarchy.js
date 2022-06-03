@@ -88,7 +88,8 @@ var hierarchy =
       [ "MOBAExample.PlayerHUDBars", "classMOBAExample_1_1PlayerHUDBars.html", null ],
       [ "MouseLock", "classMouseLock.html", null ],
       [ "PlayerController", "classPlayerController.html", null ],
-      [ "PlayerRespawn", "classPlayerRespawn.html", null ]
+      [ "PlayerRespawn", "classPlayerRespawn.html", null ],
+      [ "QuestSaveLoad", "classQuestSaveLoad.html", null ]
     ] ],
     [ "ScriptableObject", null, [
       [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", null ],

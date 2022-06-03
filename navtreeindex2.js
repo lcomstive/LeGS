@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#ab76ba1affa0d23f9489ec57f33f697f7":[5,0,0,1,4,3],
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#abd51de275db84cc01174741858a13907":[4,0,0,1,4,4],
+"interfaceLEGS_1_1Characters_1_1ICharacter.html#abd51de275db84cc01174741858a13907":[5,0,0,1,4,4],
 "interfaceLEGS_1_1IDamageable.html":[4,0,0,17],
 "interfaceLEGS_1_1IDamageable.html":[5,0,0,17],
 "interfaceLEGS_1_1IDamageable.html#a19bb82d3b6e232e9da75df3730c8b369":[5,0,0,17,1],

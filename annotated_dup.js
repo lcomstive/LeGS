@@ -78,5 +78,6 @@ var annotated_dup =
     [ "LookRotate", "classLookRotate.html", null ],
     [ "MouseLock", "classMouseLock.html", null ],
     [ "PlayerController", "classPlayerController.html", null ],
-    [ "PlayerRespawn", "classPlayerRespawn.html", null ]
+    [ "PlayerRespawn", "classPlayerRespawn.html", null ],
+    [ "QuestSaveLoad", "classQuestSaveLoad.html", null ]
 ];
