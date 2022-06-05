@@ -119,12 +119,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a75459734a61ee6168ce363a1913fb2ea"><td class="memItemLeft" align="right" valign="top"><a id="a75459734a61ee6168ce363a1913fb2ea" name="a75459734a61ee6168ce363a1913fb2ea"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Quest</b> (uint id, <a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a> creatingEntity)</td></tr>
 <tr class="separator:a75459734a61ee6168ce363a1913fb2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514d729c7dd01f5812f742b1cf8393e8"><td class="memItemLeft" align="right" valign="top"><a id="a514d729c7dd01f5812f742b1cf8393e8" name="a514d729c7dd01f5812f742b1cf8393e8"></a>
+<a class="el" href="classLEGS_1_1Quests_1_1QuestParameter.html">QuestParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (string name)</td></tr>
+<tr class="separator:a514d729c7dd01f5812f742b1cf8393e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05194023b8ae1c32da2a1f385c09342"><td class="memItemLeft" align="right" valign="top"><a id="ad05194023b8ae1c32da2a1f385c09342" name="ad05194023b8ae1c32da2a1f385c09342"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddParameter</b> (string name, <a class="el" href="classLEGS_1_1Quests_1_1QuestParameter.html">QuestParameter</a> parameter)</td></tr>
+<tr class="separator:ad05194023b8ae1c32da2a1f385c09342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5038ea8072092d99ef28e70c0c0d77a6"><td class="memItemLeft" align="right" valign="top"><a id="a5038ea8072092d99ef28e70c0c0d77a6" name="a5038ea8072092d99ef28e70c0c0d77a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveParameter</b> (string name)</td></tr>
+<tr class="separator:a5038ea8072092d99ef28e70c0c0d77a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69799a565a99176ae9ecd7a877d44b40"><td class="memItemLeft" align="right" valign="top"><a id="a69799a565a99176ae9ecd7a877d44b40" name="a69799a565a99176ae9ecd7a877d44b40"></a>
 <a class="el" href="classLEGS_1_1Quests_1_1QuestParameter.html">QuestParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetParameter</b> (string name)</td></tr>
 <tr class="separator:a69799a565a99176ae9ecd7a877d44b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29cdb1065b55016012cddac540136fdc"><td class="memItemLeft" align="right" valign="top"><a id="a29cdb1065b55016012cddac540136fdc" name="a29cdb1065b55016012cddac540136fdc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParameter</b> (string name, int value)</td></tr>
 <tr class="separator:a29cdb1065b55016012cddac540136fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8853a9ff845f4595fb3aeb5e86011a03"><td class="memItemLeft" align="right" valign="top"><a id="a8853a9ff845f4595fb3aeb5e86011a03" name="a8853a9ff845f4595fb3aeb5e86011a03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParameterName</b> (string oldName, string newName)</td></tr>
+<tr class="separator:a8853a9ff845f4595fb3aeb5e86011a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b3f86ab68e80b7e6bbd4de2207e17c"><td class="memItemLeft" align="right" valign="top"><a id="a09b3f86ab68e80b7e6bbd4de2207e17c" name="a09b3f86ab68e80b7e6bbd4de2207e17c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParameter</b> (string name, <a class="el" href="classLEGS_1_1Quests_1_1QuestParameter.html">QuestParameter</a> parameter)</td></tr>
 <tr class="separator:a09b3f86ab68e80b7e6bbd4de2207e17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +195,13 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>ID</b><code> [get]</c
 <tr class="memdesc:a67c30d5cca0f5c71a02e4ceb2caab855"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="interfaceLEGS_1_1IEntity.html" title="Represents a LeGS object. This is the base type for most LeGS types.">IEntity</a> that created this quest <br /></td></tr>
 <tr class="separator:a67c30d5cca0f5c71a02e4ceb2caab855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457a235df5cd6a79d4993b0ea1630536"><td class="memItemLeft" align="right" valign="top"><a id="a457a235df5cd6a79d4993b0ea1630536" name="a457a235df5cd6a79d4993b0ea1630536"></a>
-QuestState&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [get]</code></td></tr>
+QuestState&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [getset]</code></td></tr>
 <tr class="memdesc:a457a235df5cd6a79d4993b0ea1630536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state <br /></td></tr>
 <tr class="separator:a457a235df5cd6a79d4993b0ea1630536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0243ad1a32c786fed3bf4f87acb835"><td class="memItemLeft" align="right" valign="top"><a id="abc0243ad1a32c786fed3bf4f87acb835" name="abc0243ad1a32c786fed3bf4f87acb835"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ParameterCount</b><code> [get]</code></td></tr>
+<tr class="memdesc:abc0243ad1a32c786fed3bf4f87acb835"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many parameters this quest has <br /></td></tr>
+<tr class="separator:abc0243ad1a32c786fed3bf4f87acb835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a07f7295bb0ff50b3bb62f24ddde57"><td class="memItemLeft" align="right" valign="top"><a id="a78a07f7295bb0ff50b3bb62f24ddde57" name="a78a07f7295bb0ff50b3bb62f24ddde57"></a>
 static ushort&#160;</td><td class="memItemRight" valign="bottom"><b>QuestEndEventID</b> = ushort.MaxValue<code> [get]</code></td></tr>
 <tr class="separator:a78a07f7295bb0ff50b3bb62f24ddde57"><td class="memSeparator" colspan="2">&#160;</td></tr>
