@@ -95,17 +95,28 @@ namespace LEGS.Quests
 		/// <summary>
 		/// Current state
 		/// </summary>
-		public QuestState State { get; private set; }
+		public QuestState State
+		{
+			get => m_State;
+			set => ChangeState(value);
+		}
 
 		/// <summary>
 		/// All parameters, with key as unique name
 		/// </summary>
 		protected Dictionary<string, QuestParameter> Parameters;
 
+		/// <summary>
+		/// How many parameters this quest has
+		/// </summary>
+		public int ParameterCount => Parameters.Count;
+
 		public static ushort QuestEndEventID			 { get; private set; } = ushort.MaxValue;
 		public static ushort QuestBeginEventID			 { get; private set; } = ushort.MaxValue;
 		public static ushort QuestStatusChangeEventID	 { get; private set; } = ushort.MaxValue;
 		public static ushort QuestParameterUpdateEventID { get; private set; } = ushort.MaxValue;
+
+		private QuestState m_State = QuestState.Pending;
 
 		public Quest(uint id, IEntity creatingEntity)
 		{
@@ -113,7 +124,7 @@ namespace LEGS.Quests
 			Entity = creatingEntity;
 			Name = "Quest";
 			Description = string.Empty;
-			State = QuestState.Pending;
+			m_State = QuestState.Pending;
 			Parameters = new Dictionary<string, QuestParameter>();
 
 			if(QuestEndEventID == ushort.MaxValue)
@@ -123,6 +134,27 @@ namespace LEGS.Quests
 				QuestStatusChangeEventID = EventManager.Register<QuestEventArgs>("QuestStatusChange");
 				QuestParameterUpdateEventID = EventManager.Register<QuestEventArgs>("QuestParameterUpdate");
 			}
+		}
+
+		public QuestParameter AddParameter(string name)
+		{
+			if(Parameters.ContainsKey(name))
+				return Parameters[name];
+			QuestParameter parameter = new QuestParameter();
+			Parameters.Add(name, parameter);
+			return parameter;
+		}
+
+		public void AddParameter(string name, QuestParameter parameter)
+		{
+			if(!Parameters.ContainsKey(name))
+				Parameters.Add(name, parameter);
+		}
+
+		public void RemoveParameter(string name)
+		{
+			if(Parameters.ContainsKey(name))
+				Parameters.Remove(name);
 		}
 
 		public QuestParameter GetParameter(string name) =>
@@ -135,6 +167,16 @@ namespace LEGS.Quests
 			Parameters[name].Value = value;
 
 			ParameterChanged?.Invoke(this, name, value);
+			EventManager.Publish(QuestParameterUpdateEventID, new QuestEventArgs(Entity, this));
+		}
+
+		public void SetParameterName(string oldName, string newName)
+		{
+			if(!Parameters.ContainsKey(oldName))
+				return;
+
+			Parameters[newName] = Parameters[oldName];
+			Parameters.Remove(oldName);
 			EventManager.Publish(QuestParameterUpdateEventID, new QuestEventArgs(Entity, this));
 		}
 
@@ -158,8 +200,8 @@ namespace LEGS.Quests
 		{
 			if (State == state)
 				return; // No change
-			QuestState oldState = State;
-			State = state;
+			QuestState oldState = m_State;
+			m_State = state;
 
 			// Check if quest is beginning
 			if (State == QuestState.InProgress)
