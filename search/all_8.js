@@ -8,6 +8,7 @@ var searchData=
   ['ientity_5',['IEntity',['../interfaceLEGS_1_1IEntity.html',1,'LEGS']]],
   ['installation_6',['Installation',['../Installation.html',1,'']]],
   ['iscompleted_7',['IsCompleted',['../classLEGS_1_1Quests_1_1QuestParameter.html#a6b0b0b04e82d0ce7790b34ea487ed6bb',1,'LEGS::Quests::QuestParameter']]],
-  ['istatuseffect_8',['IStatusEffect',['../interfaceLEGS_1_1IStatusEffect.html',1,'LEGS']]],
-  ['istatuseffectreceiver_9',['IStatusEffectReceiver',['../interfaceLEGS_1_1IStatusEffectReceiver.html',1,'LEGS']]]
+  ['iserializable_8',['ISerializable',['../interfaceLEGS_1_1ISerializable.html',1,'LEGS']]],
+  ['istatuseffect_9',['IStatusEffect',['../interfaceLEGS_1_1IStatusEffect.html',1,'LEGS']]],
+  ['istatuseffectreceiver_10',['IStatusEffectReceiver',['../interfaceLEGS_1_1IStatusEffectReceiver.html',1,'LEGS']]]
 ];

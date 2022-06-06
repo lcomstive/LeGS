@@ -122,6 +122,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1DamageOverTimeStatusEffect.html">DamageOverTimeStatusEffect</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLEGS_1_1TimedStatusEffect.html" title="StatusEffect that removes itself from StatusEffect.Receiver after Duration seconds has passed">TimedStatusEffect</a> that applies damage over time to StatusEffect.Receiver  <a href="classLEGS_1_1DamageOverTimeStatusEffect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1DataStream.html">DataStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1DestroyAfterSeconds.html">DestroyAfterSeconds</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys attached GameObject after m_Seconds  <a href="classLEGS_1_1DestroyAfterSeconds.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +152,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IEntity.html">IEntity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a LeGS object. This is the base type for most LeGS types.  <a href="interfaceLEGS_1_1IEntity.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1ISerializable.html">ISerializable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that can be serialized &amp; deserialized using a <a class="el" href="classLEGS_1_1DataStream.html">DataStream</a>  <a href="interfaceLEGS_1_1ISerializable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceLEGS_1_1IStatusEffect.html">IStatusEffect</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that can be added and removed from an <a class="el" href="interfaceLEGS_1_1IStatusEffectReceiver.html" title="An IEntity that can have IStatusEffects added and removed">IStatusEffectReceiver</a>  <a href="interfaceLEGS_1_1IStatusEffect.html#details">More...</a><br /></td></tr>
@@ -188,6 +193,27 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6ab38b0d7e56dfeb8153f20c52adb339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9b86738d352bb7e848f876f35f6a95"><td class="memItemLeft" align="right" valign="top"><a id="aad9b86738d352bb7e848f876f35f6a95" name="aad9b86738d352bb7e848f876f35f6a95"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95">DataStreamType</a> : byte { <br />
+&#160;&#160;<b>Char</b> = 1
+, <b>Byte</b>
+, <b>Int</b>
+, <b>Float</b>
+, <br />
+&#160;&#160;<b>String</b>
+, <b>Boolean</b>
+, <b>ByteArray</b>
+, <b>Short</b>
+, <br />
+&#160;&#160;<b>UShort</b>
+, <b>UInt</b>
+, <b>Long</b>
+, <b>ULong</b>
+, <br />
+&#160;&#160;<b>Double</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:aad9b86738d352bb7e848f876f35f6a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types that support serialization by DataStream <br /></td></tr>
+<tr class="separator:aad9b86738d352bb7e848f876f35f6a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37451fd710834c0009b7f09a06931424"><td class="memItemLeft" align="right" valign="top"><a id="a37451fd710834c0009b7f09a06931424" name="a37451fd710834c0009b7f09a06931424"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TriggerApplyType</b> { <b>None</b> = 0
 , <b>Enter</b> = 1
 , <b>Exit</b> = 2

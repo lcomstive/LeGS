@@ -22,6 +22,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "LEGS.Currency", "structLEGS_1_1Currency.html", null ],
+    [ "LEGS.DataStream", "classLEGS_1_1DataStream.html", null ],
     [ "LEGS.EventManager", "classLEGS_1_1EventManager.html", null ],
     [ "LEGS.Extensions", "classLEGS_1_1Extensions.html", null ],
     [ "LEGS.IDamageable", "interfaceLEGS_1_1IDamageable.html", [
@@ -38,6 +39,9 @@ var hierarchy =
       [ "LEGS.IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", [
         [ "LEGS.Characters.ICharacter", "interfaceLEGS_1_1Characters_1_1ICharacter.html", null ]
       ] ]
+    ] ],
+    [ "LEGS.ISerializable", "interfaceLEGS_1_1ISerializable.html", [
+      [ "LEGS.Quests.Quest", "classLEGS_1_1Quests_1_1Quest.html", null ]
     ] ],
     [ "LEGS.IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", [
       [ "LEGS.StatusEffect", "classLEGS_1_1StatusEffect.html", [
@@ -57,7 +61,6 @@ var hierarchy =
       [ "MOBAExample.AbilityCastInfoChangedEventArgs", "classMOBAExample_1_1AbilityCastInfoChangedEventArgs.html", null ],
       [ "MOBAExample.CharacterChangedEventArgs", "classMOBAExample_1_1CharacterChangedEventArgs.html", null ]
     ] ],
-    [ "LEGS.Quests.Quest", "classLEGS_1_1Quests_1_1Quest.html", null ],
     [ "LEGS.Quests.QuestManager", "classLEGS_1_1Quests_1_1QuestManager.html", null ],
     [ "LEGS.Quests.QuestParameter", "classLEGS_1_1Quests_1_1QuestParameter.html", null ],
     [ "MOBAExample.AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", null ],

@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('classLEGS_1_1Quests_1_1Quest.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -113,6 +114,15 @@ $(document).ready(function(){initNavTree('classLEGS_1_1Quests_1_1Quest.html','')
 
 <p>Base quest type  
 </p>
+<div class="dynheader">
+Inheritance diagram for LEGS.Quests.Quest:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classLEGS_1_1Quests_1_1Quest.png" usemap="#LEGS.Quests.Quest_map" alt=""/>
+  <map id="LEGS.Quests.Quest_map" name="LEGS.Quests.Quest_map">
+<area href="interfaceLEGS_1_1ISerializable.html" title="An object that can be serialized &amp; deserialized using a DataStream" alt="LEGS.ISerializable" shape="rect" coords="0,0,124,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -149,12 +159,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasParameter</b> (str
 <tr class="memitem:a878bfdd95e705b2dfd64b90ce365d8d7"><td class="memItemLeft" align="right" valign="top"><a id="a878bfdd95e705b2dfd64b90ce365d8d7" name="a878bfdd95e705b2dfd64b90ce365d8d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeState</b> (QuestState state)</td></tr>
 <tr class="separator:a878bfdd95e705b2dfd64b90ce365d8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9bae3d96d54395da1cfc9cecae3139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Quests_1_1Quest.html#aee9bae3d96d54395da1cfc9cecae3139">Serialize</a> (ref <a class="el" href="classLEGS_1_1DataStream.html">DataStream</a> stream)</td></tr>
+<tr class="separator:aee9bae3d96d54395da1cfc9cecae3139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e0ec55fce4ee4e95f295a67fc1a2f6"><td class="memItemLeft" align="right" valign="top"><a id="a95e0ec55fce4ee4e95f295a67fc1a2f6" name="a95e0ec55fce4ee4e95f295a67fc1a2f6"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStateChanged</b> (<a class="el" href="classLEGS_1_1Quests_1_1Quest.html">Quest</a> quest)</td></tr>
 <tr class="separator:a95e0ec55fce4ee4e95f295a67fc1a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023e2e692acd40f4fcdd9c1cd4cd7957"><td class="memItemLeft" align="right" valign="top"><a id="a023e2e692acd40f4fcdd9c1cd4cd7957" name="a023e2e692acd40f4fcdd9c1cd4cd7957"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnParameterChanged</b> (<a class="el" href="classLEGS_1_1Quests_1_1Quest.html">Quest</a> quest, string parameterName, int value)</td></tr>
 <tr class="separator:a023e2e692acd40f4fcdd9c1cd4cd7957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1a10cb028a42d3161e76035ddc447d33"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfaceLEGS_1_1ISerializable.html">ISerializable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLEGS_1_1Quests_1_1Quest.html#a1a10cb028a42d3161e76035ddc447d33">Deserialize</a> (<a class="el" href="classLEGS_1_1DataStream.html">DataStream</a> stream)</td></tr>
+<tr class="separator:a1a10cb028a42d3161e76035ddc447d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -227,6 +244,55 @@ OnStateChanged&#160;</td><td class="memItemRight" valign="bottom"><b>StateChange
 OnParameterChanged&#160;</td><td class="memItemRight" valign="bottom"><b>ParameterChanged</b></td></tr>
 <tr class="separator:ab672c961ac402fe16449ad45d83ee1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1a10cb028a42d3161e76035ddc447d33" name="a1a10cb028a42d3161e76035ddc447d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a10cb028a42d3161e76035ddc447d33">&#9670;&nbsp;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="interfaceLEGS_1_1ISerializable.html">ISerializable</a> LEGS.Quests.Quest.Deserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLEGS_1_1DataStream.html">DataStream</a>&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceLEGS_1_1ISerializable.html">LEGS.ISerializable</a>.</p>
+
+</div>
+</div>
+<a id="aee9bae3d96d54395da1cfc9cecae3139" name="aee9bae3d96d54395da1cfc9cecae3139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9bae3d96d54395da1cfc9cecae3139">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LEGS.Quests.Quest.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="classLEGS_1_1DataStream.html">DataStream</a>&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceLEGS_1_1ISerializable.html">LEGS.ISerializable</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

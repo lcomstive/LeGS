@@ -9,6 +9,7 @@ var namespaceLEGS =
     [ "Currency", "structLEGS_1_1Currency.html", null ],
     [ "Damageable", "classLEGS_1_1Damageable.html", "classLEGS_1_1Damageable" ],
     [ "DamageOverTimeStatusEffect", "classLEGS_1_1DamageOverTimeStatusEffect.html", "classLEGS_1_1DamageOverTimeStatusEffect" ],
+    [ "DataStream", "classLEGS_1_1DataStream.html", "classLEGS_1_1DataStream" ],
     [ "DestroyAfterSeconds", "classLEGS_1_1DestroyAfterSeconds.html", null ],
     [ "DestroyOnCollision", "classLEGS_1_1DestroyOnCollision.html", null ],
     [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
@@ -19,6 +20,7 @@ var namespaceLEGS =
     [ "Extensions", "classLEGS_1_1Extensions.html", null ],
     [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
     [ "IEntity", "interfaceLEGS_1_1IEntity.html", "interfaceLEGS_1_1IEntity" ],
+    [ "ISerializable", "interfaceLEGS_1_1ISerializable.html", null ],
     [ "IStatusEffect", "interfaceLEGS_1_1IStatusEffect.html", "interfaceLEGS_1_1IStatusEffect" ],
     [ "IStatusEffectReceiver", "interfaceLEGS_1_1IStatusEffectReceiver.html", "interfaceLEGS_1_1IStatusEffectReceiver" ],
     [ "LEGEventArgs", "classLEGS_1_1LEGEventArgs.html", "classLEGS_1_1LEGEventArgs" ],
@@ -26,5 +28,20 @@ var namespaceLEGS =
     [ "StatusEffect", "classLEGS_1_1StatusEffect.html", "classLEGS_1_1StatusEffect" ],
     [ "StatusEffectChangeArgs", "classLEGS_1_1StatusEffectChangeArgs.html", "classLEGS_1_1StatusEffectChangeArgs" ],
     [ "TimedStatusEffect", "classLEGS_1_1TimedStatusEffect.html", "classLEGS_1_1TimedStatusEffect" ],
-    [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", "classLEGS_1_1TriggerApplyStatus" ]
+    [ "TriggerApplyStatus", "classLEGS_1_1TriggerApplyStatus.html", "classLEGS_1_1TriggerApplyStatus" ],
+    [ "DataStreamType", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95", [
+      [ "Char", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a8e95e84813830072b7516cfaa7dbc1a9", null ],
+      [ "Byte", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95aa245c3230debe5c956484ecc6fa93877", null ],
+      [ "Int", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a1686a6c336b71b36d77354cea19a8b52", null ],
+      [ "Float", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a22ae0e2b89e5e3d477f988cc36d3272b", null ],
+      [ "String", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a27118326006d3829667a400ad23d5d98", null ],
+      [ "Boolean", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a27226c864bac7454a8504f8edb15d95b", null ],
+      [ "ByteArray", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a29d83f0080e24c1f4b3975dc9ff9e868", null ],
+      [ "Short", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a30bb747c98bccdd11b3f89e644c4d0ad", null ],
+      [ "UShort", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95adfe785f133347f9b473f99009732b1bc", null ],
+      [ "UInt", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a0b1291eded63143ac04709711274785a", null ],
+      [ "Long", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a8394f0347c184cf156ac5924dccb773b", null ],
+      [ "ULong", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95a43963b8459ea654be36f373f1a036182", null ],
+      [ "Double", "namespaceLEGS.html#aad9b86738d352bb7e848f876f35f6a95ad909d38d705ce75386dd86e611a82f5b", null ]
+    ] ]
 ];

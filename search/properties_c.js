@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['receiver_0',['Receiver',['../classLEGS_1_1StatusEffectChangeArgs.html#ac08a6c885c346cf3c788454343825c55',1,'LEGS::StatusEffectChangeArgs']]]
+  ['quest_0',['Quest',['../classLEGS_1_1Quests_1_1QuestEventArgs.html#aacc1e283d4a18e3ac90b36724cc0c985',1,'LEGS::Quests::QuestEventArgs']]]
 ];
