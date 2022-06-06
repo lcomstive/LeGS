@@ -78,6 +78,24 @@ public class PlayerController : MonoBehaviour
 		m_Rigidbody.isKinematic = false;
 	}
 
+	private void OnEnable()
+	{
+		if(m_Rigidbody)
+			m_Rigidbody.useGravity = false;
+	}
+
+	private void OnDisable()
+	{
+		m_Animator.SetBool("IsJumping", false);
+		m_Animator.SetBool("IsSprinting", false);
+		m_Animator.SetBool("IsMoving", false);
+		m_Animator.SetFloat("Horizontal Input", 0, m_AnimationDamping, Time.deltaTime);
+		m_Animator.SetFloat("Vertical Input", 0, m_AnimationDamping, Time.deltaTime);
+		m_Animator.SetFloat("Movement Input", 0, m_AnimationDamping, Time.deltaTime);
+
+		m_Rigidbody.useGravity = true;
+	}
+
 	private void Update()
 	{
 		m_GroundTime += Time.deltaTime * (IsGrounded ? 1.0f : -1.0f);

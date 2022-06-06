@@ -10,6 +10,7 @@ namespace LEGS
 		private Camera m_Camera;
 
 		[SerializeField] private float m_RotateSpeed = 10;
+		[SerializeField] private bool m_InvertRotation = false;
 
 		private void Start()
 		{
@@ -19,7 +20,7 @@ namespace LEGS
 
 		private void Update()
 		{
-			Quaternion rotation = Quaternion.LookRotation(-m_Camera.transform.forward);
+			Quaternion rotation = Quaternion.LookRotation(m_Camera.transform.forward * (m_InvertRotation ? -1.0f : 1.0f));
 			transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * m_RotateSpeed);
 		}
 	}

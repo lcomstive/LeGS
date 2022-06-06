@@ -118,7 +118,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!114 &-2944181621147533952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbdc286dd382dd3428dbea501039d314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HitEffectPrefab: {fileID: 0}
+  m_HitEffectPrefab: {fileID: 9173653742657867671, guid: ed9efc252d2a9cf48a8cc9ad9789378a, type: 3}
   m_DamagePopupPrefab: {fileID: 5099891060839550346, guid: 321270d28ac687a4cbf399ec796440af, type: 3}
 --- !u!114 &7044212300687041569
 MonoBehaviour:

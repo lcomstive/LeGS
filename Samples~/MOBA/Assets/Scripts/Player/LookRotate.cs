@@ -21,9 +21,6 @@ public class LookRotate : MonoBehaviour
 	{
 		Vector2 input = m_LookAction.action.ReadValue<Vector2>() * Sensitivity * Time.deltaTime;
 
-		if(input.sqrMagnitude <= 0.01f)
-			return; // No input
-
 		if(m_RotateY) m_Euler.y = m_Euler.y + input.x * (InvertXInput ? -1.0f : 1.0f);
 		if(m_RotateX) m_Euler.x = ClampAngle(m_Euler.x + input.y * (InvertYInput ? -1.0f : 1.0f));
 

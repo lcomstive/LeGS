@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5099891060839550348}
   - component: {fileID: 5099891060839550347}
   - component: {fileID: 8920184360486233659}
+  - component: {fileID: -4288022374857209122}
   m_Layer: 0
   m_Name: Damage Popup
   m_TagString: Untagged
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278254079
+    rgba: 4283978751
   m_fontColor: {r: 1, g: 0.3254717, b: 0.343783, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -220,3 +221,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_MovementPerSecond: {x: 0, y: 1, z: 0}
   m_DestroyAfterScaleCurve: 1
+--- !u!114 &-4288022374857209122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099891060839550346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40abd43bdb644c80ba125078c79c419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_RotateSpeed: 30
