@@ -70,7 +70,7 @@ namespace LEGS.Quests
 	/// Base quest type
 	/// </summary>
 	[System.Serializable]
-	public class Quest
+	public class Quest : ISerializable
 	{
 		/// <summary>
 		/// Display name
@@ -228,6 +228,46 @@ namespace LEGS.Quests
 					return;
 
 			ChangeState(QuestState.Complete);
+		}
+
+		private void OnSerialized(ref DataStream stream)
+		{
+			stream.Serialize(ref Name);
+			stream.Serialize(ref Description);
+
+			byte state = (byte)m_State;
+			stream.Serialize(ref state);
+			m_State = (QuestState)state;
+
+			if(stream.isWriting)
+			{
+				stream.Write(Parameters.Count);
+				foreach(var key in Parameters.Keys)
+					stream.Write(key);
+			}
+			else
+			{
+				int parameterCount = stream.Read<int>();
+				for(int i = 0; i < parameterCount; i++)
+					Parameters.Add(stream.Read<string>(), new QuestParameter());
+			}
+
+			foreach(var pair in Parameters)
+			{
+				stream.Serialize(ref pair.Value.Value);
+				stream.Serialize(ref pair.Value.MaxValue);
+				stream.Serialize(ref pair.Value.Optional);
+				stream.Serialize(ref pair.Value.Description);
+			}
+		}
+
+		public void Serialize(ref DataStream stream) => OnSerialized(ref stream);
+
+		public static ISerializable Deserialize(DataStream stream)
+		{
+			Quest quest = QuestManager.Create(null);
+			quest.OnSerialized(ref stream);
+			return quest;
 		}
 
 		public QuestParameter this[string parameterName]

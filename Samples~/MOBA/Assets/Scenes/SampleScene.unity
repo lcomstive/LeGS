@@ -4393,11 +4393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16ce807c0988664aa496b0e9bacf321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Quests:
-  - Name: 
-    Description: 
-  - Name: 
-    Description: 
+  m_SaveLocation: Quests.dat
 --- !u!4 &1854991387
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using LEGS;
+using System.IO;
+using UnityEngine;
 using LEGS.Quests;
 using System.Collections.Generic;
 
@@ -10,16 +12,33 @@ using UnityEditorInternal;
 public class QuestSaveLoad : MonoBehaviour
 {
 	[SerializeField] private string m_SaveLocation = "Quests.dat";
-	[SerializeField] private List<Quest> m_Quests;
+
+	public string SaveLocation => $"{Application.dataPath}/{m_SaveLocation}";
+
+	private List<Quest> m_Quests = new List<Quest>();
 
 	public void Save()
 	{
+		DataStream stream = new DataStream();
 
+		stream.Write(m_Quests.Count);
+		foreach(Quest quest in m_Quests)
+			quest.Serialize(ref stream);
+
+		File.WriteAllBytes(SaveLocation, stream.Data);
 	}
 
 	public void Load()
 	{
+		m_Quests.Clear();
+		
+		if(!File.Exists(SaveLocation))
+			return;
 
+		DataStream stream = new DataStream(File.ReadAllBytes(SaveLocation));
+		int questCount = stream.Read<int>();
+		for(int i = 0; i < questCount; i++)
+			m_Quests.Add((Quest)Quest.Deserialize(stream));
 	}
 
 #if UNITY_EDITOR
@@ -45,13 +64,24 @@ public class QuestSaveLoad : MonoBehaviour
 			m_QuestFoldouts.Clear();
 			for(int i = 0; i < m_Target.m_Quests.Count; i++)
 				m_QuestFoldouts.Add(false);
+
+			m_Target.Load();
 		}
+
+		private void OnDisable() => m_Target?.Save();
 
 		public override void OnInspectorGUI()
 		{
 			m_Target.m_SaveLocation = EditorGUILayout.TextField("Save Location", m_Target.m_SaveLocation);
 
 			m_List.DoLayoutList();
+
+			EditorGUILayout.BeginHorizontal();
+			if(GUILayout.Button("Save"))
+				m_Target.Save();
+			if(GUILayout.Button("Load"))
+				m_Target.Load();
+			EditorGUILayout.EndHorizontal();
 		}
 
 		private void OnElementAdd(ReorderableList _)
@@ -96,9 +126,23 @@ public class QuestSaveLoad : MonoBehaviour
 				for(int i = 0; i < parameters.Length; i++)
 				{
 					string paramName = EditorGUI.TextField(drawRect, "Name", paramNames[i]);
+					drawRect.y += EditorGUIUtility.singleLineHeight;
+
 					if(!paramName.Equals(paramNames[i]))
 						quest.SetParameterName(paramNames[i], paramName);
 
+					QuestParameter parameter = quest.GetParameter(paramName);
+
+					parameter.Value = EditorGUI.IntField(drawRect, "Value", parameter.Value);
+					drawRect.y += EditorGUIUtility.singleLineHeight;
+
+					parameter.MaxValue = EditorGUI.IntField(drawRect, "Max Value", parameter.MaxValue);
+					drawRect.y += EditorGUIUtility.singleLineHeight;
+
+					parameter.Optional = EditorGUI.Toggle(drawRect, "Optional", parameter.Optional);
+					drawRect.y += EditorGUIUtility.singleLineHeight;
+
+					parameter.Description = EditorGUI.TextField(drawRect, "Description", parameter.Description);
 					drawRect.y += EditorGUIUtility.singleLineHeight;
 				}
 
@@ -114,7 +158,7 @@ public class QuestSaveLoad : MonoBehaviour
 			float height = EditorGUIUtility.singleLineHeight * 4;
 			if(index < 0 || index >= m_QuestFoldouts.Count || !m_QuestFoldouts[index])
 				return height;
-			height += EditorGUIUtility.singleLineHeight * (m_Target.m_Quests[index].ParameterCount * 3);
+			height += EditorGUIUtility.singleLineHeight * (m_Target.m_Quests[index].ParameterCount * 5);
 			height += EditorGUIUtility.singleLineHeight;
 			return height;
 		}
