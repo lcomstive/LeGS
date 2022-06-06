@@ -39,7 +39,6 @@ var annotated_dup =
       [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
       [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
       [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
-      [ "EventDebugger", "classLEGS_1_1EventDebugger.html", null ],
       [ "EventManager", "classLEGS_1_1EventManager.html", "classLEGS_1_1EventManager" ],
       [ "Extensions", "classLEGS_1_1Extensions.html", null ],
       [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],
@@ -81,5 +80,6 @@ var annotated_dup =
     [ "MouseLock", "classMouseLock.html", null ],
     [ "PlayerController", "classPlayerController.html", null ],
     [ "PlayerRespawn", "classPlayerRespawn.html", null ],
-    [ "QuestSaveLoad", "classQuestSaveLoad.html", null ]
+    [ "QuestSaveLoad", "classQuestSaveLoad.html", null ],
+    [ "QuitButton", "classQuitButton.html", null ]
 ];

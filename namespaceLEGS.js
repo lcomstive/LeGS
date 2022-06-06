@@ -15,7 +15,6 @@ var namespaceLEGS =
     [ "Entity", "classLEGS_1_1Entity.html", "classLEGS_1_1Entity" ],
     [ "EntityDeathEventArgs", "classLEGS_1_1EntityDeathEventArgs.html", "classLEGS_1_1EntityDeathEventArgs" ],
     [ "EntityHealthChangeEventArgs", "classLEGS_1_1EntityHealthChangeEventArgs.html", "classLEGS_1_1EntityHealthChangeEventArgs" ],
-    [ "EventDebugger", "classLEGS_1_1EventDebugger.html", null ],
     [ "EventManager", "classLEGS_1_1EventManager.html", "classLEGS_1_1EventManager" ],
     [ "Extensions", "classLEGS_1_1Extensions.html", null ],
     [ "IDamageable", "interfaceLEGS_1_1IDamageable.html", "interfaceLEGS_1_1IDamageable" ],

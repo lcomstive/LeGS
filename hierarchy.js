@@ -1,8 +1,5 @@
 var hierarchy =
 [
-    [ "EditorWindow", null, [
-      [ "LEGS.EventDebugger", "classLEGS_1_1EventDebugger.html", null ]
-    ] ],
     [ "LEGS.Abilities.IAbility", "interfaceLEGS_1_1Abilities_1_1IAbility.html", [
       [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", [
         [ "LEGS.Abilities.AbilityAddStatusEffect", "classLEGS_1_1Abilities_1_1AbilityAddStatusEffect.html", null ],
@@ -92,7 +89,8 @@ var hierarchy =
       [ "MouseLock", "classMouseLock.html", null ],
       [ "PlayerController", "classPlayerController.html", null ],
       [ "PlayerRespawn", "classPlayerRespawn.html", null ],
-      [ "QuestSaveLoad", "classQuestSaveLoad.html", null ]
+      [ "QuestSaveLoad", "classQuestSaveLoad.html", null ],
+      [ "QuitButton", "classQuitButton.html", null ]
     ] ],
     [ "ScriptableObject", null, [
       [ "LEGS.Abilities.Ability", "classLEGS_1_1Abilities_1_1Ability.html", null ],
