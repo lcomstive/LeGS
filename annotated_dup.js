@@ -75,6 +75,7 @@ var annotated_dup =
       [ "PlayerHUDBars", "classMOBAExample_1_1PlayerHUDBars.html", null ],
       [ "StatusEffectChangeMana", "classMOBAExample_1_1StatusEffectChangeMana.html", "classMOBAExample_1_1StatusEffectChangeMana" ]
     ] ],
+    [ "EventManagerStressTest", "classEventManagerStressTest.html", null ],
     [ "FollowTarget", "classFollowTarget.html", null ],
     [ "LookRotate", "classLookRotate.html", null ],
     [ "MouseLock", "classMouseLock.html", null ],

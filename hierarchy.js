@@ -63,6 +63,7 @@ var hierarchy =
     [ "MOBAExample.AbilityCastInfo", "classMOBAExample_1_1AbilityCastInfo.html", null ],
     [ "MOBAExample.AbilityCooldownUI", "classMOBAExample_1_1AbilityCooldownUI.html", null ],
     [ "MonoBehaviour", null, [
+      [ "EventManagerStressTest", "classEventManagerStressTest.html", null ],
       [ "FollowTarget", "classFollowTarget.html", null ],
       [ "LEGS.Abilities.AbilityInfo", "classLEGS_1_1Abilities_1_1AbilityInfo.html", null ],
       [ "LEGS.Abilities.SimpleAbilityCaster", "classLEGS_1_1Abilities_1_1SimpleAbilityCaster.html", null ],
