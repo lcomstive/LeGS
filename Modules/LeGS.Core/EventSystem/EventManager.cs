@@ -200,7 +200,7 @@ namespace LEGS
 		/// <summary>
 		/// Raises an event and informs listeners. Uses default <see cref="LEGEventArgs"/> as event type.
 		/// </summary>
-		public static bool Publish(string eventName) => Publish<LEGEventArgs>(GetID(eventName), null);
+		public static bool Publish(string eventName) => Publish<LEGEventArgs>(GetID(eventName), new LEGEventArgs(null));
 
 		/// <summary>
 		/// Gets all registered event IDs
