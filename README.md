@@ -1,5 +1,4 @@
-LeGS
-> Lewis' Game Systems
+![Lewis' Game Systems](https://media.githubusercontent.com/media/lcomstive/LeGS/gh-pages/Media/Logo.png)
 
 A collection of modules & tools to simplify Unity3D game development.
 
@@ -12,8 +11,10 @@ A collection of modules & tools to simplify Unity3D game development.
 
 ### Samples
 - [MOBA](https://lcomstive.github.io/LeGS/samplemoba.html)
-- [Tutorial 0 - Getting Familiar](https://lcomstive.github.io/LeGS/_tutorial0.html)
-- [Tutorial 1 - Abilities](https://lcomstive.github.io/LeGS/_tutorial1.html)
+- [Tutorial 0 - Getting Started](https://lcomstive.github.io/LeGS/Tutorial0.html)
+- [Tutorial 1 - Abilities](https://lcomstive.github.io/LeGS/Tutorial1.html)
+- [Tutorial 2 - Characters](https://lcomstive.github.io/LeGS/Tutorial2.html)
+- [Tutorial 3 - Events](https://lcomstive.github.io/LeGS/Tutorial3.html)
 
 ### Installation
 The *LeGS* package can be installed via Git URL in the Unity Package Manager.
@@ -21,4 +22,4 @@ The *LeGS* package can be installed via Git URL in the Unity Package Manager.
 For further details you can follow the [installation guide](https://lcomstive.github.io/LeGS/installation.html).
 
 ### License
-This project is released under the [MIT License](./LICENSE)
+This project is released under the [MIT License](https://lcomstive.github.io/LeGS/License.html)
